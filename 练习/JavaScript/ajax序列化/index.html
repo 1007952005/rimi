@@ -7,21 +7,35 @@
 </head>
 
 <body>
+    <form action="" name="test">
+        <label for="">姓名：</label><input name="name" type="text">
+        <label for="">电话：</label><input name="tel" type="tel">
+        <button type="button" id="submit">提交</button>
+    </form>
+    <p></p>
     <script>
-        function objToParam(param) {
-            var str = Object.prototype.toString.call(param),
-                type = str.split(" ")[1],
-                typeString = type.slice(0, type.length - 1);
-            if (typeString == "object") {
-                var objToParamString = "";
-                for (var x in param) {
-                    var encode = encodeURIComponent(param[x]);
-                    if ()
-                        objToParamString += x + "="
-                    encode
+        var url = "https://www.aulence.com/php/test-backstage.php",
+            btn = document.getElementById("submit");
+        var res = document.getElementsByTagName("p")[0];
+
+        btn.onclick = function() {
+            var name = encodeURIComponent(test.name.value);
+            var tel = encodeURIComponent(test.tel.value);
+            url = url + "/?name=" + name + "&tel=" + tel;
+            getHTTP(url, function(data) {
+                res.innerHTML = data;
+            })
+        }
+
+        function getHTTP(url, callback) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", url, true);
+            xhr.send(null);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    var data = xhr.responseText;
+                    callback(data);
                 }
-            } else {
-                console.error("该函数的参数只能是一个原生对象");
             }
         }
 
