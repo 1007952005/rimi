@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ajax序列化函数</title>
+</head>
+
+<body>
+    <script>
+        function objToParam(param) {
+            var str = Object.prototype.toString.call(param),
+                type = str.split(" ")[1],
+                typeString = type.slice(0, type.length - 1);
+            if (typeString == "object") {
+                var objToParamString = "";
+                for (var x in param) {
+                    var encode = encodeURIComponent(param[x]);
+                    if ()
+                        objToParamString += x + "="
+                    encode
+                }
+            } else {
+                console.error("该函数的参数只能是一个原生对象");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
