@@ -1,0 +1,53 @@
+@charset "utf-8";
+body,nav,ul,button{margin:0;padding:0;}
+ul{list-style:outside none none;}
+a{text-decoration: none;}
+*{box-sizing: border-box;margin: 0;padding: 0;}
+.clearfix{clear: both;}
+.tel{background-color: #000000;height:45px;line-height:45px;}
+.container{width:900px;margin:0 auto;}
+.container .logo{position: absolute;z-index: 1;}
+.tel p {color: #ffffff;float: right;}
+.tel p span{ color: #2e8b57;}
+.nav {height:65px;background: url(../images/bg.png);vertical-align: middle;}
+.nav ul{width:60%;float: right;padding-left: 0;}
+.nav ul li{display:inline-block;float: left;line-height: 65px;width:20%;text-align: center;}
+.nav .active a{color:#2e8b57;display: block; }
+.nav a{color: #000;}
+.read{display:block;position: relative;width:100%;height:390px;background: url("../images/banner.jpg")}
+.read .button{width:50px;height:30px;display:inline-block;background: url("../images/slider.png");position: absolute;left:0;top:46%;}
+.read .sub{ display:inline-block;width:48px;height:30px;position:absolute;top:46%;right:0;background: url("../images/slider.png") -60px no-repeat;}
+.list .welcome{background-color:#333333;height:320px;position: relative; }
+.welcome_img{width:40%;}
+.welcome img{border-radius: 140px;}
+.welcome img{display: inline-block;float: left;position: absolute;top:20px;}
+.welcome_text{width:60%;display:inline-block;float: right;padding:90px 0;color: #fafafa;}
+.welcome_text h2{padding:0 0 20px 0;font-size: 36px;}
+.welcome_text p{line-height: 1.5;}
+.about{background-image: url("../images/bg.png")}
+.about h2{color:#8b4513;font-size: 40px;padding:35px 0 20px 0; text-align: center;}
+.about p{color:#000;font-weight: 400;text-align: center;}
+.about .test h2{color:#8b4513;font-size: 40px;padding:60px 0 20px 0; text-align: center;}
+.test .figure{height:520px;}
+.test .figure ul{display:block;float: left;}
+.test .figure li{float: left;width:33.3%;padding:10px 10px;}
+.picture{width:100%;height:405px;position:relative;background: url("../images/quote.jpg")}
+.picture_shadow{width:50%;height:405px;background-color:#000000;opacity:0.2}
+.picture_p{width:50%;height:405px;float: left;position:absolute;top:0;}
+.picture p{display:inline-block;font-size: 30px;color:#fafafa;padding: 150px 20px 150px 50px;text-align: left;line-height: 1.5;}
+.about .fig{height:440px;}
+.about figcaption{width:25%;float: left;padding:20px 0;}
+.about figcaption span{color:#8b4513;font-size:26px}
+.about figcaption strong{font-size:40px;text-align: center; color:#8b4513; }
+.about figcaption a{color:#000;font-weight: 500;border-top: 2px solid #8b4513;padding:5px 0;}
+.about figcaption p{padding:5px 10px 10px 0;text-align: left;font-size:12px;line-height: 2;}
+.footer{height:290px;background-color: #333333;}
+.footer .top{padding: 45px 0 0 0;display:block;float: left}
+.footer .top figure{width:225px;float: left;}
+.footer .top h4{color: #fff;font-size:26px;padding:0 0 10px;}
+.footer .top li{line-height: 1.5;}
+.footer .top a{color:#777777;}
+#input{width: 160px;height:40px;padding-left: 10px;float: left;background-color: #333333;color: #fff;border:1px solid #ffffff;}
+#inputbtn{width: 40px;height:40px;float: left;background: url("../images/arrow.png") center no-repeat;border:1px solid #ffffff;border-left: none;}
+.footer .bottom {display:inline-block;padding:30px 248px 45px 248px;}
+.footer .bottom  p{color:#777777;; }

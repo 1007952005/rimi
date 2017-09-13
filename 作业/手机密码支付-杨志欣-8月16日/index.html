@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>手机密码支付</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <main id="root">
+        <section id="page1">
+            <header>首页</header>
+            <main>
+                <!--                <button id="toPayBtn" type="button">前往支付页面</button>-->
+                <ul id="frendsList">
+                </ul>
+            </main>
+            <footer></footer>
+        </section>
+        <section id="page2">
+            <header><span id="backPage1">返回</span>支付页面</header>
+            <main>
+                <div class="pay-content">
+                    <div class="portrait">
+                        <div>
+                            <img id="portrait" src="">
+                            <p id="payObjName"></p>
+                        </div>
+                    </div>
+                    <div class="pa">
+                        <div>转账金额</div>
+                        <div><label for="inputMoney">￥</label><input type="number" maxlength="7" placeholder="请输入支付金额" id="inputMoney"></div>
+                    </div>
+                    <div><button id="alertPayComp">支付</button></div>
+                </div>
+            </main>
+            <footer></footer>
+        </section>
+        <section id="page3">
+            <header><span id="backPage2">返回</span>支付结果</header>
+            <main>
+                <div class="txtPaySuccess"><img src="images/success_32px.png"><span>支付成功</span></div>
+                <p>你以成功向</p>
+                <p id="oName"></p>
+                <p>支付了：￥<span id="sucMoney"></span></p>
+            </main>
+            <footer></footer>
+        </section>
+    </main>
+    <div id="pay"></div>
+    <script src="javascript/index.js"></script>
+</body>
+
+</html>

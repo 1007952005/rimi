@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="x5-orientation" content="portrait">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+	<title>我的订单</title>
+	<link rel="shortcut icon" href="../../resource/img/favicon.ico"> 
+	<link rel="stylesheet" href="../../resource/plugin/baseCSS-1.0.5.min.css">
+	<link rel="stylesheet" href="../../resource/css/common.css">
+	<link rel="stylesheet" href="../../resource/css/details.css">
+	<style type="text/css">
+		.paid {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<!-- header -->
+<!-- 	<header class="header">
+		<a class="leftBtn goBack"></a>
+		<span>我的订单</span>
+		<a class="rightBtn ico-home goHome"></a>
+	</header> -->
+	<!-- 支付状态  -->
+	<div class="payStatusChoose">
+		<span class="checked">未支付</span>
+		<span>已支付</span>
+	</div>
+	<section class="unpay">
+		<ul class="sotres-orders order-item">
+			<li>
+				<div class="orderli">
+					<div class="left-info">
+						<i class="icon ico-del"></i>
+						<p class="store-title">日本花王纸尿裤
+							<span class="label-font-red">待支付</span>
+						</p>
+						<div class="stores-img owl-example">
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+						</div>
+						<div class="right-price">
+							<p class="price-text"><span>共1件商品</span>总金额：<span class="sum-price">￥22334.92</span></p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="orderli">
+					<div class="left-info">
+							<i class="icon ico-del"></i>
+						<p class="store-title">日本花王纸尿裤
+							<span class="label-font-red">待支付</span>
+						</p>
+						<div class="stores-img owl-example">
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+						</div>
+						<div class="right-price">
+							<p class="price-text"><span>共1件商品</span>总金额：<span class="sum-price">￥22334.92</span></p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="orderli">
+					<div class="left-info">
+							<i class="icon ico-del"></i>
+						<p class="store-title">日本花王纸尿裤
+							<span class="label-font-red">待支付</span>
+						</p>
+						<div class="stores-img owl-example">
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+						</div>
+						<div class="right-price">
+							<p class="price-text"><span>共1件商品</span>总金额：<span class="sum-price">￥22334.92</span></p>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</section>
+	<section class="paid">
+		<ul class="sotres-orders">
+			<li>
+				<div class="orderli">
+					<div class="left-info">
+						<p class="store-title">
+							<span>花王Merries纸尿裤</span>
+							<span class="ico-mark-weixin"></span>
+						</p>
+						<div class="stores-img owl-example">
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+						</div>
+						<div class="right-price">
+							<p class="price-text"><span>共1件商品</span>总金额：<span class="sum-price">￥22334.92</span></p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="orderli">
+					<div class="left-info">
+						<p class="store-title">
+							<span>花王Merries纸尿裤</span>
+							<span class="ico-mark-weixin"></span>
+						</p>
+						<div class="stores-img owl-example">
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+						</div>
+						<div class="right-price">
+							<p class="price-text"><span>共1件商品</span>总金额：<span class="sum-price">￥22334.92</span></p>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="orderli">
+					<div class="left-info">
+						<p class="store-title">
+							<span>花王Merries纸尿裤</span>
+							<span class="ico-mark-weixin"></span>
+						</p>
+						<div class="stores-img owl-example">
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+							<div class="item">
+								<img src="../../resource/img/content/stores/img-1@2x.png">
+							</div>
+						</div>
+						<div class="right-price">
+							<p class="price-text"><span>共1件商品</span>总金额：<span class="sum-price">￥22334.92</span></p>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+</body>
+<!-- JS引入部分 -->
+<script src="../../resource/plugin/jquery-2.2.4.min.js"></script>
+<script src="../../resource/plugin/owl.carousel.min.js"></script>
+<script>
+	/* 用于切换点击显示不同状态页面 */
+	$(".payStatusChoose span").click(function() {
+		// 获取点击index
+		var idx = $(this).index();
+		switch(idx) {
+			case 0:
+			swicthToPage(this, ".unpay");
+			break;
+			case 1:
+			swicthToPage(this, ".paid");
+			break;
+			default:
+			swicthToPage(this, ".unpay");
+			break;
+		}
+	});
+	// 用于显示当前点击，隐藏其它同级元素
+	// 参数：1、点击的按钮class选择符；2、section的class选择符
+	function swicthToPage(btn,sec) {
+		$(btn).addClass("checked").siblings().removeClass("checked");
+		$(sec).show().siblings("section").hide();
+	}
+	// 订单商品缩略图滚动
+	$(".owl-example").owlCarousel({
+		itemsMobile : [768,6]//
+	});
+</script>
+
+</html>

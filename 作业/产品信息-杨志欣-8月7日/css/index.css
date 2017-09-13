@@ -1,0 +1,59 @@
+@charset: "utf-8";
+body {
+    font-family: "Microsoft Yahei";
+    font-size: 16px;
+}
+
+input {
+    font-size: 14px;
+    padding: 5px 10px 5px;
+}
+
+select {
+    font-size: 14px;
+    padding: 2px 10px 5px
+}
+
+button {
+    font-size: 16px;
+    background-color: #9e5caa;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+laber {
+    display: inline-block;
+}
+
+laber,
+input,
+select {
+    vertical-align: middle;
+}
+
+.add>form>div {
+    margin-top: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table>thead {
+    background: #c93c9e;
+    color: #fff;
+}
+
+table tr>td {
+    width: 120px;
+    padding: 5px;
+    border: solid 1px #999;
+}
+
+table>tbody>tr:nth-child(2n) {
+    background: #e6e6e6;
+}

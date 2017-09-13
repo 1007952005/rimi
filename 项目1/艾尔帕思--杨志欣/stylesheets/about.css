@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+/***********************************************
+ *
+ *   功能：“关于我们”详细设置
+ *   开发者：杨志欣
+ *   最后修改日期：2017-09-09
+ *
+************************************************/
+
+
+/**********************
+ *  “关于我们”公共样式
+**********************/
+
+.aboutMain>section {
+    width: 100%;
+}
+
+.aboutMain>section>h3 {
+    font-size: 1.75em;
+    color: #3c9de5;
+    letter-spacing: 1px;
+    padding-bottom: 40px;
+    padding-top: 80px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/**********************
+ *  “关于我们”banner样式
+**********************/
+
+.aboutMain>.aboutBanner {
+    height: 500px;
+    background: url('../images/about/us-banner.png')0 0/cover no-repeat;
+    color: #fff;
+}
+
+.aboutMain>.aboutBanner>.aboutBannerBox {
+    padding: 155px 17% 0;
+    text-align: center;
+}
+
+.aboutMain>.aboutBanner>.aboutBannerBox>h2 {
+    font-size: 4.375em;
+    letter-spacing: 10px;
+    padding-bottom: 50px;
+}
+
+.aboutMain>.aboutBanner>.aboutBannerBox>div>span {
+    display: inline-block;
+    font-size: 2.625em;
+    letter-spacing: 5px;
+    vertical-align: middle;
+}
+
+.aboutMain>.aboutBanner>.aboutBannerBox>div>i {
+    padding-left: 140px;
+    display: inline-block;
+    border-bottom: 1px solid #3c9ce6;
+    margin: 0 30px;
+    vertical-align: middle;
+}
+
+
+/**********************
+ *  “关于我们”公司简介样式
+**********************/
+
+.aboutMain>.CorporateProfile {
+    padding: 0 15% 80px;
+}
+
+.aboutMain>.CorporateProfile>p {
+    color: #666;
+    line-height: 25px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+    text-indent: 2em;
+}
+
+
+/**********************
+ *  “关于我们”公司历程样式
+**********************/
+
+.aboutMain>.CorporateHistory {
+    background-color: #f6f6f6;
+    padding-bottom: 80px;
+}
+
+.tree {
+    width: 100%;
+    position: relative;
+}
+
+.tree>.trunk {
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    background-color: #3c9de5;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.tree>.twig {
+    width: 100%;
+    position: relative;
+    font-size: 0;
+    padding: 30px 0;
+}
+
+.tree>.twig>i {
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    border: 2px solid #3c9de5;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    top: 62px;
+    left: 50%;
+    margin-left: -9px;
+}
+
+.tree>.twig>.experience {
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #666;
+    font-size: 1rem;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.tree>.twig>div {
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.tree>.twig>.year>span {
+    display: inline-block;
+    color: #3c9de5;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 5px 20px 8px;
+    text-align: left;
+    border-bottom: 4px solid #3c9de5;
+}
+
+.tree>.twig>.year.yearLeft {
+    text-align: right;
+}
+
+
+/**********************
+ *  “关于我们”公司资源样式
+**********************/
+
+.aboutMain>.CorporatePesources {
+    width: 100%;
+    max-width: 974px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+.aboutMain>.CorporatePesources>img {
+    width: 100%;
+}
+
+.aboutMain>.CorporatePesources>span {
+    font-size: 1.125em;
+    letter-spacing: 1px;
+    padding-top: 17px;
+    font-weight: 100;
+    color: #666;
+    padding: 10px 30px;
+}

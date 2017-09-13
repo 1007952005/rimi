@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+
+
+
+/**/
+html,body{
+	margin:0;
+}
+p.first>span:hover + input{
+	display: none;
+}
+p.second>span:hover + input{
+	visibility: hidden;
+}
+
+
+/*float*/
+ul{
+	list-style: none;
+	/*2.给高度为0的元素设置绝对定位*/
+	/*position:absolute;*/
+	/*3.给高度为0的元素设置显示裁属性*/
+	/*overflow: auto;*/
+}
+/*4.伪类元素选择器：after*/
+.clearfix:after{
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear:both;
+
+}
+
+ul>li{
+	float: left;
+	background-color:#f00;
+	padding:5px;
+	margin:0 2px;
+}
+p{
+	color:#00f;
+}
+.clear{
+	clear:both;
+}
+
+/*position*/
+section{
+	height: 400px;
+	background-color: #efefef;
+	border:1px solid #eee;
+	position: relative;
+}
+div{
+	height: 300px;
+	width:500px;
+	margin:0 auto;
+	background-color: #f00;
+}
+p:not(.p2){
+	background-color: #0f0;
+	line-height: 50px;
+	color:#00f;
+}
+p>span{
+	background-color: pink;
+}
+/*相对定位*/
+div{
+	position: relative;
+	/*right:50px;*/
+}
+p{
+	position: relative;
+	/*right:100px;*/
+}
+p.p2{
+background-color: #0f0;
+}
+p.p2>span{
+	position: absolute;
+	/*position: relative;*/
+	bottom: 0;
+	right: 0;
+}
+p>#goTop{
+	position: fixed;
+	display: inline-block;
+	width:40px;
+	height: 50px;
+	text-decoration: none;
+	background-color: #f00;
+	right:100px;
+	bottom: 100px;
+
+}

@@ -1,0 +1,100 @@
+@charset "utf-8";
+body{
+	min-width: 940px;
+	overflow: scroll;
+	background-image: url('../images/bg.png');
+}
+.top{
+	min-width: 940px;
+	background-color: black;
+	
+
+}
+.top-content{
+	width: 920px;
+	margin: 0 auto;
+	position: relative;
+	min-width: 920px;
+}
+.top-content-left{
+  position: absolute;
+  z-index: 9999;
+}
+.top-content-left img{
+	width: 120px;
+	height: 130px;
+}
+.top-content-right{
+	font-size: 16px;
+	color: white;
+	line-height: 240%;
+	font-weight: bold;
+}
+.top-content-right span{
+	color: #1E8B57;
+}
+nav{
+	width: 920px;
+	min-width: 920px;
+	margin: 0 auto;
+}
+
+nav li{
+	display: inline-block;
+	width: 100px;
+	height: 70px;
+	float: right;
+	line-height: 70px;
+
+}
+.selected a{
+	color: #339966;
+}
+.header-image{
+	height: 200px;
+	overflow: hidden;
+}
+.header-banner{
+	width: 100%;
+	height: 400px;
+	background: red;
+	overflow: hidden;
+	position: relative;
+	
+}
+.header-banner ul li{
+ 	margin: 0;
+ 	padding: 0;
+}
+.header-banner .btn{
+	position: absolute;
+	left: 0;
+	top: calc(50% - 25px);
+	width: 100%;
+}
+.header-welcome-content{
+	width: 920px;
+	margin: 0 auto;
+	
+}
+.header-welcome{
+	background-color: #333;
+}
+.header-welcome-content{
+	position: relative;
+}
+.header-welcome-content img{
+	border-radius: 50%;
+	padding: 20px 0;
+}
+.header-welcome-content section{
+	width: 500px;
+	height: 150px;
+	position: absolute;
+	top: calc(50% - 75px);
+	right: 0;
+	color: white;
+}
+.header-welcome-content section h2{
+	font-size: 38px;
+}

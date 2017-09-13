@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>边框</title>
+	<style>
+		section{
+			width:200px;
+			height: 200px;
+			float: left;
+			background-color: #00f;
+			margin-left: 20px;
+			border:15px solid #f00;
+		}
+		section:nth-child(1){
+			border-width:5px 6px 7px 8px;
+		}
+		section:nth-child(2){
+			border-style:solid dashed double inset;
+		}
+		section:nth-child(3){
+			border-color:#000 #f00 #0f0 #0aa;
+		}
+		/*边框图形*/
+		div{
+			width:0;
+			height: 0;
+			margin-bottom: 10px;
+		}
+		div:nth-child(1){
+			border-width:10px;
+			border-style:solid;
+			border-color:#f00 #0f0 #00f #333;
+		}
+		div:nth-child(2){
+			border-width:10px;
+			border-style:groove;
+			border-color:#f00 transparent transparent transparent;
+		}
+		div:nth-child(3){
+			border-width:10px;
+			border-style:double;
+			border-color:#f00 transparent transparent transparent;
+		}
+
+	</style>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+<!-- 	<section></section>
+	<section></section>
+	<section></section>	 -->
+</body>
+</html>

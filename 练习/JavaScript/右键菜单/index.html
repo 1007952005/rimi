@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>右键菜单练习</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    contextmenu {
+        display: none;
+        width: 220px;
+        position: fixed;
+        background: #fff;
+        border: 1px solid #eae7e7;
+        box-shadow: 3px 3px 2px #ddd;
+        font: 14px "Microsoft Yahei";
+    }
+    
+    contextmenu>div {
+        padding: 5px 20px;
+        position: relative;
+    }
+    
+    contextmenu>div:hover {
+        background-color: #eee;
+    }
+    
+    contextmenu>div>span {
+        position: absolute;
+        padding: 5px;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        font-family: cursive;
+        font-weight: 500;
+    }
+
+</style>
+
+<body>
+    <p>右键菜单练习</p>
+    <contextmenu></contextmenu>
+    <script>
+        var contextmenuObj = {
+            menuItems: ["新建", "复制", "粘贴"]
+        }
+        document.oncontextmenu = function(e) {
+            e.preventDefault();
+            createContextmenu(e, contextmenuObj);
+        }
+        //右键菜单插件
+        function createContextmenu(e, param) {
+            var items = param.menuItems,
+                items_length = items.length;
+            var contextmenu = document.getElementsByTagName("contextmenu")[0];
+            str = "";
+            contextmenu.style.display = "inline-block";
+            for (var i = 0; i < items_length; i++) {
+                str += "<div>" + param.menuItems[i] + "</div>"
+            }
+            contextmenu.innerHTML = str;
+            contextmenu.style.left = e.pageX + "px";
+            contextmenu.style.top = e.pageY + "px";
+        }
+
+    </script>
+</body>
+
+</html>

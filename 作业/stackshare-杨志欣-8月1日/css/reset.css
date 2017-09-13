@@ -1,0 +1,95 @@
+@charset "utf-8";
+html{
+	color:#000;
+	background:#FFF;
+}
+/*
+	TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+	TODO test putting a class on HEAD.
+		- Fails on FF.
+*/
+
+/* 兼容 */
+article,
+aside,
+footer,
+header,
+section,
+footer,
+nav,
+main
+{
+	display:block;
+}
+article,
+aside,
+footer,
+header,
+section,
+main,
+footer,
+input,
+nav,
+body,
+div,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+p,
+th,
+td {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+img {
+	border:0;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+/*
+	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+strong,
+th,
+var {
+	font-style:normal;
+	font-weight:normal;
+}
+
+ol,
+ul {
+	list-style:none;
+}
+caption,
+{
+	font-style:normal;
+	font-weight:normal;
+}
+caption,
+th {
+	text-align:center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size:100%;
+	font-weight:100;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实用标签</title>
+</head>
+<body>
+	<!-- mark标签 -->
+	<p>由于在测试环境中，没有发现“optimum”属性产生任何作用，所以在这里大家只要进行简单记录即可。当然，在实际项目中也可以加上该属性，以迎接“<mark>新规范</mark>”的支持。</p>
+<!-- meter -->
+<meter value="20" min="10" max="100" low="50" high="80" optimum="30"></meter>
+<meter value="30" min="10" max="100" low="50" high="80" optimum="30"></meter>
+<meter value="40" min="10" max="100" low="50" high="80" optimum="30"></meter>
+<meter value="50" min="10" max="100" low="50" high="80" optimum="30"></meter>
+<meter value="55" min="10" max="100" low="50" high="80" optimum="30"></meter>
+<meter value="70" min="10" max="100" low="50" high="80" optimum="30"></meter>
+<!-- <meter value="80" min="10" max="100" low="50" high="80" optimum="30"></meter>
+<meter value="81" min="10" max="100" low="50" high="80" optimum="30"></meter>
+<p>1,如果optimum值小于low;<br>
+绿：value <= low <br>
+黄：low < value <= high <br>
+红：value > high
+</p>
+
+<meter value="20" min="10" max="100" low="50" high="80" optimum="90"></meter>
+<meter value="50" min="10" max="100" low="50" high="80" optimum="90"></meter>
+<meter value="70" min="10" max="100" low="50" high="80" optimum="90"></meter>
+<meter value="80" min="10" max="100" low="50" high="80" optimum="90"></meter>
+<meter value="100" min="10" max="100" low="50" high="80" optimum="90"></meter>
+<p>2,如果optimum值大于high;<br>
+绿：value >= high <br>
+黄：low =< value < high <br>
+红：value < low
+</p> -->
+<!-- 进度条信息 -->
+<progress></progress>
+<progress value="80" max="90"></progress>
+</body>
+</html>

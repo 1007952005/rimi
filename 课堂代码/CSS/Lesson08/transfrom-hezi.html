@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>转换</title>
+  <style>
+    html,body,article,section{
+      padding:0;
+      margin:0;
+    }
+    /*设置背景图片*/
+    body{
+      width:100%;
+      height: 100%;
+      background:#8bcdd9 url(img/xwbj-3.png);
+    }
+    /*设置整个盒子大小*/
+    article.box{
+      width:360px;
+      height: 360px;
+      position: absolute;
+      left:50%;top:50%;
+      margin-left: -180px;
+      margin-top:-180px;
+      transform-style: preserve-3d;
+      /*盒子旋转角度*/
+      transform: rotateX(30deg) rotateY(30deg);
+
+    }
+    /*六个面大小和样式*/
+    article>section{
+      width:100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0.8;
+    }
+/* 正面 */
+.box-frount {
+   background-color:#ffb200;
+   transform:translateZ(180px);
+  }
+/* 反面 */
+.box-reverse {
+    background-color:#2196F3;
+   transform:translateZ(-180px);
+}
+/* 上面 */
+.box-top {
+    background-color:#ce00ff;
+    transform: rotateX(90deg) translateZ(180px);
+}
+/* 右面 */
+.box-right {
+   background-color:#b3ff00;
+    transform: rotateY(90deg) translateZ(180px);
+}
+/* 下面 */
+.box-bottom {
+    background-color:#30d1f7;
+    transform: rotateX(90deg) translateZ(-180px);
+}
+/* 左面 */
+.box-left {
+    background-color:#f9246c;
+   transform: rotateY(90deg) translateZ(-180px);
+
+}
+  </style>
+</head>
+<body>
+  <article class="box">
+    <section class="box-frount"></section>
+    <section class="box-reverse"></section>
+    <section class="box-top"></section>
+    <section class="box-right"></section>
+    <section class="box-bottom"></section>
+    <section class="box-left"></section>
+  </article>
+</body>
+</html>

@@ -1,0 +1,17 @@
+@charset "utf-8";
+.fr{
+	float: right;
+}
+.fl{
+	float: left;
+}
+.clearfix:after,.clearfix:before{
+	content: "";
+	display: block;
+}
+.clearfix:after{
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+}

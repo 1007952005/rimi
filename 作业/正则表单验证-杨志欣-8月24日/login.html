@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<style>
+    label {
+        display: inline-block;
+        width: 80px!important;
+        text-align: right;
+    }
+    
+    p {
+        text-align: center;
+    }
+    
+    button {
+        text-align: center;
+        width: 120px;
+        height: 36px;
+        background-color: #340606;
+        border: 1px solid #4e0a0a;
+        border-radius: 3px;
+        font-size: 18px;
+        color: #fff;
+    }
+    
+    button:hover {
+        background-color: #580a0a;
+        border: 1px solid #800b0b;
+    }
+    
+    button:active {
+        background-color: #340606;
+        border: 1px solid #4e0a0a;
+    }
+    
+    button:last-child {
+        margin-left: 50px;
+    }
+    
+    #errorMsg {
+        width: 20px;
+        font-size: 16px;
+        text-align: center;
+        color: #a82020;
+        line-height: 20px;
+    }
+
+</style>
+
+<body>
+    <form action="">
+        <p><label for="userName">用户名：</label><input id="userName" type="text"></p>
+        <p><label for="userPWD">密&nbsp;&nbsp;&nbsp;&nbsp;码：</label><input id="userPWD" type="text"></p>
+        <p><button type="button" id="signIn">登录</button></p>
+        <p id="errorMsg"></p>
+    </form>
+    <script>
+        var userName = document.getElementById("userName"),
+            userPWD = document.getElementById("userPWD"),
+            signIn = document.getElementById("signIn"),
+            errorMsg =
+            signIn.onclick = function() {
+                var userNameVal = userName.value,
+                    userPWDVal = userPWD.value,
+                    rightName = localStorage.getItem("userName"),
+                    rightPWD = localStorage.getItem("userPWD");
+                if (userNameVal === rightName && userPWDVal === rightPWD) {
+                    location.href = "succese.html"
+                }
+            }
+
+    </script>
+</body>
+
+</html>

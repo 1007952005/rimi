@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>消费数据</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <main>
+        <div class="input">
+            <form action="">
+                <div class="rol">
+                    <div><label for="foot">饮食：</label><input type="number" id="foot"></div>
+                    <div><label for="shop">购物：</label><input type="number" id="shop"></div>
+                    <div><label for="life">居家生活：</label><input type="number" id="life"></div>
+                </div>
+                <div class="rol">
+                    <div><label for="traffic">行车交通：</label><input type="number" id="traffic"></div>
+                    <div><label for="entertainment">休闲娱乐：</label><input type="number" id="entertainment"></div>
+                    <div><label for="relationship">人情费用：</label><input type="number" id="relationship"></div>
+                </div>
+                <div class="rol">
+                    <div><label for="insurance">金融保险：</label><input type="number" id="insurance"></div>
+                    <div><label for="medical">医疗：</label><input type="number" id="medical"></div>
+                    <div><label for="other">其他：</label><input type="number" id="other"></div>
+                </div>
+                <div class="rol">
+                    <input type="reset" value="重置" id="msgReset">
+                    <input type="button" value="添加" id="msgAdd">
+                </div>
+            </form>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <td>饮食</td>
+                    <td>购物</td>
+                    <td>居家生活</td>
+                    <td>行车交通</td>
+                    <td>休闲娱乐</td>
+                    <td>人情费用</td>
+                    <td>金融保险</td>
+                    <td>医疗</td>
+                    <td>其他</td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <td>平均每天</td>
+                    <td colspan="8" id="average">￥0.00</td>
+                </tr>
+                <tr>
+                    <td>总计</td>
+                    <td colspan="8" id="count">￥0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <script src="javascript/index.js"></script>
+</body>
+
+</html>

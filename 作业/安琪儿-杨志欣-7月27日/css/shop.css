@@ -1,0 +1,193 @@
+@charset "utf-8";
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	font-family: "HiraginoSansGB w3";
+	background: #F9F9F9;
+}
+.header{
+	min-height: 128px;
+	height: 9.6%;
+	width: 100%;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: table;
+	min-height: 128px;
+	height: 9.6%;
+	width: 100%;
+	background: #11ABBB; 
+	text-align: center;
+	z-index: 9999;
+}
+header>div{
+	display: table-cell;
+	width: 100%;
+	font-size: 36px;
+	color: #FFF;
+	vertical-align: middle;
+}
+header>div>i{
+	float: left;
+	display: inline-block;
+	background: url('../images/sprites.png') -550px -200px ;
+	width: 46px;
+	height: 46px;
+	margin-left: 30px;
+}
+.shop-right{
+	float: right;
+	margin-right: 30px;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+}
+.shop-right i{
+	display: block;
+	background: url('../images/sprites.png');
+	background-position: -600px -200px ;
+	width: 42px;
+	height: 25px;
+}
+.search{
+	display: inline-block;
+	width: 520px;
+	height: 56px;
+	background: #11A8BB;
+	border: 2px solid  #a6d6df;
+	border-radius: 56px;
+	overflow: hidden;
+	position: relative;
+}
+.search input{
+	background: #11A8BB;
+	border: none;
+	width: 447px;
+	height: 46px;
+	vertical-align: middle;
+	font-size: 28px;
+	margin-left: 63px;
+	color: #fff;
+	outline: none;
+}
+.search i{
+	display: inline-block;
+	background: url('../images/sprites.png')-650px -200px ;
+	width: 33px;
+	height: 34px;
+	position: absolute;
+	left: 13px;
+	top: 50%;
+	margin-top: -17px;
+
+}
+::-webkit-input-placeholder{
+	color: #a6d6df;
+}
+section {
+	background: #F9F9F9;
+}
+section ul{
+	width: 95%;
+	margin: 10px auto;
+	background: #F9F9F9;
+}
+section li{
+	display: inline-block;
+	float: left;
+	width: 41.4%; 
+	margin: 10px;
+	padding: 30px 28px 32px;
+	background: #fff;
+}
+section li img{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+section li a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+section li p{
+	font-size: 28px;
+	color: #333333;
+	line-height: 36px;
+}
+
+section li div>span:first-child{
+	float: left;
+	font-size: 32px;
+	color: #ff4040;
+
+}
+section li div>span:last-child{
+	float:  right;
+	font-size: 22px;
+	color: #999;
+	margin-top: 10px;
+}
+.footer{
+	min-height: 99px;
+	height:7.35%;
+	width: 100%;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	min-height: 99px;
+	height:7.35%;
+	width: 100%;
+	border-top: 1px solid #ddd;
+	background: #F6F6F6;
+	z-index: 9999;
+}
+footer ul{
+	width: 100%;
+	height: 100%;
+}
+footer li{
+	float:left;
+	width: 25%;
+	height: 100%;
+	display: table;
+}
+footer li>div{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+footer li div i{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin: 12px 0 10px;
+	background: url('../images/sprites.png');
+}
+footer li div a{
+	display:inline-block;
+	width: 100%;
+	height: 100%;
+}
+footer li div p{
+	margin-bottom: 12px;
+	color:#808080;
+}
+footer li:nth-child(1)>div i{
+	background-position: -80px -150px;
+}
+footer li:nth-child(2)>div i{
+	background-position: -187px -150px;
+}
+footer li:nth-child(3)>div i{
+	background-position: -280px -150px ;
+}
+footer li:nth-child(4)>div i{
+	background-position: -563px -150px;
+}

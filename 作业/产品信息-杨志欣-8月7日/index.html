@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>产品信息</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="add">
+        <form action="">
+            <div><label for="">品牌：</label><input id="brand" type="text" placeholder="请输入品牌"></div>
+            <div><label for="">型号：</label><input id="model" type="text" placeholder="请输入型号"></div>
+            <div><label for="">参数：</label><input id="param" type="text" placeholder="请输入参数"></div>
+            <div><label for="">价格：</label><input id="price" type="text" placeholder="请输入价格"></div>
+            <div><label for="">国别：</label><select id="country">
+                    <option value="请选择..">请选择..</option>
+                    <option value="中国">中国</option>
+                    <option value="美国">美国</option>
+                    <option value="法国">法国</option>
+                    <option value="德国">德国</option>
+                    <option value="加拿大">加拿大</option>
+                    </select>
+            </div>
+            <div><button id="addBtn" type="reset">添加信息</button></div>
+        </form>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <td>品牌</td>
+                <td>型号</td>
+                <td>参数</td>
+                <td>价格</td>
+                <td>国别</td>
+            </tr>
+
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="javascript/index.js"></script>
+</body>
+
+</html>

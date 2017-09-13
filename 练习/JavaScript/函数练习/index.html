@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>函数练习</title>
+</head>
+
+<body>
+    <div id="skillList">
+        <div data-color="#d98e00">HTML</div>
+        <div data-color="#0096d9">CSS</div>
+        <div data-color="#00c72e">JavaScript</div>
+    </div>
+    <div id="showInfo"></div>
+    <script>
+        var skillList = document.getElementById("skillList"),
+            showInfo = document.getElementById("showInfo"),
+            skill = skillList.children,
+            showInfo = document.getElementById("showInfo");
+        for (var i = 0; i < skill.length; i++) {
+            skill[i].onclick = function() {
+                getContent(this);
+            }
+        }
+
+        function getContent(obj) {
+            var divColor = obj.getAttribute("data-color");
+            showInfo.textContent = obj.textContent;
+            showInfo.style.backgroundColor = divColor;
+
+        }
+
+    </script>
+</body>
+
+</html>

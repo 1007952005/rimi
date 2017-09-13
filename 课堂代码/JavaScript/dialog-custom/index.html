@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>测试文件</title>
+	<link rel="stylesheet" href="css/dialog-custom.css">
+</head>
+<body>
+	<!--<dialog-custom>
+		<dialog-header>
+			<dialog-icon></dialog-icon>
+			<span>您有新的消息啦！</span>
+			<i>1</i>
+			<div class="close">×</div>
+		</dialog-header>
+		<dialog-content>
+			<div class="consulter">
+				<span>李老师（QQ:3434343434）</span>
+				<span>00:14:50</span>
+			</div>
+			<div class="message">您好，我是李老师，您可以留一下你的姓名和电话吗？老师将尽快安排老师发送学校短信资料...</div>
+		</dialog-content>
+		<dialog-mesgbox>
+			<input type="text" name="mesgContent" placeholder="请在此输入..."><button type="button">发送</button>
+		</dialog-mesgbox>
+	</dialog-custom>-->
+	
+	<script src="js/dialog-custom.js"></script>
+	<script>
+		// 实例化自定义弹出框
+		var createDialog = new DialogRimi({
+			header: "您有新的消息啦！",
+			teachrInfo: "李老师（QQ:3434343434）",
+			message: "您好，我是李老师，您可以留一下你的姓名和电话吗？老师将尽快安排老师发送学校短信资料到您的手机上。哈哈哈哈哈哈。",
+			focusEvent: function() {
+				console.log("这里需要设置一个弹出框内的消息框获得焦点后的事件。");
+			}
+		});
+		// 初始化并执行
+		createDialog.init();
+	</script>
+</body>
+</html>

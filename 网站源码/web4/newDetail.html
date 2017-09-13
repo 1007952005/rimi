@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"/>
+<title>单车博客-新闻详情页</title>
+  <link rel="stylesheet" type="text/css" media="all" href="css/style.css" /> 
+	<script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery.error.js" type="text/javascript"></script>
+	<script src="js/jtemplates.js" type="text/javascript"></script>
+	<script src="js/jquery.form.js" type="text/javascript"></script>
+	<script src="js/lazy.js"        type="text/javascript"></script>
+	<script src="js/wp-sns-share.js" type="text/javascript"></script>
+	<script src="js/voterajax.js"     type="text/javascript"></script>
+	<script src="js/userregister.js"   type="text/javascript" ></script>
+	<link rel="stylesheet" href="css/pagenavi-css.css" type="text/css" media="all"/>
+	<link rel="stylesheet" href="css/votestyles.css" type="text/css"/>
+	<link rel="stylesheet" href="css/voteitup.css" type="text/css"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<link rel="stylesheet" href="css/list.css" type="text/css"/>
+    <link rel="stylesheet" href="css/article.css" type="text/css"/>
+  <script language="javascript" type="text/javascript" src="../include/dedeajax2.js"></script> 
+  <script language="javascript" type="text/javascript">
+<!--
+
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script> 
+  <script type="text/javascript">
+
+function ILike(th, v) {
+	if (v) {
+		$(th).addClass("single_views_over");
+	}
+	else {
+		$(th).removeClass("single_views_over");
+	}
+}
+
+</script> 
+ </head> 
+ <body class="single2"> 
+  <script>
+ function subForm()
+ {
+
+ formsearch.submit();
+ //form1为form的id
+ }
+ </script> 
+  <script type="text/javascript">
+    function showMask() {
+        $("#mask").css("height", $(document).height());
+        $("#mask").css("width", $(document).width());
+        $("#mask").show();
+    }  
+</script> 
+  <div id="mask" class="mask" onclick="CloseMask()"></div> 
+  
+<div id="header_wrap"> 
+  <div id="header"> 
+    <div style="float: left; width: 310px;"> 
+      <h1> <a href="#" title="宽屏大气文章类织梦博客模板">宽屏大气文章类织梦博客模板</a> 
+        <div class="" id="logo-sub-class"> </div>
+      </h1>
+    </div>
+    <div id="navi"> 
+      <ul id="jsddm">
+        <li><a class="navi_home" href="index.html">首页</a></li>
+        <li><a href="bikeList.html">单车分类</a> 
+          <ul>
+            <li><a href="bikeDetail.html">死飞车</a></li>
+            <li><a href="bikeDetail.html">复古骑行</a></li>
+            <li><a href="bikeDetail.html">公路车</a></li>
+            <li><a href="bikeDetail.html">山地车</a></li>
+            <li><a href="bikeDetail.html">折叠/小径车</a></li>
+            <li><a href="bikeDetail.html">BMX</a></li>
+            <li><a href="bikeDetail.html">城市车及其他</a></li>
+          </ul>
+        </li>
+        <li><a href="gearList.html">骑行装备</a> 
+          <ul>
+            <li><a href="gearDetail.html">车身装备</a></li>
+            <li><a href="gearDetail.html">人身装备</a></li>
+          </ul>
+        </li>
+        <li><a href="life.html">单车生活</a></li>
+        <li><a href="news.html">行业资讯</a></li>
+      </ul>
+      <div style="clear: both;"> </div>
+    </div>
+    <div style="float: right; width: 209px;"> 
+      <div class="widget" style="height: 30px; padding-top: 20px;"> 
+        <div style="float: left;"> 
+          <form name="formsearch" action="/plus/search.php">
+            <input type="hidden" name="kwtype" value="0" />
+            <input name="q" type="text" style="background-color: #000000;padding-left: 10px; font-size: 12px;font-family: 'Microsoft Yahei'; color: #999999;height: 29px; width: 160px; border: solid 1px #666666; line-height: 28px;" id="go" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+          </form>
+        </div>
+        <div style="float: left;"> <img src="images/search-new.png" id="imgSearch" style="cursor: pointer; margin: 0px;
+                        padding: 0px;" onclick="subForm()" /> </div>
+        <div style="clear: both;"> </div>
+      </div>
+    </div>
+  </div>
+</div>  
+  <div id="wrapper"> 
+   <div id="wrapper"> 
+    <div id="container"> 
+      <div id="content"> 
+        <div class="post" id="post-19563" style="border-right: solid 1px #000000; min-height: 1700px;
+                    margin-top: 10px;"> 
+          <div class="path"> <a href="#">主页</a> &gt; <a href="#">行业资讯</a> &gt; 
+          </div>
+          <div class="single_entry single2_entry"> 
+            <div class="entry fewcomment"> 
+              <div class="title_container"> 
+                <h2 class="title single_title"> <span>前叉、坐垫、升降座管――元渝为骑行注入品质保证</span><span class="title_date"></span></h2>
+                <p class="single_info">时间：2014-02-06 12:28&nbsp;&nbsp;&nbsp;编辑：dede58.com</p>
+              </div>
+              <div class="div-content"> 
+                <p> </p>
+                <p>以生产自行车前叉、头管、五通、座管在业界享有盛誉的元渝机械（深圳）有限公司，将在第<span style="font-family: 'Times New Roman'; ">24</span>届中国国际自行车展览会<span style="font-family: 'Times New Roman'; ">N2</span>馆<span style="font-family: 'Times New Roman'; ">1020</span>展台与采购商、经销商会面。“<span style="font-family: 'Times New Roman'; ">2014</span>中国展”中，元渝公司将携新款座管、坐垫、前叉等产品，为整车提供更加完善的配备，“中国展”组委会独家曝光元渝展台新品介绍，让喜爱元渝产品的展商及观众可以提前饱览元渝新品的魅力：</p>
+                <p><span style="font-family: 'Times New Roman'; "><strong>1</strong></span>、升降座管</p>
+                <p><span style="font-family: 'Times New Roman'; ">LEV CARBON</span>是元渝公司<span style="font-family: 'Times New Roman'; ">2014</span>年的主推产品。这款升降座管采用碳纤维材质，重量仅为<span style="font-family: 'Times New Roman'; ">452-466kg</span>；天秤式锁固方式，碳纤控制按把，重量轻、高质感；专利单向轴承控制偏摆，顺畅升降且近零偏摆，油路设计可无段调整任意停留在任何位置。线控拉线可结合车架设计，设置在最短的方式，调整升降时拉线将固定不动，可确保骑乘时完全不会与其他对象干涉且不与车架摩擦，座管端的集线盒，可选择在<span style="font-family: 'Times New Roman'; ">360</span>度里从任何方向走线，也可使用<span style="font-family: 'Times New Roman'; ">LEV 
+                  CARBON </span>的延伸型号<span style="font-family: 'Times New Roman'; ">LEV 
+                  CI</span>，与车架配合采用走内线系统，同样支持调整空气压力改变回弹速度。</p>
+                <div> <img src="images/201312250239499962.jpg" alt="" /> 
+                  <br />
+                </div>
+                <div> <br />
+                </div>
+                <p style="margin: 0px 0px 0px -21px; text-align: justify; text-indent: 28px; font-size: 14px; line-height: normal; font-family: SimSun; "></p>
+                <div> 全新的 <span style="font-family: 'Times New Roman'; ">VAREO</span>系列座管提供了实时调整座垫高度的功能，不仅拥有基本的气压弹簧以及油压死锁系统，还有多样化的选择 
+                  <span style="font-family: 'Times New Roman'; ">100mm</span>的行程。 
+                  <span style="font-family: 'Times New Roman'; ">VAREO</span>与 
+                  <span style="font-family: 'Times New Roman'; ">VAREO-R</span>分别采用手柄与线控手柄两种调节方式，使用可以自我调整的专利自润轴承 
+                  <span style="font-family: 'Times New Roman'; ">,</span>可大幅改善偏摆及升降顺畅度 
+                  <span style="font-family: 'Times New Roman'; ">! </span>轻触手把可以随时随地调整座垫高度来达到骑乘上的舒适性。 
+                  <img src="images/201312250240448923.jpg" alt="" /> 
+                  <br />
+                </div>
+                <div> 
+                  <p style="margin: 0px 0px 0px -21px; text-align: justify; text-indent: 30.3px; font-size: 14px; line-height: normal; font-family: SimSun; "><span style="font-family: 'Times New Roman'; "><strong>2</strong></span>、坐垫</p>
+                  <span style="font-family: 'Times New Roman'; ">LEAF TOURISMO</span>座垫的特点是分开式的外壳安装在座弓上，独立悬挂钢片弹簧使它能配合骑乘者在踩踏的动作时发挥单边避震的效果。 
+                  <span style="font-family: 'Times New Roman'; ">LEAF</span>座垫会随着骑乘者的不同的踩踏行程做出支持，共有 
+                  <span style="font-family: 'Times New Roman'; ">3</span>种款式可供选择，每种都为特定的功能和舒适度。 
+                  <span style="font-family: 'Times New Roman'; ">LEAF</span>座垫堪称是完美的人体工程学座垫的解决方案。 
+                  <img src="images/201312250241163275.jpg" alt="" /> 
+                  <br />
+                </div>
+                <div> 
+                  <p style="margin: 0px 0px 0px -21px; text-align: justify; text-indent: 30.3px; font-size: 14px; line-height: normal; font-family: SimSun; "><span style="font-family: 'Times New Roman'; "><strong>3</strong></span>、前叉</p>
+                  <span style="font-family: 'Times New Roman'; ">M1-FC4</span>是一种全新独创的避震前叉 
+                  <span style="font-family: 'Times New Roman'; ">,</span>可使公路车种适用在平地越野场地骑乘。其具有的避震功能可适应诸多的凹凸颠簸路况，而特有的避震体结构设计则使踩踏更为舒适安全。它使用轻量化碳纤加铝合金材质以 
+                  <span style="font-family: 'Times New Roman'; ">MCU</span>为避震体，使用碗组 
+                  <span style="font-family: 'Times New Roman'; ">1 1/8 * 1 1/8</span>，另加上转接件也可使用 
+                  <span style="font-family: 'Times New Roman'; ">1 1/2* 1 1/8</span>、 
+                  <span style="font-family: 'Times New Roman'; ">1 1/4*1 1/8 </span>，重量 
+                  <span style="font-family: 'Times New Roman'; ">750g</span>。 
+                  <br />
+                </div>
+                <div> <img src="images/20131225024211792.jpg" alt="" /> 
+                  <br />
+                </div>
+                <div> <span style="font-family: 'Times New Roman'; ">APG-FC1</span>创新的使用气压弹簧并巧妙地将打气筒及气压表置入前叉竖管中及叉腿。该设计让使用者随时了解气压的强度，随时可免携其他工具就能改变其避震的软硬程度，以适应骑行中的任何路况。 
+                </div>
+                <div> <img src="images/201312250242434771.jpg" alt="" /> 
+                  <br />
+                </div>
+                <div> 成立于 <span style="font-family: 'Times New Roman'; ">1983</span>年的元渝公司，生产自行车前叉、头管、前叉立管、五通等， 
+                  <span style="font-family: 'Times New Roman'; ">1995</span>年在深圳投资精密抽管，逐年扩大生产线。 
+                  <span style="font-family: 'Times New Roman'; ">1997</span>年起，元渝公司研发自行车避震器并投入生产，并自创品牌 
+                  <span style="font-family: 'Times New Roman'; ">KINDSHOCK</span>，于 
+                  <span style="font-family: 'Times New Roman'; ">2000</span>年通过 
+                  <span style="font-family: 'Times New Roman'; ">ISO 9000</span>认证，同年投入研发滑板车。多年来，元渝公司频频亮相“中国展”，多次参加 
+                  <span style="font-family: 'Times New Roman'; ">CHINA CYCLE </span>创新产品评选活动，并作为每年“中国国际极限运动单车大师赛”的承办单位，支持、赞助两轮车极限体育赛事。 
+                  <br />
+                </div>
+                <p></p>
+                <center id="pagenav">
+                </center>
+                <div id="BottomNavOver" style="height: 80px;"> 
+                  <div style="float: left; font-size: 12px;"> </div>
+                  <div style="float: right; padding-right: 20px; width: 120px;" class="div"> 
+                    <table cellpadding="0" cellspacing="0" border="0" style="background-color: transparent;
+                                            border: 0px solid #EEEEEE; border-collapse: collapse; margin: 5px 0 10px;">
+                      <tbody>
+                        <tr> 
+                          <td style="border-width: 0px; padding: 0px; padding-right: 4px;"> 
+                          </td>
+                          <td style="border-width: 0px; padding: 0px;"> 
+                            <!-- JiaThis Button BEGIN -->
+                            <div class="jiathis_style"> <a class="jiathis_button_qzone"></a> 
+                              <a class="jiathis_button_tqq"></a> <a class="jiathis_button_renren"> 
+                              </a> <a class="jiathis_button_kaixin001"></a> <a href="#" class="jiathis jiathis_txt jtico jtico_jiathis" ></a> 
+                            </div>
+                            <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1365565447348652" charset="utf-8"></script> 
+                            <!-- JiaThis Button END -->
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div style="float: right; width: 60px; font-size: 12px;"> 分享至： 
+                  </div>
+                  <div style="clear: both;"> </div>
+                </div>
+              </div>
+              <div class="clear"> </div>
+              <div id="ctl00_ctl00_ContentPlaceHolder1_contentPlace_divRead"> 
+                <div style="text-align: left; width: 100%; border-bottom: solid 1px #e0e0e0; padding-bottom: 4px;
+                                    color: Black; vertical-align: middle; font-weight: bold;"> 
+                  &nbsp;&nbsp;猜您喜欢的文章 </div>
+                <ul class="read" style="list-style-type: none; margin-top: 10px; width: 780px;">
+                </ul>
+              </div>
+              <div class="clear"> </div>
+              <div class="comments_wrap" style="margin-top: 35px;"> <a name="comment"></a> 
+                <!-- Duoshuo Comment BEGIN -->
+                <div>评论</div>
+                <!-- Duoshuo Comment END -->
+              </div>
+              <div class="clear"> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="sidebar"> 
+        <div class="widget single" style="margin-bottom: 0px; margin-left: 0px; margin-top: 40px;
+                    padding-bottom: 0px;" id="newdigg"> 
+          <div class="single_views" onmouseout="ILike(this,false)" onmouseover="ILike(this,true)"> 
+            <span class="textcontainer"><span class="votecount26536">0</span></span> 
+            <span class="bartext voteid26536"><a href="#" id="aZanImg" onclick="javascript:postDigg('good',414)"></a></span> 
+            <span class="text" id="spanZan">赞</span> <span class="text love">人</span> 
+          </div>
+        </div>
+        <script language="javascript" type="text/javascript">getDigg(414);</script>
+        <!-- 右侧 -->
+        <div class="widget"> 
+          <div style="background: url('images/hots_bg.png') no-repeat scroll 0 0 transparent;width:250px;height:52px;margin-bottom:15px;"> 
+          </div>
+          <ul id="ulHot">
+            <li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;"> 
+              <div style="float:left;width:85px;height:55px; overflow:hidden;"> 
+                <a href="#" ><img src="images/359.jpg" width="83" title="爱车出行新概念 YAKIMA与WHISPBAR将在中国自行车展同台亮相" /></a> 
+              </div>
+              <div style="float:right;width:145px;height:52px; overflow:hidden;"> 
+                <a href="#"  title="爱车出行新概念 YAKIMA与WHISPBAR将在中国自行车展同台亮相">爱车出行新概念 
+                YAKIMA与WHISPBAR将在中国自</a> </div>
+            </li>
+            <li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;"> 
+              <div style="float:left;width:85px;height:55px; overflow:hidden;"> 
+                <a href="#" ><img src="images/358.jpg" width="83" title="中国自行车展WIEL展品的技术与品质" /></a> 
+              </div>
+              <div style="float:right;width:145px;height:52px; overflow:hidden;"> 
+                <a href="#"  title="中国自行车展WIEL展品的技术与品质">中国自行车展WIEL展品的技术与品质</a> 
+              </div>
+            </li>
+            <li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;"> 
+              <div style="float:left;width:85px;height:55px; overflow:hidden;"> 
+                <a href="#" ><img src="images/372.jpg" width="83" title="中国自行车展久裕产品推陈出新 四款碟刹轮组强势来袭" /></a> 
+              </div>
+              <div style="float:right;width:145px;height:52px; overflow:hidden;"> 
+                <a href="#"  title="中国自行车展久裕产品推陈出新 四款碟刹轮组强势来袭">中国自行车展久裕产品推陈出新 
+                四款碟刹轮组</a> </div>
+            </li>
+            <li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;"> 
+              <div style="float:left;width:85px;height:55px; overflow:hidden;"> 
+                <a href="#" ><img src="images/374.jpg" width="83" title="前叉、坐垫、升降座管――元渝为骑行注入品质保证" /></a> 
+              </div>
+              <div style="float:right;width:145px;height:52px; overflow:hidden;"> 
+                <a href="#"  title="前叉、坐垫、升降座管――元渝为骑行注入品质保证">前叉、坐垫、升降座管――元渝为骑行注入品质</a> 
+              </div>
+            </li>
+            <li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;"> 
+              <div style="float:left;width:85px;height:55px; overflow:hidden;"> 
+                <a href="#" ><img src="images/369.jpg" width="83" title="中国自行车展美利达展台顶级靓车一览" /></a> 
+              </div>
+              <div style="float:right;width:145px;height:52px; overflow:hidden;"> 
+                <a href="#"  title="中国自行车展美利达展台顶级靓车一览">中国自行车展美利达展台顶级靓车一览</a> 
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="widget portrait"> 
+          <div> 
+            <div class="textwidget"> <a href="#"><img src="images/tg.jpg" alt="&#xfffd;&#xfffd;&#xfffd;" /></a> 
+              <br />
+              <br />
+              <script type="text/javascript">BAIDU_CLB_fillSlot("870073");</script>
+              <script type="text/javascript">BAIDU_CLB_fillSlot("870080");</script>
+              <script type="text/javascript">BAIDU_CLB_fillSlot("870081");</script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear"> </div>
+    </div> 
+   </div> 
+   <script type="text/javascript" src="js/z700bike_global.js"></script> 
+   <script type="text/javascript" src="js/z700bike_single.js"></script> 
+   <script type="text/javascript" src="js/jquery.colorbox-min.js?ver=1.3.17.2"></script> 
+  </div> 
+  <div id="footer_wrap"> 
+   
+  <div id="footer"> 
+    <div class="footer_navi"> 
+      <ul id="menu-%e5%b0%be%e9%83%a8%e5%af%bc%e8%88%aa" class="menu">
+        <li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156"> 
+          <a href="#">关于我们</a></li>
+        <li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157"> 
+          <a href="#">联络我们</a></li>
+        <li id="menu-item-158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-158"> 
+          <a href="#">我要投稿</a></li>
+        <li id="menu-item-159" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-159"> 
+          <a href="http://www.daiyou8.com/">网站模板</a></li>
+      </ul>
+    </div>
+    <div class="footer_info"> <span class="legal">Copyright &copy; 2002-2015 daiyou8.COM 
+      版权所有&nbsp;&nbsp;&nbsp;<a href="#"> 琼ICP备xxxxxx号</a>&nbsp;&nbsp;&nbsp; 
+      </span> </div>
+  </div> 
+  </div> 
+  <div style="display: none;" id="scroll"> 
+  </div> 
+  <script type="text/javascript" src="js/z700bike_global.js"></script>   
+ </body>
+</html>

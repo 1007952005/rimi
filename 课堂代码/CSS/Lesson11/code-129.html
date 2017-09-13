@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cn">
+	<head>
+		<meta charset="UTF-8">
+		<title>代码示例</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			.wrapper {overflow:auto;}
+			#main {margin-left: 4px;}
+			#leftsidebar {float: none;width: auto;}
+			#menulist {margin:0;padding:0;background-color: #333}
+
+			.menuitem {
+				border-bottom: 1px solid #7b7b7b;
+				list-style-type: none;
+				padding: 10px;
+				color: #fff;
+				text-align: center;
+			}
+			#menulist li:last-child{
+				border:0;
+			}
+			#menulist li:hover{
+				background-color:rgba(93, 93, 93, 0.67);
+			}	
+			/*大于最小可视区域时，菜单将浮动到左侧*/
+			@media screen and (min-width: 640px) {
+				#leftsidebar {width:200px;float:left;}
+				#main {margin-left:216px;}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div id="leftsidebar">
+				<ul id="menulist">
+					<li class="menuitem">Menu-item 1</li>
+					<li class="menuitem">Menu-item 2</li>
+					<li class="menuitem">Menu-item 3</li>
+					<li class="menuitem">Menu-item 4</li>
+					<li class="menuitem">Menu-item 5</li>
+				</ul>
+			</div>
+			<div id="main">
+				<p>在屏幕可视窗口尺寸大于 640 像素时,菜单浮动于页面左侧。</p>
+			</div>
+		</div>
+	</body>
+ </html>

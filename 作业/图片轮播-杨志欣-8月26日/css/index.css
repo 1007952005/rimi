@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/**
+ *   功能：公共样式
+ **/
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    padding: 0;
+}
+
+
+/**
+ *   功能：轮播组件样式
+ **/
+
+carousel {
+    display: block;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*轮播图片样式*/
+
+carousel>.carousel-box {
+    position: relative;
+    font-size: 0;
+    height: 100%;
+}
+
+carousel>.carousel-box>li {
+    display: inline-block;
+    height: 100%;
+}
+
+carousel>.carousel-box>li>img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*轮播导航样式*/
+
+carousel>.carousel-nav {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+
+carousel>.carousel-nav>li {
+    display: inline-block;
+    margin: 0 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.63);
+}
+
+carousel>.carousel-nav>li.selected {
+    box-shadow: 0 0 10px #d9d3d3;
+    background-color: #fff;
+}

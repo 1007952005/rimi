@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>重排测试</title>
+</head>
+<style>
+    main {
+        padding: 20px;
+        background-color: #81d642;
+    }
+    
+    .divtest {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+    
+    .divtest:nth-child(1) {
+        background-color: #f7e831;
+    }
+    
+    .divtest:nth-child(2) {
+        background-color: #eb4a4a;
+    }
+
+</style>
+
+<body>
+    <main>
+        <div id="test">
+            <div class="divtest"></div>
+            <div class="divtest"></div>
+        </div>
+    </main>
+    <script>
+        var divtest = document.getElementsByClassName("divtest");
+        divtest[0].onclick = function() {
+            alert("div1已删除");
+            this.outerHTML = ' <div class = "divtest" > 数据 </div>';
+        }
+        divtest[1].onclick = function() {
+            alert("div2已删除");
+            this.remove();
+        }
+
+    </script>
+
+</body>
+
+</html>

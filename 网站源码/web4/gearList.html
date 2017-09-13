@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"/>
+<title>单车博客-装备列表页</title>
+<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.error.js"></script>
+<script type="text/javascript" src="js/jtemplates.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<script type="text/javascript" src="js/lazy.js"></script>
+<script type="text/javascript" src="js/wp-sns-share.js"></script>
+<script type="text/javascript" src="js/voterajax.js"></script>
+<script type="text/javascript" src="js/userregister.js"></script>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/votestyles.css" type="text/css"/>
+<link rel="stylesheet" href="css/voteitup.css" type="text/css"/>
+<link rel="stylesheet" href="css/list.css" type="text/css"/>
+<link rel="stylesheet" href="css/article.css" type="text/css"/>
+<link rel="stylesheet" href="css/pagenavi-css.css" type="text/css" media="all"/>
+
+
+</head>
+<body id="list_style_2" class="list_style_2">
+<script>
+ function subForm()
+ {
+ formsearch.submit();
+ //form1为form的id
+ }
+ </script>
+<script type="text/javascript">
+    function showMask() {
+        $("#mask").css("height", $(document).height());
+        $("#mask").css("width", $(document).width());
+        $("#mask").show();
+    }  
+</script>
+<div id="mask" class="mask" onclick="CloseMask()">
+</div>
+<div id="header_wrap"> 
+  <div id="header"> 
+    <div style="float: left; width: 310px;"> 
+      <h1><a href="#" title="宽屏大气文章类织梦博客模板--www.dede58.com">宽屏大气文章类织梦博客模板</a> 
+        <div class="" id="logo-sub-class"> </div>
+      </h1>
+    </div>
+    <div id="navi"> 
+      <ul id="jsddm">
+        <li><a class="navi_home" href="index.html">首页</a></li>
+        <li><a href="bikeList.html">单车分类</a> 
+          <ul>
+            <li><a href="bikeDetail.html">死飞车</a></li>
+            <li><a href="bikeDetail.html">复古骑行</a></li>
+            <li><a href="bikeDetail.html">公路车</a></li>
+            <li><a href="bikeDetail.html">山地车</a></li>
+            <li><a href="bikeDetail.html">折叠/小径车</a></li>
+            <li><a href="bikeDetail.html">BMX</a></li>
+            <li><a href="bikeDetail.html">城市车及其他</a></li>
+          </ul>
+        </li>
+        <li><a href="gearList.html">骑行装备</a> 
+          <ul>
+            <li><a href="gearDetail.html">车身装备</a></li>
+            <li><a href="gearDetail.html">人身装备</a></li>
+          </ul>
+        </li>
+        <li><a href="life.html">单车生活</a></li>
+        <li><a href="news.html">行业资讯</a></li>
+      </ul>
+      <div style="clear: both;"> </div>
+    </div>
+    <div style="float: right; width: 209px;"> 
+      <div class="widget" style="height: 30px; padding-top: 20px;"> 
+        <div style="float: left;"> 
+          <form name="formsearch" action="/plus/search.php">
+            <input type="hidden" name="kwtype" value="0"/>
+            <input name="q" type="text" style="background-color: #000000;padding-left: 10px; font-size: 12px;font-family: 'Microsoft Yahei'; color: #999999;height: 29px; width: 160px; border: solid 1px #666666; line-height: 28px;" id="go" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}"/>
+          </form>
+        </div>
+        <div style="float: left;"> <img src="images/search-new.png" id="imgSearch" style="cursor: pointer; margin: 0px; padding: 0px;" onclick="subForm()"/> 
+        </div>
+        <div style="clear: both;"> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="wrapper">
+	<div id="xh_container">
+		<div id="xh_content">
+			
+      <div class="path"> <a href="#">主页</a> &gt; <a href="#">骑行装备</a> 
+        &gt; </div>
+			<div class="clear">
+			</div>
+			<div class="xh_area_h_3" style="margin-top: 40px;">
+				<div class="xh_post_h_3 ofh">
+					<div class="xh">
+						<a  href="#" title=" forward set x bicycle belts联合出品u型锁腰带u-lock belt"><img src="images/320.jpg" alt=" forward set x bicycle belts联合出品u型锁腰带u-lock belt" height="240" width="400"/></a>
+					</div>
+					<div class="r ofh">
+						<h2 class="xh_post_h_3_title ofh" style="height:60px;"><a  href="#" title=" forward set x bicycle belts联合出品u型锁腰带u-lock belt"> Forward Set x Bicycle Belts联合出品U型锁腰带U-Lock Belt</a></h2>
+						<span class="time">2014年02月06日</span>
+						<div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+          Forward Set和Bicycle Belts似乎提供了一种新的可能，它们联手打造了一款U型锁腰带。这款腰带对于通勤和信使来说可谓相当便捷，腰带本身是采用二手的自行车轮胎改制而成。
+						</div>
+						<div class="b">
+							<a href="#" class="xh_readmore" rel="nofollow">read more</a>
+							<span title="0人赞" class="xh_love"><span class="textcontainer"><span>0</span></span></span>
+							<span title="144人浏览" class="xh_views"> 144</span>
+						</div>
+					</div>
+				</div>
+				<div class="xh_post_h_3 ofh">
+					<div class="xh">
+						<a  href="#" title="硅胶环保材质 Bone iPhone5 单车号角扬声器"><img src="images/319.jpg" alt="硅胶环保材质 Bone iPhone5 单车号角扬声器" height="240" width="400"/></a>
+					</div>
+					<div class="r ofh">
+						<h2 class="xh_post_h_3_title ofh" style="height:60px;"><a  href="#" title="硅胶环保材质 Bone iPhone5 单车号角扬声器">硅胶环保材质 Bone iPhone5 单车号角扬声器</a></h2>
+						<span class="time">2014年02月06日</span>
+						<div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+          这款Bone iPhone5 单车号角扬声器利用号角的原理，将音源集中后，引导音源传导方向，达到扩大音量的效果，使用后可提高13分贝，并且无需任何外接电源，响应环保，节能减碳。
+						</div>
+						<div class="b">
+							<a href="#" class="xh_readmore" rel="nofollow">read more</a>
+							<span title="0人赞" class="xh_love"><span class="textcontainer"><span>0</span></span></span>
+							<span title="62人浏览" class="xh_views"> 62</span>
+						</div>
+					</div>
+				</div>
+				<div class="xh_post_h_3 ofh">
+					<div class="xh">
+						<a  href="#" title="#CES展上的新玩意# Casio 发布 STB-1000 智能手表 可同步骑行速"><img src="images/284.jpg" alt="#CES展上的新玩意# Casio 发布 STB-1000 智能手表 可同步骑行速" height="240" width="400"/></a>
+					</div>
+					<div class="r ofh">
+						<h2 class="xh_post_h_3_title ofh" style="height:60px;"><a  href="#" title="#CES展上的新玩意# Casio 发布 STB-1000 智能手表 可同步骑行速">#CES展上的新玩意# Casio 发布 STB-1000 智能手表 可同步骑行速</a></h2>
+						<span class="time">2014年02月06日</span>
+						<div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+          许多大牌厂商正在争先发布自己的新智能穿戴设备，Casio 也不甘落后，在2014CES上发布最新产品 STB-1000 智能手表，具备健康追踪功能，可通过蓝牙与智能手机进行数据传输。
+						</div>
+						<div class="b">
+							<a href="#" class="xh_readmore" rel="nofollow">read more</a>
+							<span title="0人赞" class="xh_love"><span class="textcontainer"><span>0</span></span></span>
+							<span title="86人浏览" class="xh_views"> 86</span>
+						</div>
+					</div>
+				</div>
+				<div class="xh_post_h_3 ofh">
+					<div class="xh">
+						<a  href="#" title="新品情报：2013 Brooks Bugle 新型号Cambium C17"><img src="images/317.jpg" alt="新品情报：2013 Brooks Bugle 新型号Cambium C17" height="240" width="400"/></a>
+					</div>
+					<div class="r ofh">
+						<h2 class="xh_post_h_3_title ofh" style="height:60px;"><a  href="#" title="新品情报：2013 Brooks Bugle 新型号Cambium C17">新品情报：2013 Brooks Bugle 新型号Cambium C17</a></h2>
+						<span class="time">2014年02月06日</span>
+						<div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+          这是BROOKS一个新的型号Cambium C17，虽然只有4张黑白照片，但是我们还是不难分辨出这款座垫打破BROOKS常规，没有使用牛皮，而是使用了天然橡胶和有机棉布，并以特殊的编制方式增加韧...
+						</div>
+						<div class="b">
+							<a href="#" class="xh_readmore" rel="nofollow">read more</a>
+							<span title="0人赞" class="xh_love"><span class="textcontainer"><span>0</span></span></span>
+							<span title="195人浏览" class="xh_views"> 195</span>
+						</div>
+					</div>
+				</div>
+				<div class="xh_post_h_3 ofh">
+					<div class="xh">
+						<a  href="#" title="丰富的图案选择，Cinelli 2013 自行车帽新品"><img src="images/318.jpg" alt="丰富的图案选择，Cinelli 2013 自行车帽新品" height="240" width="400"/></a>
+					</div>
+					<div class="r ofh">
+						<h2 class="xh_post_h_3_title ofh" style="height:60px;"><a  href="#" title="丰富的图案选择，Cinelli 2013 自行车帽新品">丰富的图案选择，Cinelli 2013 自行车帽新品</a></h2>
+						<span class="time">2014年02月06日</span>
+						<div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+          意大利世界级自行车品牌 CINELLI 这次推出的 CYCLING CAP 系列令人耳目一新。以元祖设定的独特的翘帽舌自行车帽 B-CAP 为载体，融入了非常丰富的图案设定。
+						</div>
+						<div class="b">
+							<a href="#" class="xh_readmore" rel="nofollow">read more</a>
+							<span title="0人赞" class="xh_love"><span class="textcontainer"><span>0</span></span></span>
+							<span title="166人浏览" class="xh_views"> 166</span>
+						</div>
+					</div>
+				</div>
+				<div class="xh_post_h_3 ofh">
+					<div class="xh">
+						<a  href="#" title="环状牛皮拼接而成 BROOKS Plump Grip 复古把套"><img src="images/315.jpg" alt="环状牛皮拼接而成 BROOKS Plump Grip 复古把套" height="240" width="400"/></a>
+					</div>
+					<div class="r ofh">
+						<h2 class="xh_post_h_3_title ofh" style="height:60px;"><a  href="#" title="环状牛皮拼接而成 BROOKS Plump Grip 复古把套">环状牛皮拼接而成 BROOKS Plump Grip 复古把套</a></h2>
+						<span class="time">2014年02月06日</span>
+						<div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+          Brooks Plump Grip把套采用一层一层的环状牛皮拼接而成，可根据车把的具体状况调整把套的长短（例如使用转把变速就要使用较短的把套，特殊把型也会对把套有长短不同的要求）。
+						</div>
+						<div class="b">
+							<a href="#" class="xh_readmore" rel="nofollow">read more</a>
+							<span title="0人赞" class="xh_love"><span class="textcontainer"><span>0</span></span></span>
+							<span title="197人浏览" class="xh_views"> 197</span>
+						</div>
+					</div>
+				</div>
+				<div class="xh_post_h_3 ofh">
+					<div class="xh">
+						<a  href="#" title="令运动者更难偷懒，Nike 发布新一代运动手环 Nike+ FuelBand SE"><img src="images/316.jpg" alt="令运动者更难偷懒，Nike 发布新一代运动手环 Nike+ FuelBand SE" height="240" width="400"/></a>
+					</div>
+					<div class="r ofh">
+						<h2 class="xh_post_h_3_title ofh" style="height:60px;"><a  href="#" title="令运动者更难偷懒，Nike 发布新一代运动手环 Nike+ FuelBand SE">令运动者更难偷懒，Nike 发布新一代运动手环 Nike+ FuelBand SE</a></h2>
+						<span class="time">2014年02月06日</span>
+						<div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+          Nike正式发表了发布了新一代的运动手环 Nike+ FuelBand SE 。和前代相比，除了增加了 Volt(霓虹黄), Total Crimson(红) 和 Pink Foil（粉色）三种...
+						</div>
+						<div class="b">
+							<a href="#" class="xh_readmore" rel="nofollow">read more</a>
+							<span title="0人赞" class="xh_love"><span class="textcontainer"><span>0</span></span></span>
+							<span title="83人浏览" class="xh_views"> 83</span>
+						</div>
+					</div>
+				</div>
+				<div class="xh_post_h_3 ofh">
+					<div class="xh">
+						<a  href="#" title="日本皮制束腿带BROTURES Original Ankle Band"><img src="images/312.jpg" alt="日本皮制束腿带BROTURES Original Ankle Band" height="240" width="400"/></a>
+					</div>
+					<div class="r ofh">
+						<h2 class="xh_post_h_3_title ofh" style="height:60px;"><a  href="#" title="日本皮制束腿带BROTURES Original Ankle Band">日本皮制束腿带BROTURES Original Ankle Band</a></h2>
+						<span class="time">2014年02月06日</span>
+						<div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+          凉快的夏天结束后，车友们陆续穿上牛仔裤等长裤，骑车时有些不便，裤腿容易磨蹭，这款由日本BROTURES品牌原创的皮革束腿采用高质量皮革，适合复古死飞等车型，在日本很受欢迎。
+						</div>
+						<div class="b">
+							<a href="#" class="xh_readmore" rel="nofollow">read more</a>
+							<span title="0人赞" class="xh_love"><span class="textcontainer"><span>0</span></span></span>
+							<span title="115人浏览" class="xh_views"> 115</span>
+						</div>
+					</div>
+				</div>
+				<div class="xh_post_h_3 ofh">
+					<div class="xh">
+						<a  href="#" title="适合都市中居住空间狭小的骑车族 英国Cycloc挂车架"><img src="images/313.jpg" alt="适合都市中居住空间狭小的骑车族 英国Cycloc挂车架" height="240" width="400"/></a>
+					</div>
+					<div class="r ofh">
+						<h2 class="xh_post_h_3_title ofh" style="height:60px;"><a  href="#" title="适合都市中居住空间狭小的骑车族 英国Cycloc挂车架">适合都市中居住空间狭小的骑车族 英国Cycloc挂车架</a></h2>
+						<span class="time">2014年02月06日</span>
+						<div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+          Cycloc自行车存放装置在英国开发研制，这是一个带有扭转装置的自行车存放器，具有时尚的造型，尤其适合都市中居住空间狭小的骑车族使用。有了Cycloc，您就能像挂外套那样把自行车挂在墙上。
+						</div>
+						<div class="b">
+							<a href="#" class="xh_readmore" rel="nofollow">read more</a>
+							<span title="0人赞" class="xh_love"><span class="textcontainer"><span>0</span></span></span>
+							<span title="99人浏览" class="xh_views"> 99</span>
+						</div>
+					</div>
+				</div>
+				<div class="xh_post_h_3 ofh">
+					<div class="xh">
+						<a  href="#" title="骑行摄影又一利器 Sony 首款全画幅微单相机 A7 和 A7R"><img src="images/314.jpg" alt="骑行摄影又一利器 Sony 首款全画幅微单相机 A7 和 A7R" height="240" width="400"/></a>
+					</div>
+					<div class="r ofh">
+						<h2 class="xh_post_h_3_title ofh" style="height:60px;"><a  href="#" title="骑行摄影又一利器 Sony 首款全画幅微单相机 A7 和 A7R">骑行摄影又一利器 Sony 首款全画幅微单相机 A7 和 A7R</a></h2>
+						<span class="time">2014年02月06日</span>
+						<div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+          100年前，Oskar Barnack灵光闪现，将电影用35mm胶片旋转过来以记录影像，开创了135胶片时代。近日索尼推出了135全画幅规格的E卡口微单产品 A7/A7r。
+						</div>
+						<div class="b">
+							<a href="#" class="xh_readmore" rel="nofollow">read more</a>
+							<span title="0人赞" class="xh_love"><span class="textcontainer"><span>0</span></span></span>
+							<span title="62人浏览" class="xh_views"> 62</span>
+						</div>
+					</div>
+				</div>
+				<div id="pagination">
+					<div class="wp-pagenavi">
+						<span class="current">1</span>
+						<a class="page larger" href="#">2</a>
+						<a class="page larger" href="#">3</a>
+						<a class="page larger" href="#">4</a>
+						<a class="page larger" href="#">5</a>
+						<a class="page larger" href="#">6</a>
+						<a class="page larger" href="#">7</a>
+						<a class="page larger" href="#">8</a>
+						<a class="page larger" href="#">下一页</a>
+						<a class="page larger" href="#">末页</a>
+						<span class="pages">共 8 页，80条</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="xh_sidebar">
+			<!-- 右侧 -->
+			<div class="widget">
+				<div style="background: url('images/hots_bg.png') no-repeat scroll 0 0 transparent;width:250px;height:52px;margin-bottom:15px;">
+				</div>
+				<ul id="ulHot">
+					<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+					<div style="float:left;width:85px;height:55px; overflow:hidden;">
+						<a href="#" ><img src="images/258.jpg" width="83" title="超大容量！Chrome Barrage Cargo背包"/></a>
+					</div>
+					<div style="float:right;width:145px;height:52px; overflow:hidden;">
+						<a href="#"  title="超大容量！Chrome Barrage Cargo背包">超大容量！Chrome Barrage Cargo背包</a>
+					</div>
+					</li>
+					<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+					<div style="float:left;width:85px;height:55px; overflow:hidden;">
+						<a href="#" ><img src="images/315.jpg" width="83" title="环状牛皮拼接而成 BROOKS Plump Grip 复古把套"/></a>
+					</div>
+					<div style="float:right;width:145px;height:52px; overflow:hidden;">
+						<a href="#"  title="环状牛皮拼接而成 BROOKS Plump Grip 复古把套">环状牛皮拼接而成 BROOKS Plump Grip 复古把</a>
+					</div>
+					</li>
+					<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+					<div style="float:left;width:85px;height:55px; overflow:hidden;">
+						<a href="#" ><img src="images/317.jpg" width="83" title="新品情报：2013 Brooks Bugle 新型号Cambium C17"/></a>
+					</div>
+					<div style="float:right;width:145px;height:52px; overflow:hidden;">
+						<a href="#"  title="新品情报：2013 Brooks Bugle 新型号Cambium C17">新品情报：2013 Brooks Bugle 新型号Cambium </a>
+					</div>
+					</li>
+					<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+					<div style="float:left;width:85px;height:55px; overflow:hidden;">
+						<a href="#" ><img src="images/299.jpg" width="83" title="上海F5推荐：H+SON 车圈"/></a>
+					</div>
+					<div style="float:right;width:145px;height:52px; overflow:hidden;">
+						<a href="#"  title="上海F5推荐：H+SON 车圈">上海F5推荐：H+SON 车圈</a>
+					</div>
+					</li>
+					<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+					<div style="float:left;width:85px;height:55px; overflow:hidden;">
+						<a href="#" ><img src="images/300.jpg" width="83" title="Crafted Goods 2013 秋冬系列造型搭配 Lookbook"/></a>
+					</div>
+					<div style="float:right;width:145px;height:52px; overflow:hidden;">
+						<a href="#"  title="Crafted Goods 2013 秋冬系列造型搭配 Lookbook">Crafted Goods 2013 秋冬系列造型搭配 Lookbo</a>
+					</div>
+					</li>
+				</ul>
+			</div>
+			<div class="widget portrait">
+				<div>
+					<div class="textwidget">
+						<a href="/tougao.html"><img src="images/tg.jpg" alt="&#xfffd;&#xfffd;&#xfffd;"/></a>
+						<br/>
+						<br/>
+						<script type="text/javascript">BAIDU_CLB_fillSlot("870073");</script>
+						<script type="text/javascript">BAIDU_CLB_fillSlot("870080");</script>
+						<script type="text/javascript">BAIDU_CLB_fillSlot("870081");</script>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear">
+		</div>
+	</div>
+	<div class="boxBor">
+	</div>
+	<div class="boxBor" onclick="IBoxBor()" style="cursor:pointer;">
+	</div>
+	<script type="text/javascript">
+        $(function () {
+            var imgHoverSetTimeOut = null;
+            $('.xh_265x265 img').hover(function () {
+                var oPosition = $(this).offset();
+                var oThis = $(this);
+                $(".boxBor").css({
+                    left: oPosition.left,
+                    top: oPosition.top,
+                    width: oThis.width(),
+                    height: oThis.height()
+                });
+                $(".boxBor").show();
+                var urlText = $(this).parent().attr("href");
+                $("#hdBoxbor").val(urlText);
+            }, function () {
+                imgHoverSetTimeOut = setTimeout(function () { $(".boxBor").hide(); }, 500);
+            });
+            $(".boxBor").hover(
+                function () {
+                    clearTimeout(imgHoverSetTimeOut);
+                }
+                , function () {
+                    $(".boxBor").hide();
+                }
+            );
+        });
+        function IBoxBor() {
+            window.open($("#hdBoxbor").val());
+        }
+        function goanewurl() {
+            window.open($("#hdUrlFocus").val());
+        }
+	</script>
+</div>
+<div id="footer_wrap">
+	
+  <div id="footer"> 
+    <div class="footer_navi"> 
+      <ul id="menu-%e5%b0%be%e9%83%a8%e5%af%bc%e8%88%aa" class="menu">
+        <li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156"><a href="#">关于我们</a></li>
+        <li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157"><a href="#">联络我们</a></li>
+        <li id="menu-item-158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-158"><a href="#">我要投稿</a></li>
+        <li id="menu-item-159" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-159"><a href="http://www.daiyou8.com/">网站模板</a></li>
+      </ul>
+    </div>
+    <div class="footer_info"> <span class="legal">Copyright &copy; 2002-2015 daiyou8.COM 
+      版权所有&nbsp;&nbsp;&nbsp;<a href="#"> 琼ICP备XXXXX号</a>&nbsp;&nbsp;&nbsp; 
+      </span> </div>
+  </div>
+</div>
+<div style="display: none;" id="scroll">
+</div>
+<script type="text/javascript" src="js/z700bike_global.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+@charset "utf-8";
+/**/
+@font-face {
+	/*外部字体引入，声明*/
+	font-family: 'fzltzh';
+	src: url('../fonts/fzltzh-webfont.eot');
+	src: url('../fonts/fzltzh-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/fzltzh-webfont.woff2') format('woff2'),
+	url('../fonts/fzltzh-webfont.svg#fzlantinghei-db-gbkregular') format('svg'),
+	url('../fonts/fzltzh.ttf') format('ttf');
+}
+body{
+	/*font:字体样式  字体粗细 字体大小 字体系列;*/
+	/*外部字体引用*/
+	font:bold 20px/150% "fzltzh";
+}
+
+body,p{
+	margin:0;
+}
+div,p,span{
+	font-size: 50px;
+	padding:30px 0;
+}
+div{
+	text-align: center;
+	text-shadow:0 0 5px #f00;
+
+}
+p{
+	text-align:right;
+	text-shadow: -10px -10px 5px #00f;
+}
+section{
+		border:1px solid #0f0;
+		height: 80px;
+}
+section>span{
+	text-shadow: 0 10px 5px #0f0;
+	text-align: center;
+	line-height: 80px;
+}

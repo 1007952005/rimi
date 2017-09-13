@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录成功</title>
+</head>
+
+<body>
+    登录成功，欢迎<span id="user"></span>!
+    <script>
+        window.onload = function() {
+            var user = document.getElementById("user");
+            user.textContent = localStorage.getItem("userName");
+        }
+
+    </script>
+</body>
+
+</html>

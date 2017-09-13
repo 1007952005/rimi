@@ -1,0 +1,558 @@
+@charset "utf-8";
+
+/***********************************************
+ *
+ *   功能：样式初始化以及网站header、footer样式设置
+ *   开发者：杨志欣
+ *   最后修改日期：2017-09-10
+ *
+************************************************/
+
+
+/**********************
+ *  网站初始化设置
+**********************/
+
+header,
+nav,
+article,
+section,
+footer {
+    display: block;
+}
+
+* {
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-width: 1020px;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", STHeiti, "华文细黑", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/**********************
+ *  header样式设置  
+*********************/
+
+header {
+    position: absolute;
+    z-index: 25;
+    width: 100%;
+    min-width: 1020px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    padding: 0 9%;
+    line-height: 60px;
+    border-bottom: 1px solid #9a9a9a;
+    overflow: hidden;
+}
+
+header:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+header>.logo {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+
+/*导航栏样式*/
+
+header>nav {
+    display: inline-block;
+    height: 60px;
+    float: right;
+    text-align: center;
+}
+
+header>nav>ul {
+    height: 100%;
+    overflow: hidden;
+}
+
+header>nav>ul>li {
+    display: inline-block;
+    height: 100%;
+    margin: 0 3px;
+    vertical-align: top;
+}
+
+header>nav>ul>li a {
+    display: block;
+    width: 100px;
+    height: 100%;
+    cursor: pointer;
+    color: #fff;
+}
+
+header>nav>ul>li>a.selected {
+    background-color: rgba(135, 158, 195, 0.38);
+}
+
+header>nav>ul>li>a:hover {
+    background-color: #3c9ce6;
+}
+
+
+/*登录、注册样式*/
+
+header>nav>ul>li #signIn,
+header>nav>ul>li #signUp {
+    height: 25px;
+    width: 60px;
+    padding: 1px 0px 3px;
+    border-radius: 30px;
+    font-size: 14px;
+    line-height: 25px;
+    user-select: none;
+}
+
+header>nav>ul>li #signIn {
+    background-color: #528dba;
+}
+
+header>nav>ul>li #signUp {
+    background-color: #38ce83;
+}
+
+header>nav>ul>li #signIn:hover {
+    background-color: #3c9ce6;
+}
+
+header>nav>ul>li #signUp:hover {
+    background-color: #30ed8f;
+}
+
+header>nav>ul>li #signIn:active,
+header>nav>ul>li #signUp:active {
+    background-color: #ff8023;
+}
+
+header>nav>ul>li:last-child {
+    width: 135px;
+    font-size: 0;
+}
+
+header>nav>ul>li:last-child .signBox {
+    color: #fff;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+header>nav>ul>li:last-child .signBox:nth-child(2) {
+    cursor: pointer;
+}
+
+header>nav>ul>li:last-child a {
+    display: inline-block;
+    margin: 0 3px;
+    width: 100px;
+}
+
+
+/**********************
+ *  footer样式设置  
+*********************/
+
+footer {
+    width: 100%;
+    min-width: 1020px;
+    background-color: #3d444f;
+}
+
+footer>.footerContent {
+    width: 100%;
+    padding: 55px 0 60px 10%;
+    text-align: left;
+    color: #fff;
+}
+
+footer>.footerContent>ul {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 60px;
+}
+
+footer>.footerContent>ul>.footerTitle {
+    padding-bottom: 26px;
+}
+
+footer>.footerContent>ul>li>a {
+    display: inline-block;
+    padding-bottom: 17px;
+    font-size: 14px;
+    color: #9ca3ae;
+}
+
+footer>.footerContent>ul>li>a:hover {
+    color: #fff;
+}
+
+footer>.copyright {
+    text-align: center;
+    font-size: 14px;
+    padding: 15px 0;
+    background-color: #363d46;
+    color: #cbd3b9;
+}
+
+
+/***********************
+ *  用户登录注册弹出框样式
+**********************/
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #999;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #999;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #999;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #999;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+user-dialog {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 50;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+user-dialog>.dialog-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+    margin-top: -170px;
+    padding: 30px 40px 10px 35px;
+    background-color: #fff;
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+}
+
+user-dialog>.dialog-main.shock {
+    animation: shockAnimation 0.3s;
+}
+
+user-dialog>.dialog-main .dialog-title {
+    font-size: 1.2em;
+    text-align: center;
+    padding-left: 6px;
+    color: #3c9ce6;
+}
+
+user-dialog>.dialog-main .dialog-box {
+    position: relative;
+}
+
+
+/*滑块设置*/
+
+user-dialog>.dialog-main .dialog-box>#dialog-smoothSI,
+user-dialog>.dialog-main .dialog-box>#dialog-smoothSU,
+user-dialog>.dialog-main #dialog-smoothSUNick {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 3px;
+    height: 30px;
+    background-color: #3c9ce6;
+    transition: top 0.4s;
+}
+
+user-dialog>.dialog-main .dialog-box>#dialog-smoothSU {
+    left: -6px;
+}
+
+user-dialog>.dialog-main #dialog-smoothSUNick {
+    left: -6px;
+}
+
+user-dialog>.dialog-main .dialog-input-box {
+    position: relative;
+}
+
+user-dialog>.dialog-main .dialog-input-box p {
+    padding-top: 25px;
+    position: relative;
+}
+
+user-dialog>.dialog-main>.dialog-type .dialog-input-box p:nth-last-child(2) {
+    text-align: center;
+}
+
+user-dialog>.dialog-main .dialog-input-box p:last-child {
+    padding-top: 10px;
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+user-dialog>.dialog-main .dialog-input-box p:last-child>span {
+    cursor: pointer;
+    color: #666;
+    text-decoration: underline;
+}
+
+user-dialog>.dialog-main label {
+    display: inline-block;
+    text-align: right;
+    width: 70px;
+    font-size: 1em;
+    color: #666;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+user-dialog>.dialog-main input {
+    font-size: 0.95em;
+    outline: none;
+    color: #666;
+    padding: 5px 10px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.dialog-input-box #verificationCodeSI,
+.dialog-input-box #verificationCodeSU {
+    width: 100px;
+}
+
+user-dialog>.dialog-main i {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 24px;
+    color: #666;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+/*验证码*/
+
+.dialog-input-box p .v-codeSI,
+.dialog-input-box p .v-codeSU {
+    position: relative;
+    display: inline-block;
+    width: 85px;
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1em;
+    line-height: 30px;
+    margin-left: 10px;
+    background: url('../images/common/verificationCode.jpg')0, 0 no-repeat;
+}
+
+.codeBox {
+    width: 100%;
+    height: 100%;
+    font-size: 1.3em;
+}
+
+.codeBox>span {
+    display: inline-block;
+}
+
+.codeMask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+
+/*提示信息设置*/
+
+p>.errorMsgSI,
+p>.errorMsgSU {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 87px;
+    font-size: 0.86em;
+    color: #dd3e3e;
+}
+
+.dialog-input-box p>.isRight {
+    display: inline-block;
+    width: 24px;
+    color: #38ce83;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+
+/*按钮设置*/
+
+user-dialog>.dialog-main .confirmSU,
+user-dialog>.dialog-main .confirmSI {
+    padding: 5px;
+    width: 120px;
+    height: 40px;
+    background-color: #fff;
+    color: #3c9ce6;
+    border: 2px solid #3c9ce6;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+user-dialog>.dialog-main .confirmSU.errorInputActive,
+user-dialog>.dialog-main .confirmSI.errorInputActive {
+    color: #dd3e3e;
+    border-color: #dd3e3e;
+}
+
+user-dialog>.dialog-main .confirmSU.loadActive,
+user-dialog>.dialog-main .confirmSI.loadActive {
+    width: 40px;
+}
+
+user-dialog>.dialog-main .confirmSU.loadingActive,
+user-dialog>.dialog-main .confirmSI.loadingActive {
+    border-color: #3c9ce6 #ccc #ccc #ccc;
+    animation: loadAnimation 0.8s linear infinite;
+}
+
+user-dialog>.dialog-main .confirmSU.successActive,
+user-dialog>.dialog-main .confirmSI.successActive {
+    width: 120px;
+    color: #fff;
+    background-color: #38ce83;
+    border-color: #38ce83;
+}
+
+user-dialog>.dialog-main .confirmSU.errorActive,
+user-dialog>.dialog-main .confirmSI.errorActive {
+    width: 120px;
+    color: #fff;
+    background-color: #dd3e3e;
+    border-color: #dd3e3e;
+}
+
+user-dialog>.dialog-main .confirmSU.yesActive,
+user-dialog>.dialog-main .confirmSI.yesActive {
+    width: 120px;
+    color: #fff;
+    background-color: #38ce83;
+    border-color: #38ce83;
+}
+
+
+/*昵称设置*/
+
+user-dialog .dialog-type:nth-child(3) p:nth-of-type(1) {
+    padding-top: 25px;
+}
+
+user-dialog .dialog-type:nth-child(3) p:nth-of-type(1)>label {
+    width: 80px;
+}
+
+user-dialog .dialog-type:nth-child(3) p:nth-of-type(2) {
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+/*加载动画*/
+
+@keyframes loadAnimation {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+/*抖动动画*/
+
+@keyframes shockAnimation {
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(10px);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    75% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}

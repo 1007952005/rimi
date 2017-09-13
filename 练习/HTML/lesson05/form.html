@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>表单</title>
+</head>
+<body>
+	<form action=" " method="get" accept-charset="utf-8">
+		 <p><label for="user">用户名：</label><input id="user" type="text" name="userName" value="Anny"></p>
+		 <p><label for="pass">密&nbsp;&nbsp;&nbsp;码：</label><input type="password" name="passWord" id="pass" value="34141" maxlength="8"></p>
+		 <p><label for="">性&nbsp;&nbsp;&nbsp;别：</label>
+		 <label for="male">男</label>
+		 <input for="male" name="gender" type="radio" checked="checked">
+		 <label for="female">女</label>
+		 <input id="female" name="gender" type="radio" ></p>
+		 <p><label>兴趣爱好：</label>
+		 <input type="checkbox" name="hobby" id="game" checked="checked" checked="checked"><label for="game">游戏</label>
+		 <input type="checkbox" name="hobby" id="book" ><label for="book">看书</label><input type="checkbox" name="hobby" id="sprot" ><label for="sprot">运动</label><input type="checkbox" name="hobby" id="tra" ><label for="tra">旅行</label>
+		 </p>
+		 <p><label for="fileup">上传文件：</label><input type="file" disabled="disabled" id="fileup"></p>
+		 <p><label for="hiddenbox">隐藏域：</label>
+		 <input type="hidden" id="hiddenbox" name="" value=""></p>
+		 <p>请输入自我介绍：</p>
+		 <p><textarea name="self" rows="20" cols="25" placeholder="自我介绍。。。" resize="none"></textarea></p>
+		 <p><label for="address">地址：</label>
+		 <select id="address" name=""  size="2">
+		 	<option value="四川省">四川省</option>
+		 	<option value="湖北省">湖北省</option>
+		 	<option value="云南省" selected>云南省</option>
+		 </select><select name="" id="" size="6">
+				<optgroup label="食品">
+					<option value="">拉面</option>
+					<option value="">火腿</option>
+					<option value="">饼干</option>
+				</optgroup>
+				<optgroup label="电器">
+					<option value="">电视</option>
+					<option value="">电脑</option>
+					<option value="">冰箱</option>
+				</optgroup>
+			</select>
+			</p>
+		
+			<P>
+				<input type="button" name="" value="普通按钮">
+				<input type="submit" name="" value="提交按钮" >
+				<input type="reset" name="" value="重置按钮" >
+			</P>
+			<p>
+				<button type="button">普通按钮</button>
+				<button type="submit">提交按钮</button>
+				<button type="reset">重置按钮</button>
+			</p>
+		
+
+		 </form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+@charset "utf-8";
+/*****
+******功能：公共样式表
+******开发者：***
+******日前：
+******
+***/
+/*标签样式初始化*/
+
+body,p,ul,h1,h2,h3,h4{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+header,footer,section,article,nav,aside{
+	display: block;
+}
+a{
+	color:#333;
+	text-decoration:none;
+}
+html,body{
+	font:16px "微软雅黑";
+}
+input,button{
+	outline: none;
+}
+/*1.清除浮动*/
+.clearfix:before,.clearfix:after{
+	content: "";
+	display: table;
+}
+.clearfix:after{
+	height: 0;
+	visibility: hidden;
+	clear:both;
+}
+/*2.清除浮动*/
+.clearfix:after{
+	content: "";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="UTF-8">
+	<title>演示示例</title>
+	<style>
+		body{
+			background-color: blue;
+		}
+		/*当浏览器窗口宽度大于640px时，执行媒体查询里的样式*/
+/*
+**媒体查询样式执行条件
+**min-width:480px;大于等于480时执行样式
+**max-width:480px;小于等于480时执行样式
+**min-width:480px;and max-width:980px;大于等于480并且小于等于980时执行样式
+*/
+@media(max-width:480px){
+	body{
+		background-color: yellow;
+	}
+}
+</style>
+</head>
+<body>
+	<p>如果媒体类型屏幕的可视窗口宽度小于 640 px ，背景颜色将改变。</p>
+</body>
+</html>

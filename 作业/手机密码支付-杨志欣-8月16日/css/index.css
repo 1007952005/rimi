@@ -1,0 +1,378 @@
+        @charset "utf-8";
+    body,
+    html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: "Microsoft Yahei";
+        font-size: 18px;
+    }
+    
+    ul,
+    li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #root {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #root section {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border: 1px solid #eee;
+        top: 0;
+        left: 0;
+    }
+    
+    #root section header,
+    #root section footer {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        font-size: 22px;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+        background: #35343A;
+    }
+    
+    #root section header {
+        top: 0;
+        left: 0;
+    }
+    
+    #root section footer {
+        bottom: 0;
+        left: 0;
+    }
+    
+    #root section main {
+        box-sizing: border-box;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        height: calc(100% - 100px);
+        padding: 10px;
+        background: #fff;
+    }
+    
+    #root section main button {
+        font-size: 20px;
+    }
+    
+    #root #page1 {
+        z-index: 2;
+    }
+    
+    #root #page1>main {
+        width: 100%;
+        height: calc(100% - 100px);
+        overflow: hidden;
+        padding: 0;
+    }
+    
+    #root #page2 {
+        left: 100%;
+        z-index: 3;
+        transition: all .5s;
+    }
+    
+    #root #page3 {
+        left: 100%;
+        z-index: 4;
+        transition: all .5s;
+    }
+    
+    #root #page3 main {
+        text-align: center;
+    }
+    
+    #backPage1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 10px;
+        cursor: pointer;
+    }
+    
+    #backPage2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 10px;
+        cursor: pointer;
+    }
+    
+    .toLeft {
+        left: 0 !important;
+    }
+    
+    .pay-content input {
+        border: 1px solid #ccc;
+        font-size: 18px;
+        line-height: 20px;
+        padding: 5px 5px 4px 5px;
+    }
+    
+    .portrait {
+        width: 100%;
+        height: 120px;
+        position: relative;
+    }
+    
+    .portrait>div {
+        position: absolute;
+        padding: 5px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .portrait>div img {
+        width: 80px;
+        height: 80px;
+        border-right: 5px;
+    }
+    
+    .portrait>div p {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .pay-content label {
+        font-size: 20px;
+        padding-right: 10px;
+    }
+    
+    .pay-content>div:nth-child(1) {
+        margin-bottom: 10px;
+    }
+    
+    .pay-content>div:nth-child(2) {
+        width: 100%;
+    }
+    
+    .txtPaySuccess {
+        margin-top: 20px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .txtPaySuccess img {
+        vertical-align: middle;
+        width: 32px;
+        height: 32px;
+    }
+    
+    .txtPaySuccess span {
+        display: inline-block;
+        margin-left: 10px;
+        text-align: center;
+        font-size: 1.4rem;
+        color: #44d13a;
+        vertical-align: middle;
+    }
+    
+    #oName {
+        margin-top: 5px;
+        text-align: center;
+        font-size: 1.4rem;
+        color: #44d13a;
+    }
+    
+    .pa {
+        font-size: 16px;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+    }
+    
+    .pa>div:first-child {
+        margin-bottom: 10px;
+    }
+    
+    #alertPayComp {
+        width: 100%;
+        background: #01AA01;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        padding: 5px 0;
+        outline: none;
+    }
+    /*payInfo css*/
+    
+    .payInfo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 4;
+    }
+    
+    .payInfoBox {
+        width: 100%;
+        height: calc(100% - 200px);
+        background: rgba(0, 0, 0, .4);
+        position: relative;
+    }
+    
+    .payInfoBox-main {
+        width: 280px;
+        height: 220px;
+        background-color: #fff;
+        border-radius: 8px;
+        border: 1px solid #eee;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #payInfoKeyboard {
+        box-sizing: border-box;
+        width: 100%;
+        height: 200px;
+        background-color: #fff;
+        border-top: 1px solid #888;
+    }
+    
+    #payInfoKeyboard>div {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 33.33333333%;
+        height: 25%;
+        border-right: 1px solid #aaa;
+        border-bottom: 1px solid #aaa;
+        text-align: center;
+        font: 32px/50px "arial";
+        float: left;
+        cursor: pointer;
+    }
+    
+    #payInfoKeyboard>div:nth-child(3n) {
+        border-right: none;
+    }
+    
+    #payInfoKeyboard>div:nth-child(10) {
+        background: #eee;
+    }
+    
+    .payInfoHead {
+        text-align: center;
+        position: relative;
+        border-bottom: 1px solid #b6ccaf;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    
+    #closeBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 10px;
+        color: #999;
+        cursor: pointer;
+    }
+    
+    .objN {
+        line-height: 40px;
+        text-align: center;
+    }
+    
+    .money {
+        height: 50px;
+        text-align: center;
+        font-size: 40px;
+        font-family: arial;
+        line-height: 50px;
+    }
+    
+    .erro {
+        height: 20px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 20px;
+        color: #e63434;
+    }
+    
+    .payPWD {
+        box-sizing: border-box;
+        width: 242px;
+        height: 40px;
+        border: 1px solid #aaa;
+        border-radius: 3px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    
+    .payPWD>div {
+        box-sizing: border-box;
+        width: 40px;
+        height: 100%;
+        border-right: 1px solid #aaa;
+        text-align: center;
+        line-height: 40px;
+        float: left;
+    }
+    
+    .payPWD>div>i {
+        width: 16px;
+        height: 16px;
+        background-color: #333;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    
+    .payPWD>div:last-child {
+        border-right: none;
+    }
+    
+    #frendsList {
+        width: 100%;
+    }
+    
+    #frendsList li {
+        width: 100%;
+        border-bottom: 1px solid #eee;
+        height: 50px;
+        padding: 8px 10px;
+        vertical-align: middle;
+    }
+    
+    #frendsList li img {
+        display: inline-block width: 50px;
+        height: 50px;
+        border-radius: 3px;
+        vertical-align: middle;
+    }
+    
+    #frendsList li span {
+        display: inline-block;
+        font-size: 22px;
+        line-height: 30px;
+        vertical-align: middle;
+        margin-left: 10px;
+        color: #333;
+    }
+    
+    #sucMoney {
+        font-size: 1.8rem;
+        color: #f18f13;

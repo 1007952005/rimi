@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX练习</title>
+    <style>
+        #nav {
+            width: 100%;
+            background-color: #2aa851;
+        }
+        
+        #nav>a {
+            display: inline-block;
+            padding: 5px 10px;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <a href="#send1">柯基</a>
+        <a href="#send2">法斗</a>
+        <a href="#send3">柴犬</a>
+    </div>
+    <div id="responseDiv"></div>
+    <script>
+        var resDiv = document.querySelector("#responseDiv");
+        window.onhashchange = function() {
+            router("request/ajax.json");
+        }
+
+        function router(url) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", url);
+            xhr.send(null);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    var obj = JSON.parse(xhr.responseText);
+                    resDiv.innerHTML = obj.dogInfo.name;
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

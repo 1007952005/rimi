@@ -1,0 +1,184 @@
+@charset "utf-8";
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	font-family: "HiraginoSansGB w3";
+}
+.header{
+	min-height: 128px;
+	height: 9.6%;
+	width: 100%;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: table;
+	min-height: 128px;
+	height: 9.6%;
+	width: 100%;
+	background: #11ABBB; 
+	text-align: center;
+	z-index: 9999;
+}
+header p{
+	display: table-cell;
+	font-size: 36px;
+	color: #FFF;
+	vertical-align: middle;
+}
+
+section{
+	min-height: 1107px;
+	width: 100%;
+	height: 83.05%;
+}
+
+.banner{
+	width: 100%;
+	height: 38.07%;
+	overflow: hidden;
+}
+.banner img{
+	width: 100%;
+	height: 100%;
+}
+article{
+	width: 100%;
+	height: 61.93%;
+}
+article ul{
+	width: 100%;
+	height: 100%;
+	
+}
+article li{
+	display: table;
+	height: 33.33%;
+	width: 50%;
+	float: left;
+}
+article li>div{
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	vertical-align: middle;
+}
+article li>div>a{
+	display: inline-block;
+	font-size: 32px;
+	color:#1E1E1E;
+	vertical-align: middle;
+
+}
+article li>div>i{
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+	margin:54px 20px 54px 60px; 
+	background: url('../images/sprites.png');
+	vertical-align: middle;
+}
+article li:nth-child(1)>div>i{
+	background-position: 0 0;
+}
+article li:nth-child(1)>div{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+article li:nth-child(2)>div>i{
+	background-position: -150px 0;
+}
+article li:nth-child(2)>div{
+	border-bottom: 1px solid #ddd;
+}
+article li:nth-child(3)>div>i{
+	background-position: -300px 0;
+}
+article li:nth-child(3)>div{
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+article li:nth-child(4)>div>i{
+	background-position: -450px 0;
+}
+article li:nth-child(4)>div{
+	border-bottom: 1px solid #ddd;
+}
+article li:nth-child(5)>div>i{
+	background-position: -600px 0;
+}
+article li:nth-child(5)>div{
+	border-right: 1px solid #ddd;
+}
+article li:nth-child(6)>div>i{
+	background-position: -750px 0;
+}
+.footer{
+	min-height: 99px;
+	height:7.35%;
+	width: 100%;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	min-height: 99px;
+	height:7.35%;
+	width: 100%;
+	border-top: 1px solid #ddd;
+	background: #F6F6F6;
+	z-index: 9999;
+}
+footer ul{
+	width: 100%;
+	height: 100%;
+}
+footer li{
+	float:left;
+	width: 25%;
+	height: 100%;
+	position: relative;
+}
+footer li>div{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform:translate(-50%,-50%) ;
+	-ms-transform:translate(-50%,-50%) ;
+	-o-transform:translate(-50%,-50%) ;
+	transform:translate(-50%,-50%) ;
+	vertical-align: middle;
+	text-align: center;
+}
+footer li div i{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin: 12px 0 10px;
+	background: url('../images/sprites.png');
+}
+footer li div a{
+	display:inline-block;
+	width: 100%;
+	height: 100%;
+}
+footer li div p{
+	margin-bottom: 12px;
+	color:#808080;
+}
+footer li:nth-child(1)>div i{
+	background-position: 0 -150px;
+}
+footer li:nth-child(2)>div i{
+	background-position: -187px -150px;
+}
+footer li:nth-child(3)>div i{
+	background-position: -374px -150px;
+}
+footer li:nth-child(4)>div i{
+	background-position: -563px -150px;
+}

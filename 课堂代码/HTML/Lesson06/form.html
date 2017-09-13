@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>表单</title>
+</head>
+<body>
+	<!-- 声明表单 -->
+	<form name="formName" action="提交路径" 
+	method="get">
+	<!-- name -->
+	<p>
+		<label for="userName">用户名：</label>
+		<input type="text" name="userName" value="Anny" pattern="[A-Za-z]{4,10}" required >
+	</p>
+	<!-- pwd -->
+	<p>
+		<label for="">密&nbsp;&nbsp;&nbsp;码：</label>
+		<input type="password" name="pwd" value="123456" size="" required pattern="[a-zA-Z0-9]{6,10}">
+	</p>
+	<!-- gender -->
+	<p>
+		<label>性&nbsp;&nbsp;&nbsp;别：</label>
+		<label for="male">男</label>
+		<input type="radio" id="male" name="gender" value="0" checked>
+		<label for="female">女</label>
+		<input type="radio" id="female" name="gender" value="1">
+	</p>
+	<!-- 爱好 -->
+	<p>
+		<label>兴趣爱好：</label>
+		<input type="checkbox" name="game" value="" checked>
+		<label for="game">游戏</label>
+		<input type="checkbox" name="book" value="" checked>
+		<label for="book">看书</label>
+		<input type="checkbox" name="sport" value="">
+		<label for="sport">运动</label>
+		<input type="checkbox" name="travel" value="">
+		<label for="travel">旅游</label>
+	</p>
+	<!-- file up-->
+	<p>
+		<label for="fileUp">上传文件：</label>
+		<input type="file" name="fileUp" value="" disabled>
+	</p>
+	<!-- hidden -->
+	<p>
+		<label for="hiddenBox">隐藏域：</label>
+		<input type="hidden" name="hiddenBox" value="">
+	</p>
+	<!-- 文本域 -->
+	<p>
+		<label for="">请输入自我介绍：</label>
+	</p>
+	<p>
+		<textarea name="" cols="25" rows="5" >自我介绍....</textarea>
+	</p>
+	<!-- 下拉框 -->
+	<p>
+		<label for="">地址：</label>
+		<select name="" size="2">
+			<option value="">四川省</option>
+			<option value="" selected="selected">湖北省</option>
+			<option value="">江苏省</option>
+		</select>
+		<select name="" multiple="multiple">
+			<optgroup label="食品">
+				<option value="">拉面</option>
+				<option value="">火腿</option>
+				<option value="">饼干</option>
+			</optgroup>
+			<optgroup label="电器">
+				<option value="">电视</option>
+				<option value="">电脑</option>
+				<option value="">冰箱</option>
+			</optgroup>
+		</select>
+	</p>
+
+
+	<!-- input=button -->
+	<p>
+		<input type="button" name="but" value="普通按钮">
+		<input type="submit" name="sub" value="提交按钮">
+		<input type="reset" name="res" value="重置按钮">
+		<input type="image" name="imgBtn" src="../../Other/img/chrome.png" width="36px" height="36px"
+		title="google chrome" alt="图片按钮">
+	</p>
+	<!-- button -->
+	<p>
+		<button type="button">普通按钮</button>
+		<button type="submit">提交按钮</button>
+		<button type="reset">重置按钮</button>
+	</p>
+</form>
+</body>
+</html>

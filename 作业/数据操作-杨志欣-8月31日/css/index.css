@@ -1,0 +1,109 @@
+@charset "urf-8";
+
+/**************************************************
+ * 样式初始化设置 *
+**************************************************/
+
+body {
+    font: 18px "Microsoft Yahei";
+    padding: 12px;
+}
+
+
+/**************************************************
+ * 按钮组详细设计 *
+**************************************************/
+
+.dataControlGroup {
+    margin-bottom: 20px;
+}
+
+.dataControlGroup button {
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+
+/**************************************************
+ * 表格详细设计 *
+**************************************************/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr {
+    border: 1px solid #7fa894;
+}
+
+table tr td {
+    padding: 6px 12px;
+}
+
+table thead {
+    background-color: #0b9f55;
+    color: #fff;
+}
+
+table tbody {
+    color: #666;
+}
+
+table tr:nth-child(even) {
+    background-color: #edfff7;
+}
+
+
+/*排序图标设置*/
+
+table thead tr td {
+    position: relative;
+}
+
+table thead tr td .sortIcon {
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('../images/arrow.png') 0 0 no-repeat;
+    top: 11px;
+    transform: rotateZ(0deg);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+
+/*复选框样式*/
+
+table .checkboxItem {
+    width: 20px;
+}
+
+table input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+
+/*数据操作样式*/
+
+table tr td .details {
+    color: #76a2ff;
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+table tr td .delete {
+    color: #ff8080;
+    cursor: pointer;
+}
+
+table tr td .details:hover {
+    color: #135dfa;
+}
+
+table tr td .delete:hover {
+    color: #ff0a0a;
+}

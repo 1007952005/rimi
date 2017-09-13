@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>倒计时</title>
+</head>
+
+<body>
+    <p>现在距离2018世界杯还有：</p>
+    <p>
+        <span id="howDay"></span>
+        <span>天</span>
+        <span id="howHours"></span>
+        <span>时</span>
+        <span id="howMinutes"></span>
+        <span>分</span>
+        <span id="howSecond"></span>
+        <span>秒</span>
+    </p>
+    <script>
+        //设置世界杯时间
+        var worldCup = new Date(2018, 5, 14, 19, 0, 0, 0);
+        //天
+        var howDay = document.getElementById("howDay"),
+            //时
+            howHours = document.getElementById("howHours"),
+            //分
+            howMinutes = document.getElementById("howMinutes"),
+            //秒
+            howSecond = document.getElementById("howSecond");
+        setInterval(function() {
+            var currentDate = new Date();
+            var different = worldCup - currentDate;
+            //天
+            howDay.textContent = Math.floor(different / 1000 / 60 / 60 / 24);
+            //时
+            howHours.textContent = Math.floor(different / 1000 / 60 / 60 % 24);
+            //分
+            howMinutes.textContent = Math.floor(different / 1000 / 60 % 60);
+            //秒
+            howSecond.textContent = Math.floor(different / 1000 % 60);
+        }, 1000);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+@charset "utf-8";
+body {
+    font-family: "Microsoft Yahei";
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    width: 1226px;
+    margin: 0 auto;
+    background: url("../images/bg.jpg");
+}
+
+nav>ul {
+    padding: 20px 0;
+    position: relative;
+    height: 420px;
+    width: 234px;
+    background: rgba(0, 0, 0, .6);
+}
+
+nav>ul>li>a {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 42px;
+    width: 100%;
+    padding-left: 30px;
+    color: #fff;
+    line-height: 42px;
+    position: relative;
+    font-size: 14px;
+}
+
+nav>ul>li>a:hover {
+    background: #ff6700;
+}
+
+nav>ul>li>a>i {
+    position: absolute;
+    color: rgba(255, 255, 255, .8);
+    top: 5px;
+    right: 20px;
+}
+
+.nav-2 {
+    display: none;
+    height: 100px;
+    padding: 0;
+    background: #fff;
+    position: absolute;
+    left: 234px;
+    top: 0px;
+    height: 460px;
+    font-size: 0px;
+    border-top: 1px solid #e6e6e6;
+    box-shadow: 0px 7px 5px #ccc;
+    overflow: hidden;
+}
+
+nav>ul>li:hover>a+.nav-2 {
+    display: block;
+}
+
+.nav-2>ul {
+    font-size: 14px;
+    display: inline-block;
+    padding: 0px;
+    vertical-align: top;
+}
+
+.nav-2>ul>li {
+    width: 265px;
+    height: 76px;
+    position: relative;
+}
+
+.nav-2>ul>li>a:first-child {
+    display: inline-block;
+    width: 170px;
+    padding: 18px 20px;
+    padding-right: 0;
+    line-height: 40px;
+}
+
+.nav-2>ul>li>a:first-child>img,
+.nav-2>li>a:first-child>span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-2>ul>li>a:first-child>img {
+    margin-right: 12px;
+}
+
+.nav-2>ul>li>a:first-child:hover {
+    color: #ff6700;
+}
+
+.nav-2>ul>li>a:last-child {
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    top: 26px;
+    width: 58px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #ff6700;
+    background: #fff;
+    color: #ff6700;
+    text-align: center;
+    transition: .2s
+}
+
+.nav-2>ul>li>a:last-child:hover {
+    background: #ff6700;
+    color: #fff;
+}

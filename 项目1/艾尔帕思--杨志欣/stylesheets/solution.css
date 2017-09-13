@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/***********************************************
+ *
+ *   功能：“解决方案”详细设置
+ *   开发者：杨志欣
+ *   最后修改日期：2017-09-09
+ *
+************************************************/
+
+
+/**********************
+ *  “解决方案”banner设置
+**********************/
+
+.solutionMain>.solutionBanner {
+    width: 100%;
+    height: 500px;
+    background: url('../images/solution/case-banner.png')0 0/cover no-repeat;
+}
+
+.solutionMain>.solutionBanner>div {
+    padding: 0 17%;
+}
+
+.solutionMain>.solutionBanner>div>h2 {
+    color: #fff;
+    font-size: 2.625em;
+    letter-spacing: 2px;
+    padding-top: 185px;
+    margin-bottom: 50px;
+}
+
+.solutionMain>.solutionBanner>div>h3 {
+    color: #fff;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+
+/**********************
+ *  “解决方案”图片切换样式
+**********************/
+
+.solutionMain>.solutionNav {
+    width: 90%;
+    max-width: 1482px;
+    margin: 0 auto;
+    padding: 60px 0 30px;
+    margin: 0 auto;
+}
+
+.solutionMain>.solutionNav>li {
+    display: inline-block;
+    text-align: center;
+    padding: 0 25px;
+    font-size: 1em;
+    color: #414141;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.solutionMain>.solutionNav>li.selected {
+    color: #3c9de5;
+}
+
+
+/**********************
+ *  “解决方案”图片样式
+**********************/
+
+.solutionMain>.solutionImgBox {
+    width: 90%;
+    max-width: 1482px;
+    margin: 0 auto;
+    font-size: 0;
+    margin-bottom: 80px;
+}
+
+.solutionMain>.solutionImgBox>div {
+    display: none;
+    width: 32%;
+    min-width: 250px;
+    max-width: 440px;
+    margin: 0 0.6% 15px;
+}
+
+.solutionMain>.solutionImgBox>div>img {
+    width: 100%;
+}

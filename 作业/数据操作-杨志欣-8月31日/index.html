@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>数据操作</title>
+    <link rel="stylesheet" href="plugin/dialog_plugin/css/dialog.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="dataControlGroup">
+        <button id="addBtn" class="dataControlBtn">加载数据</button>
+        <button id="delBtn" class="dataControlBtn">删除选中</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <td class="checkboxItem"><input id="checkboxMain" type=checkbox></td>
+                <td>货号<span class="sortIcon"></span></td>
+                <td>名称</td>
+                <td>生产日期<span class="sortIcon"></span></td>
+                <td>进货日期<span class="sortIcon"></span></td>
+                <td>保质期</td>
+                <td>售价<span class="sortIcon"></span></td>
+                <td>操作</td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script src="plugin/dialog_plugin/javascript/dialog.js"></script>
+    <script src="data/goodsData.js"></script>
+    <script src="javascript/index.js"></script>
+</body>
+
+</html>

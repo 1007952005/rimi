@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>背面翻转可见性</title>
+	<style>
+		article{
+			width:400px;
+			height: 300px;
+			border:1px solid #333;
+			transform-style: preserve-3d;
+			position: relative;
+			/*transform:perspective(900px);*/
+			-webkit-perspective: 800;
+		}
+		section{
+			width:100%;
+			height: 100%;
+			color:#fff;
+			font-size: 40px;
+			line-height: 300px;
+			text-align: center;
+			transition:5s .5s;
+			position: absolute;
+
+		}
+		section:nth-child(1){
+			background-color: #f00;
+			transform:rotateY(0deg);
+			backface-visibility: hidden;
+		}
+		section:nth-child(2){
+			background-color: #0f0;
+			transform:rotateY(-180deg);
+			backface-visibility: hidden;
+		}
+		article:hover section:nth-child(1){
+			transform:rotateY(180deg);
+
+		}
+		article:hover section:nth-child(2){
+			transform:rotateY(0deg);
+		}
+
+
+	</style>
+
+
+</head>
+<body>
+	<article>
+		<section>正面</section>
+		<section>背面</section>
+	</article>
+</body>
+</html>

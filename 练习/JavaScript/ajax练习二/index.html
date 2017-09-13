@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ajax练习二</title>
+    <style>
+        ul {
+            display: inline-block;
+            padding: 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        li {
+            display: block;
+            min-width: 320px;
+            padding: 10px 10px;
+            border-bottom: 1px solid #ccc;
+            cursor: pointer;
+        }
+        
+        li:last-child {
+            border-bottom: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ol>
+
+    </ol>
+    <script>
+        function getJSON(url, callback) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", url);
+            xhr.send(null);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    var jsonStr = xhr.responseText;
+                    var json = JSON.parse(jsonStr);
+                    callback(json);
+                }
+
+            }
+        }
+        getJSON("https://www.aulence.com/data/hardware-info.json", function(data) {
+            var ol = document.getElementsByTagName("ol")[0];
+            var str = "";
+            for (var x in data) {
+                str += '<li>' + data[x] + '</li>';
+            }
+            ol.innerHTML = str;
+            var li = ol.children,
+                li_length = li.length;
+            for (let i = 0; i < li_length; i++) {
+                li[i].onclick = function() {
+                    alert(i + 1 + "、" + this.textContent);
+                };
+            }
+        });
+
+    </script>
+</body>
+
+</html>

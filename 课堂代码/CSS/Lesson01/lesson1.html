@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>样式的引用</title>
+	<!-- 3.外链样式 -->
+	<!-- 2.内嵌 -->
+<!-- 	<style type="text/css">
+			p.p1{
+				color:#00f;
+				text-align: right;
+				font-size: 46px;
+			}
+		</style> -->
+		<link rel="stylesheet" href="common.css">
+		<link rel="stylesheet" href="lesson.css">
+	</head>
+	<body>
+		<p>
+			<label>focus:</label>
+			<input type="text" name="user-name" value="">
+		</p>
+		<p>
+			<label>focus:</label>
+			<input type="password" name="user-pwd" value="">
+		</p>
+		<br>
+		<ul>
+			<li>项目1</li>
+			<li>项目2</li>
+			<li>项目3</li>
+		</ul>
+		<p>
+			<a href="#">超链接1</a>
+			<a href="#">超链接2</a>
+			<a href="#">超链接3</a>
+		</p>
+		<!-- 1.行内 -->
+		<p>标签选择器</p>
+		<p class="p1">类选择器</p>
+		<p id="p1">id选择器</p>
+		<section>
+			<div class="p1">section中的div1</div>
+			<p>section中的p1</p>
+			<div>
+				<p>section中的div2中p2</p>
+			</div>
+			<p>section中的p3</p>
+		</section>
+	</body>
+	</html>

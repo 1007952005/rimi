@@ -1,0 +1,33 @@
+第三个方法里的<!--[if lt IE 9]>原本是一句注释，
+但是他的作用却不只是注释，语句里面的lt表示小于，
+那么真句话解释就是：IE9及IE9以下版本可识别这个
+html5.js 文件，并解析它。而后面的<![endif]-->则表示这个语句结束。
+
+
+
+CSS中具有继承性的属性
+公共元素可继承：visibility和cursor。
+内联元素可继承：letter-spacing、word-spacing、white-space、line-height、color、font、 font-family、font-size、font-style、font-variant、font-weight、text- decoration、text-transform、direction。
+块状元素可继承：text-indent和text-align。
+列表元素可继承（~~列表相关属性）：list-style、list-style-type、list-style-position、list-style-image。
+表格元素可继承：border-collapse。
+
+
+外间距重叠问题
+之前在讲解盒子模型的时候，对于外间距的重叠应该有所了解了。我们外间距的重叠，并不是所有的外间距都会重叠，只会重叠垂直方向的，
+
+不会产生重叠的情况：
+
+水平边距永远不会重合。
+相邻的盒模型中，如果其中的一个是浮动的（float），垂直margin不会重叠，并且浮动的盒模型和它的子元素之间也是这样。
+设置了overflow属性的元素和它的子元素之间的margin不被重叠（overflow取值为visible除外）。
+设置了绝对定位（position:absolute）的盒模型，垂直margin不会被重叠，并且和他们的子元素之间也是一样。
+设置了display:inline-block的元素，垂直margin不会重叠，甚至和他们的子元素之间也是一样
+如果一个盒模型的上下margin相邻，这时它的margin可能重叠覆盖（collapse through）它。在这种情况下，元素的位置（position）取决于它的相邻元素的margin是否重叠。
+如果元素的margin和它的父元素的margin-top重叠在一起，盒模型border-top的边界定义和它的父元素相同。
+另外，任意元素的父元素不参与margin的重叠，或者说只有父元素的margin-bottom是参与计算的。如果元素的border-top非零，那么元素的border-top边界位置和原来一样。
+根元素的垂直margin不会被重叠。
+注意：
+
+相邻的盒模型可能由DOM元素动态产生并没有相邻或继承关系。
+那些已经被重叠覆盖的元素的位置对其他已经重叠的元素的位置没有任何影响；只有在对这些元素的子元素定位时，border-top边界位置才是必需的。

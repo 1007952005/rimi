@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>转化练习</title>
+</head>
+
+<body>
+    <form action="">
+        <div><input id="val1" type="text">+<input id="val2" type="text">=<output id="result1"></output></div>
+        <div><input id="val3" type="text">*<input id="val4" type="text">=<output id="result2"></div>
+    </form>
+    <script>
+        var result1 = document.getElementById("result1"),
+            result2 = document.getElementById("result2"),
+            valS1 = document.getElementById("val1"),
+            valS2 = document.getElementById("val2"),
+            valS3 = document.getElementById("val3"),
+            valS4 = document.getElementById("val4");
+        result1.innerHTML = "0";
+        result2.innerHTML = "0";
+        valS1.oninput = function() {
+            var val1 = valS1.value,
+                val2 = valS2.value;
+            plus(val1, val2);
+        }
+        valS2.oninput = function() {
+            var val1 = valS1.value,
+                val2 = valS2.value;
+            plus(val1, val2);
+        }
+        valS3.oninput = function() {
+            var val3 = valS3.value,
+                val4 = valS4.value;
+            ride(val3, val4);
+        }
+        valS4.oninput = function() {
+            var val3 = valS3.value,
+                val4 = valS4.value;
+            ride(val3, val4);
+        }
+        function plus(v1, v2) {
+            v1 = v1 || 0;
+            v2 = v2 || 0;
+            v1 = parseInt(v1);
+            v2 = parseInt(v2);
+            result1.innerHTML = v1 + v2;
+        }
+
+        function ride(v1, v2) {
+            v1 = v1 || 0;
+            v2 = v2 || 0;
+            v1 = parseInt(v1);
+            v2 = parseInt(v2);
+            result2.innerHTML = v1 * v2;
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/****
+***日期:2017-7-18
+***	 单车生活
+***
+****/
+
+/* article-s */
+body{
+	background: #DEDEDE;
+}
+.image-box{
+	width: 1180px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.image-box li{
+	display: inline-block;
+	float: left;
+	width: 363px;
+	height: 295px;
+	background: white;
+	border: solid 1px #ccc;
+	margin: 13px;
+	position: relative
+}
+.image-box li img{
+	border: none;
+	width: 329px;
+	height: 185px;
+	background: #CCC;
+	margin: 10px 17px 10px;
+	font-size: 12px;
+	color: #5d5d5d;
+}
+.image-box li .shade{
+	display: inline-block;
+	cursor: pointer;
+	width: 329px;
+	height: 185px;
+	position: absolute;
+	top: 10px;
+	left: 17px;
+	background: white;
+	opacity: 0;
+}
+.image-box li:hover .shade{
+	opacity: .4;
+}
+.image-box li p:nth-child(3){
+	width: 343px;
+	font-size: 12px;
+	color: #D5D5D5;
+	margin: 0 auto 10px;
+}
+.image-box li p:nth-child(4){
+	width: 343px;
+	font-size: 16px;
+	line-height: 160%;
+	color: #6F6F6F;
+	margin: 0 auto ;
+}
+.image-box li p:nth-child(4):hover{
+	color: #C40000;
+}
+/* article-e */
+
+/* page-s */
+.page{
+	width: 1180px;
+	margin: 0 auto;
+}
+.page a{
+	display: inline-block;
+	height: 22px;
+	background-color: #dedede;
+    color: #999999;
+    border:1px solid #CCCCCC;
+    font-size: 14px;
+    padding: 0px 5px;
+    line-height: 22px;
+    margin: 0px 5px;
+    float: right;
+}
+.page p{
+	display: inline-block;
+	height: 22px;
+    font-size: 14px;
+    color: #999999;
+    float: right;
+}
+.page a.seleced{
+	background: #333333;
+	color: white;
+}
+.page a:hover{
+	background: #333333;
+	color: white;
+}
+/* page-e */

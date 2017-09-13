@@ -1,0 +1,167 @@
+@charset "utf-8";
+body{
+	margin: 0;
+	padding: 0;
+	background-color: greenyellow;
+	transform-style: preserve-3d;
+	transform: rotateY(-5deg) rotateX(-15deg);
+	
+}
+section{
+	position: absolute;
+	margin: 200px;
+	height: 300px;
+	width: 50px;
+	transform-style: preserve-3d;
+	transform-origin: bottom right;
+	
+}
+div{
+	position: absolute;
+}
+/* 第一张牌 */
+.cardOne{
+   left: 200px;
+   animation: 2s myAnimation cubic-bezier(0.08, 0.32, 0.38, 0.4)  forwards;
+}
+
+.cardOne .front{
+   height: 300px;
+   width: 50px;
+   background-color: gainsboro;
+   transform: translateZ(100px);
+}
+.cardOne .back{
+   height: 300px;
+   width: 50px;
+   background-color: oldlace;
+    transform: translateZ(-100px);
+}
+.cardOne .left{
+	height: 300px;
+	width: 200px;
+	transform: rotateY(90deg) translateZ(-100px);
+	background-color: cadetblue;
+}
+.cardOne .right{
+	height: 300px;
+	width: 200px;
+	transform: rotateY(90deg) translateZ(-50px);
+	background-color: dimgrey;
+}
+.cardOne .top{
+	width: 50px;
+	height: 200px;
+	transform: rotateX(90deg) translateZ(100px);
+	background-color: mediumpurple;
+}
+.cardOne .bottom{
+	width: 50px;
+	height: 200px;
+	transform: rotateX(90deg) translateZ(-200px);
+	background-color: mediumpurple;
+}
+
+/* 第二张牌 */
+.cardTwo{
+	left: 400px;
+	animation: 2s myAnimation cubic-bezier( 0.76, 0.47,  0.19, 0.67) 0.5s  forwards;
+}
+
+.cardTwo .front{
+   height: 300px;
+   width: 50px;
+   background-color: #F4A460;
+   transform: translateZ(100px);
+}
+.cardTwo .back{
+   height: 300px;
+   width: 50px;
+   background-color: #F4A460;
+    transform: translateZ(-100px);
+}
+.cardTwo .left{
+	height: 300px;
+	width: 200px;
+	transform: rotateY(90deg) translateZ(-100px);
+	background-color: #CDB7B5;
+}
+.cardTwo .right{
+	height: 300px;
+	width: 200px;
+	transform: rotateY(90deg) translateZ(-50px);
+	background-color: #CDB7B5;
+}
+.cardTwo .top{
+	width: 50px;
+	height: 200px;
+	transform: rotateX(90deg) translateZ(100px);
+	background-color: mediumpurple;
+}
+.cardTwo .bottom{
+	width: 50px;
+	height: 200px;
+	transform: rotateX(90deg) translateZ(-200px);
+	background-color: mediumpurple;
+}
+
+
+
+/* 第三张牌 */
+.cardThree{
+	left: 600px;
+	animation: 2s myAnimationLast cubic-bezier(0.23, 0.67,.25,.97) 1.4s  forwards;
+}
+
+.cardThree .front{
+   height: 300px;
+   width: 50px;
+   background-color: gainsboro;
+   transform: translateZ(100px);
+}
+.cardThree .back{
+   height: 300px;
+   width: 50px;
+   background-color: oldlace;
+    transform: translateZ(-100px);
+}
+.cardThree .left{
+	height: 300px;
+	width: 200px;
+	transform: rotateY(90deg) translateZ(-100px);
+	background-color: cadetblue;
+}
+.cardThree .right{
+	height: 300px;
+	width: 200px;
+	transform: rotateY(90deg) translateZ(-50px);
+	background-color: dimgrey;
+}
+.cardThree .top{
+	width: 50px;
+	height: 200px;
+	transform: rotateX(90deg) translateZ(100px);
+	background-color: mediumpurple;
+}
+.cardThree .bottom{
+	width: 50px;
+	height: 200px;
+	transform: rotateX(90deg) translateZ(-200px);
+	background-color: mediumpurple;
+}
+@keyframes myAnimation{
+	from {
+		transform: rotateZ(0deg)
+	}
+	to {
+		transform: rotateZ(75deg)
+	}
+}
+@keyframes myAnimationLast{
+	from {
+		transform: rotateZ(0deg)
+	}
+	to {
+		transform: rotateZ(90deg)
+	}
+}

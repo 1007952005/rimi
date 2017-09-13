@@ -1,0 +1,97 @@
+@charset="utf-8";
+html,body,ol,ul,h1,h2,h3,h4,h5,h6,hr,p,th,td,dl,dd,form,legend,input,button,textarea,select{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+html,body{
+    font: 12px "微软雅黑","Arial Narrow",HELVETICA;
+    background:#fff;
+    -webkit-text-size-adjust:100%;
+}
+a{
+    color: #101010;
+    text-decoration: none;
+}
+a:hover{
+    color:#008dd7;
+/*    text-decoration: underline;*/
+}
+em{
+    font-style: none;
+}
+ul,ol{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+img{
+    border: 0;
+    vertical-align: middle;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+p{
+    word-wrap: break-word;
+}
+::-webkit-scrollbar {
+		  width: 5px;
+		  height: 5px;
+	} /* 这是针对缺省样式 (必须的) */
+::-webkit-scrollbar-track {
+	  background-color: #efefef;
+} /* 滚动条的滑轨背景颜色 */
+
+::-webkit-scrollbar-thumb {
+	  background-color: rgba(0, 0, 0, 0.2); 
+} /* 滑块颜色 */
+
+::-webkit-scrollbar-button {
+	  background-color: #eee;
+} /* 滑轨两头的监听按钮颜色 */
+
+::-webkit-scrollbar-corner {
+	  background-color: black;
+} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+::-moz-scrollbar {
+		  width: 5px;
+		  height: 5px;
+	} /* 这是针对缺省样式 (必须的) */
+::-moz-scrollbar-track {
+	  background-color: #efefef;
+} /* 滚动条的滑轨背景颜色 */
+
+::-moz-scrollbar-thumb {
+	  background-color: rgba(0, 0, 0, 0.2); 
+} /* 滑块颜色 */
+
+::-moz-scrollbar-button {
+	  background-color: #eee;
+} /* 滑轨两头的监听按钮颜色 */
+
+::-moz-scrollbar-corner {
+	  background-color: black;
+} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+::-ms-scrollbar {
+		  width: 5px;
+		  height: 5px;
+	} /* 这是针对缺省样式 (必须的) */
+::-ms-scrollbar-track {
+	  background-color: #efefef;
+} /* 滚动条的滑轨背景颜色 */
+
+::-ms-scrollbar-thumb {
+	  background-color: rgba(0, 0, 0, 0.2); 
+} /* 滑块颜色 */
+
+::-ms-scrollbar-button {
+	background-color: #eee;
+} /* 滑轨两头的监听按钮颜色 */
+
+::-ms-scrollbar-corner {
+    background-color: black;
+} /* 横向滚动条和纵向滚动条相交处尖角的颜色 */

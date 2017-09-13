@@ -1,0 +1,78 @@
+@charset "utf-8";
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url("../images/oldMother.jpg") 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.dot {
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgba(239, 239, 239, 0.9);
+    animation: dotAnimation 1s infinite;
+    cursor: pointer;
+}
+
+main>.dot:nth-child(1) {
+    top: 45%;
+    left: 25%;
+}
+
+main>.dot:nth-child(2) {
+    top: 55%;
+    left: 68%;
+}
+
+@keyframes dotAnimation {
+    0% {
+        box-shadow: 0 0 0 0px rgba(217, 215, 215, 0.72);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(217, 215, 215, 0.72);
+    }
+}
+
+.msg {
+    position: absolute;
+    display: inline-block;
+    background-color: #f8f8f8;
+    width: 240px;
+    padding: 10px;
+    z-index: 10;
+    top: -100%;
+    left: 0;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+.msg>li {
+    display: inline-block;
+    color: #333;
+    padding-left: 10px;
+    padding: 5px;
+}
+
+.msg:after {
+    position: absolute;
+    content: "";
+    bottom: -4px;
+    left: 121px;
+    transform: rotateZ(45deg);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #f8f8f8 #f8f8f8 transparent;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>背景</title>
+	<style>
+		.bg{
+			width:500px;
+			height: 80px;
+			margin:0 auto;
+			padding-top: 80px;
+		}
+		.bg>a{
+			text-decoration: none;
+			position: relative;
+			display: inline-block;
+			height: 47px;
+			width:100px;
+		}
+		.bg>a>i{
+			display: inline-block;
+			width:47px;
+			height: 47px;
+			margin-left: 10px;
+			background: #f00 url("img/bjImg.jpg") no-repeat;
+			background-position: -3px -5px;
+
+		}
+
+		.bg>a:nth-child(2)>i{
+			background-position: -100px -5px;
+		}
+		.bg>a:nth-child(3)>i{
+			background-position: -194px -5px;
+		}
+		.bg>a:nth-child(4)>i{
+			background-position: -287px -5px;
+		}
+
+		/*鼠标hover*/
+		.bg>a:nth-child(1) i:hover{
+			background-position: -3px -61px;
+		}
+		.bg>a:nth-child(2) i:hover{
+			background-position: -100px -61px;
+		}
+		.bg>a:nth-child(3) i:hover{
+			background-position: -194px -61px;
+		}
+		.bg>a:nth-child(4) i:hover{
+			background-position: -287px -61px;
+		}
+
+		.bg a>span{
+			background-color: #999;
+			padding:2px 4px;
+			border-radius:15px;
+			color:#fff;
+			font-size: 12px;
+			height: 18px;
+			position: absolute;
+			top:-25px;
+			left:-8px;
+			opacity: 0;
+			transition: opacity 1s;
+		}
+		.bg a>span:after{
+			content: '';
+			height: 0;
+			width:0;
+			border-width: 5px;
+			border-color: #999 transparent transparent transparent;
+			border-style: solid;
+			position: absolute;
+			bottom: -10px;
+			left: 36px;
+		}
+		.bg>a:hover span{
+			opacity: 1;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="bg">
+		<a href="">
+			<span>威锋网客户端</span>
+			<i></i>
+		</a>
+		<a href="">
+			<span>威锋网客户端</span>
+			<i></i>
+		</a>
+		<a href="">
+			<span>威锋网客户端</span>
+			<i></i>
+		</a>
+		<a href="">
+			<span>威锋网客户端</span>
+			<i></i>
+		</a>
+	</div>
+</body>
+</html>

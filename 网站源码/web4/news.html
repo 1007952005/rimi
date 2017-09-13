@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"/>
+<title>单车博客-新闻列表页</title>
+	<script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery.error.js" type="text/javascript"></script>
+	<script src="js/jtemplates.js" type="text/javascript"></script>
+	<script src="js/jquery.form.js" type="text/javascript"></script>
+	<script src="js/lazy.js"        type="text/javascript"></script>
+	<script src="js/wp-sns-share.js" type="text/javascript"></script>
+	<script src="js/voterajax.js"     type="text/javascript"></script>
+	<script src="js/userregister.js"   type="text/javascript" ></script>
+	<link rel="stylesheet" href="css/pagenavi-css.css" type="text/css" media="all"/>
+	<link rel="stylesheet" href="css/votestyles.css" type="text/css"/>
+	<link rel="stylesheet" href="css/voteitup.css" type="text/css"/>
+	<link rel="stylesheet" href="css/article.css" type="text/css"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<link rel="stylesheet" href="css/list.css" type="text/css"/>
+ </head> 
+ <body id="list_style_2" class="list_style_2"> 
+  <script>
+ function subForm()
+ {
+
+ formsearch.submit();
+ //form1为form的id
+ }
+ </script> 
+  <script type="text/javascript">
+    function showMask() {
+        $("#mask").css("height", $(document).height());
+        $("#mask").css("width", $(document).width());
+        $("#mask").show();
+    }  
+</script> 
+  <div id="mask" class="mask" onclick="CloseMask()"></div> 
+  
+<div id="header_wrap"> 
+  <div id="header"> 
+    <div style="float: left; width: 310px;"> 
+      <h1> <a href="/" title="宽屏大气文章类织梦博客模板">宽屏大气文章类织梦博客模板</a> 
+        <div class="" id="logo-sub-class"> </div>
+      </h1>
+    </div>
+    <div id="navi"> 
+      <ul id="jsddm">
+        <li><a class="navi_home" href="index.html">首页</a></li>
+        <li><a href="bikeList.html">单车分类</a> 
+          <ul>
+            <li><a href="bikeDetail.html">死飞车</a></li>
+            <li><a href="bikeDetail.html">复古骑行</a></li>
+            <li><a href="bikeDetail.html">公路车</a></li>
+            <li><a href="bikeDetail.html">山地车</a></li>
+            <li><a href="bikeDetail.html">折叠/小径车</a></li>
+            <li><a href="bikeDetail.html">BMX</a></li>
+            <li><a href="bikeDetail.html">城市车及其他</a></li>
+          </ul>
+        </li>
+        <li><a href="gearList.html">骑行装备</a> 
+          <ul>
+            <li><a href="gearDetail.html">车身装备</a></li>
+            <li><a href="gearDetail.html">人身装备</a></li>
+          </ul>
+        </li>
+        <li><a href="life.html">单车生活</a></li>
+        <li><a href="news.html">行业资讯</a></li>
+      </ul>
+      <div style="clear: both;"> </div>
+    </div>
+    <div style="float: right; width: 209px;"> 
+      <div class="widget" style="height: 30px; padding-top: 20px;"> 
+        <div style="float: left;"> 
+          <form name="formsearch" action="/plus/search.php">
+            <input type="hidden" name="kwtype" value="0" />
+            <input name="q" type="text" style="background-color: #000000;padding-left: 10px; font-size: 12px;font-family: 'Microsoft Yahei'; color: #999999;height: 29px; width: 160px; border: solid 1px #666666; line-height: 28px;" id="go" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}" />
+          </form>
+        </div>
+        <div style="float: left;"> <img src="images/search-new.png" id="imgSearch" style="cursor: pointer; margin: 0px;
+                        padding: 0px;" onclick="subForm()" /> </div>
+        <div style="clear: both;"> </div>
+      </div>
+    </div>
+  </div>
+</div>  
+  <div id="wrapper"> 
+   <div id="xh_container"> 
+    <div id="xh_content"> 
+      <div class="path"> <a href="#">主页</a> &gt; <a href="#">行业资讯</a> &gt; </div>
+     <div class="clear"></div> 
+     <div class="xh_area_h_3" style="margin-top: 40px;"> 
+      <div class="xh_post_h_3 ofh"> 
+       <div class="xh"> 
+        <a  href="newDetail.html" title="前叉、坐垫、升降座管――元渝为骑行注入品质保证"> <img src="images/374.jpg" alt="前叉、坐垫、升降座管――元渝为骑行注入品质保证" height="240" width="400" /></a>
+       </div> 
+       <div class="r ofh"> 
+        <h2 class="xh_post_h_3_title ofh" style="height:60px;"> <a  href="newDetail.html" title="前叉、坐垫、升降座管――元渝为骑行注入品质保证">前叉、坐垫、升降座管――元渝为骑行注入品质保证</a> </h2> 
+        <span class="time">2014年02月06日</span> 
+        <div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+          以生产自行车前叉、头管、五通、座管在业界享有盛誉的元渝机械（深圳）有限公司，将在第24届中国国际自行车展览会N2馆1020展台与采购商、经销商会面。 
+        </div> 
+        <div class="b"> 
+         <a href="#" class="xh_readmore" rel="nofollow">read more</a> 
+         <span title="0人赞" class="xh_love"><span class="textcontainer"><span>0</span></span> </span> 
+         <span title="192人浏览" class="xh_views"> 192</span> 
+        </div> 
+       </div> 
+      </div>
+      <div class="xh_post_h_3 ofh"> 
+       <div class="xh"> 
+        <a  href="#" title="“中国自行车展”奥贝亚展台展品抢先看"> <img src="images/375.jpg" alt="“中国自行车展”奥贝亚展台展品抢先看" height="240" width="400" /></a>
+       </div> 
+       <div class="r ofh"> 
+        <h2 class="xh_post_h_3_title ofh" style="height:60px;"> <a  href="#" title="“中国自行车展”奥贝亚展台展品抢先看">“中国自行车展”奥贝亚展台展品抢先看</a> </h2> 
+        <span class="time">2014年02月06日</span> 
+        <div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+          2014年4月13日至16日，享有自行车业界中的“法拉利”美誉的ORBEA（奥贝亚）将再次在中国国际自行车展览会（简称：“中国展”）W1馆1217展位精彩亮相。 
+        </div> 
+        <div class="b"> 
+         <a href="#" class="xh_readmore" rel="nofollow">read more</a> 
+         <span title="0人赞" class="xh_love"><span class="textcontainer"><span>0</span></span> </span> 
+         <span title="117人浏览" class="xh_views"> 117</span> 
+        </div> 
+       </div> 
+      </div>
+      <div class="xh_post_h_3 ofh"> 
+       <div class="xh"> 
+        <a  href="#" title="中国自行车展久裕产品推陈出新 四款碟刹轮组强势来袭"> <img src="images/372.jpg" alt="中国自行车展久裕产品推陈出新 四款碟刹轮组强势来袭" height="240" width="400" /></a>
+       </div> 
+       <div class="r ofh"> 
+        <h2 class="xh_post_h_3_title ofh" style="height:60px;"> <a  href="#" title="中国自行车展久裕产品推陈出新 四款碟刹轮组强势来袭">中国自行车展久裕产品推陈出新 四款碟刹轮组强势来袭</a> </h2> 
+        <span class="time">2014年02月06日</span> 
+        <div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+          以生产花鼓、轮组、电动车零件的久裕公司将在“中国展”N2馆0830展位，隆重推出四款碟刹轮组，凭借精美、高端、高品质的生产技术吸引观众的眼球。 
+        </div> 
+        <div class="b"> 
+         <a href="#" class="xh_readmore" rel="nofollow">read more</a> 
+         <span title="0人赞" class="xh_love"><span class="textcontainer"><span>0</span></span> </span> 
+         <span title="196人浏览" class="xh_views"> 196</span> 
+        </div> 
+       </div> 
+      </div>
+      <div class="xh_post_h_3 ofh"> 
+       <div class="xh"> 
+        <a  href="#" title="上海自行车展“2013最佳展台评选活动”评选结果出炉"> <img src="images/373.jpg" alt="上海自行车展“2013最佳展台评选活动”评选结果出炉" height="240" width="400" /></a>
+       </div> 
+       <div class="r ofh"> 
+        <h2 class="xh_post_h_3_title ofh" style="height:60px;"> <a  href="#" title="上海自行车展“2013最佳展台评选活动”评选结果出炉">上海自行车展“2013最佳展台评选活动”评选结果出炉</a> </h2> 
+        <span class="time">2014年02月06日</span> 
+        <div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+          近日，第23届中国国际自行车展览会最佳企业展台评选活动结果出炉，有18家企业设计搭建的展台分获一、二、三等奖。 
+        </div> 
+        <div class="b"> 
+         <a href="#" class="xh_readmore" rel="nofollow">read more</a> 
+         <span title="0人赞" class="xh_love"><span class="textcontainer"><span>0</span></span> </span> 
+         <span title="56人浏览" class="xh_views"> 56</span> 
+        </div> 
+       </div> 
+      </div>
+      <div class="xh_post_h_3 ofh"> 
+       <div class="xh"> 
+        <a  href="#" title="中国自行车展美利达展台顶级靓车一览"> <img src="images/369.jpg" alt="中国自行车展美利达展台顶级靓车一览" height="240" width="400" /></a>
+       </div> 
+       <div class="r ofh"> 
+        <h2 class="xh_post_h_3_title ofh" style="height:60px;"> <a  href="#" title="中国自行车展美利达展台顶级靓车一览">中国自行车展美利达展台顶级靓车一览</a> </h2> 
+        <span class="time">2014年02月06日</span> 
+        <div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+          在第24届中国国际自行车展览会（简称：“中国展”）中，行销全球的美利达（MERIDA）自行车将在N1馆0805展位，再次向全世界展示精密严谨的设计和精良可靠的产品。 
+        </div> 
+        <div class="b"> 
+         <a href="#" class="xh_readmore" rel="nofollow">read more</a> 
+         <span title="0人赞" class="xh_love"><span class="textcontainer"><span>0</span></span> </span> 
+         <span title="167人浏览" class="xh_views"> 167</span> 
+        </div> 
+       </div> 
+      </div>
+      <div class="xh_post_h_3 ofh"> 
+       <div class="xh"> 
+        <a  href="#" title="COMPRESSPORT、RZ MASK、ALLEN 三大品牌打造骑行装备精品"> <img src="images/370.jpg" alt="COMPRESSPORT、RZ MASK、ALLEN 三大品牌打造骑行装备精品" height="240" width="400" /></a>
+       </div> 
+       <div class="r ofh"> 
+        <h2 class="xh_post_h_3_title ofh" style="height:60px;"> <a  href="#" title="COMPRESSPORT、RZ MASK、ALLEN 三大品牌打造骑行装备精品">COMPRESSPORT、RZ MASK、ALLEN 三大品牌打造骑行装备精品</a> </h2> 
+        <span class="time">2014年02月06日</span> 
+        <div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+          与第24届中国国际自行车展览会（简称：“中国展”）同期举办的2014上海国际户外骑行装备展览会（简称：“上海户外骑行装备展”）将迎来RZ MARK、COMPRESSPORT、ALLEN三大国际户... 
+        </div> 
+        <div class="b"> 
+         <a href="#" class="xh_readmore" rel="nofollow">read more</a> 
+         <span title="0人赞" class="xh_love"><span class="textcontainer"><span>0</span></span> </span> 
+         <span title="120人浏览" class="xh_views"> 120</span> 
+        </div> 
+       </div> 
+      </div>
+      <div class="xh_post_h_3 ofh"> 
+       <div class="xh"> 
+        <a  href="#" title="意大利ZEHUS公司成为“中国自行车展”新成员"> <img src="images/371.jpg" alt="意大利ZEHUS公司成为“中国自行车展”新成员" height="240" width="400" /></a>
+       </div> 
+       <div class="r ofh"> 
+        <h2 class="xh_post_h_3_title ofh" style="height:60px;"> <a  href="#" title="意大利ZEHUS公司成为“中国自行车展”新成员">意大利ZEHUS公司成为“中国自行车展”新成员</a> </h2> 
+        <span class="time">2014年02月06日</span> 
+        <div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+          2013年欧洲展上，一款崭新的科技产品：电动助力车BIKE+ 被权威人士评为“最佳创新科技产品”。 
+        </div> 
+        <div class="b"> 
+         <a href="#" class="xh_readmore" rel="nofollow">read more</a> 
+         <span title="0人赞" class="xh_love"><span class="textcontainer"><span>0</span></span> </span> 
+         <span title="145人浏览" class="xh_views"> 145</span> 
+        </div> 
+       </div> 
+      </div>
+      <div class="xh_post_h_3 ofh"> 
+       <div class="xh"> 
+        <a  href="#" title="2013年美国十大增长最快的行业 自行车入榜"> <img src="images/366.jpg" alt="2013年美国十大增长最快的行业 自行车入榜" height="240" width="400" /></a>
+       </div> 
+       <div class="r ofh"> 
+        <h2 class="xh_post_h_3_title ofh" style="height:60px;"> <a  href="#" title="2013年美国十大增长最快的行业 自行车入榜">2013年美国十大增长最快的行业 自行车入榜</a> </h2> 
+        <span class="time">2014年02月06日</span> 
+        <div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+          商业令人欢喜的一面就在于，当某个行业开始繁荣起来时，局外人往往能找到对这种成功加以利用的方法。一个朝阳行业需要新的供应商、经销商或者后台服务供应商，又或者一个蓬勃发展的领域可能需要新的竞争对手。 
+        </div> 
+        <div class="b"> 
+         <a href="#" class="xh_readmore" rel="nofollow">read more</a> 
+         <span title="0人赞" class="xh_love"><span class="textcontainer"><span>0</span></span> </span> 
+         <span title="99人浏览" class="xh_views"> 99</span> 
+        </div> 
+       </div> 
+      </div>
+      <div class="xh_post_h_3 ofh"> 
+       <div class="xh"> 
+        <a  href="#" title="花旗银行赞助纽约市自行车共享计划 堪称史上最佳营销策略"> <img src="images/367.jpg" alt="花旗银行赞助纽约市自行车共享计划 堪称史上最佳营销策略" height="240" width="400" /></a>
+       </div> 
+       <div class="r ofh"> 
+        <h2 class="xh_post_h_3_title ofh" style="height:60px;"> <a  href="#" title="花旗银行赞助纽约市自行车共享计划 堪称史上最佳营销策略">花旗银行赞助纽约市自行车共享计划 堪称史上最佳营销策略</a> </h2> 
+        <span class="time">2014年02月06日</span> 
+        <div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+          “Citi Bike”是由花旗银行赞助的一个纽约市的私有营利公共自行车系统。在2013年5月27日正式营运，是全美国最大的公共自行车系统。 
+        </div> 
+        <div class="b"> 
+         <a href="#" class="xh_readmore" rel="nofollow">read more</a> 
+         <span title="0人赞" class="xh_love"><span class="textcontainer"><span>0</span></span> </span> 
+         <span title="130人浏览" class="xh_views"> 130</span> 
+        </div> 
+       </div> 
+      </div>
+      <div class="xh_post_h_3 ofh"> 
+       <div class="xh"> 
+        <a  href="#" title="三联生活周刊2013年度生活方式：骑行入榜"> <img src="images/368.jpg" alt="三联生活周刊2013年度生活方式：骑行入榜" height="240" width="400" /></a>
+       </div> 
+       <div class="r ofh"> 
+        <h2 class="xh_post_h_3_title ofh" style="height:60px;"> <a  href="#" title="三联生活周刊2013年度生活方式：骑行入榜">三联生活周刊2013年度生活方式：骑行入榜</a> </h2> 
+        <span class="time">2014年02月06日</span> 
+        <div class="xh_post_h_3_entry ofh" style="color:#555;height:80px; overflow:hidden;">
+          相比那些在野外做长途骑行的骑士传奇，更喜欢这些利用每周的闲暇时间，从写字楼、咖啡店、家里的炉灶前赶赴一场“刷街”的骑行者们。他们这种自然的姿态，源于对骑行单纯朴素的爱好。 
+        </div> 
+        <div class="b"> 
+         <a href="#" class="xh_readmore" rel="nofollow">read more</a> 
+         <span title="0人赞" class="xh_love"><span class="textcontainer"><span>0</span></span> </span> 
+         <span title="96人浏览" class="xh_views"> 96</span> 
+        </div> 
+       </div> 
+      </div> 
+      <div id="pagination">
+       <div class="wp-pagenavi"> 
+        <span class="current">1</span>
+        <a class="page larger" href="#">2</a>
+        <a class="page larger" href="#">下一页</a>
+        <a class="page larger" href="#">末页</a>
+        <span class="pages">共 2 页，20条</span> 
+       </div>
+      </div> 
+     </div> 
+    </div> 
+    <div id="xh_sidebar"> 
+     <!-- 右侧 --> 
+     <div class="widget"> 
+      <div style="background: url('images/hots_bg.png') no-repeat scroll 0 0 transparent;width:250px;height:52px;margin-bottom:15px;"> 
+      </div> 
+      <ul id="ulHot"> 
+       <li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;"> 
+        <div style="float:left;width:85px;height:55px; overflow:hidden;">
+         <a href="#" ><img src="images/359.jpg" width="83" title="爱车出行新概念 YAKIMA与WHISPBAR将在中国自行车展同台亮相" /></a>
+        </div> 
+        <div style="float:right;width:145px;height:52px; overflow:hidden;">
+         <a href="#"  title="爱车出行新概念 YAKIMA与WHISPBAR将在中国自行车展同台亮相">爱车出行新概念 YAKIMA与WHISPBAR将在中国自</a>
+        </div> </li> 
+       <li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;"> 
+        <div style="float:left;width:85px;height:55px; overflow:hidden;">
+         <a href="#" ><img src="images/358.jpg" width="83" title="中国自行车展WIEL展品的技术与品质" /></a>
+        </div> 
+        <div style="float:right;width:145px;height:52px; overflow:hidden;">
+         <a href="#"  title="中国自行车展WIEL展品的技术与品质">中国自行车展WIEL展品的技术与品质</a>
+        </div> </li> 
+       <li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;"> 
+        <div style="float:left;width:85px;height:55px; overflow:hidden;">
+         <a href="#" ><img src="images/372.jpg" width="83" title="中国自行车展久裕产品推陈出新 四款碟刹轮组强势来袭" /></a>
+        </div> 
+        <div style="float:right;width:145px;height:52px; overflow:hidden;">
+         <a href="#"  title="中国自行车展久裕产品推陈出新 四款碟刹轮组强势来袭">中国自行车展久裕产品推陈出新 四款碟刹轮组</a>
+        </div> </li> 
+       <li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;"> 
+        <div style="float:left;width:85px;height:55px; overflow:hidden;">
+         <a href="#" ><img src="images/374.jpg" width="83" title="前叉、坐垫、升降座管――元渝为骑行注入品质保证" /></a>
+        </div> 
+        <div style="float:right;width:145px;height:52px; overflow:hidden;">
+         <a href="#"  title="前叉、坐垫、升降座管――元渝为骑行注入品质保证">前叉、坐垫、升降座管――元渝为骑行注入品质</a>
+        </div> </li> 
+       <li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;"> 
+        <div style="float:left;width:85px;height:55px; overflow:hidden;">
+         <a href="#" ><img src="images/369.jpg" width="83" title="中国自行车展美利达展台顶级靓车一览" /></a>
+        </div> 
+        <div style="float:right;width:145px;height:52px; overflow:hidden;">
+         <a href="#"  title="中国自行车展美利达展台顶级靓车一览">中国自行车展美利达展台顶级靓车一览</a>
+        </div> </li> 
+      </ul> 
+     </div> 
+     <div class="widget portrait"> 
+      <div> 
+       <div class="textwidget"> 
+        <a href="#"><img src="images/tg.jpg" alt="&#xfffd;&#xfffd;&#xfffd;" /></a>
+        <br />
+        <br /> 
+        <script type="text/javascript">BAIDU_CLB_fillSlot("870073");</script> 
+        <script type="text/javascript">BAIDU_CLB_fillSlot("870080");</script> 
+        <script type="text/javascript">BAIDU_CLB_fillSlot("870081");</script> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="clear"> 
+    </div> 
+   </div> 
+   <div class="boxBor"></div> 
+   <div class="boxBor" onclick="IBoxBor()" style="cursor:pointer;"></div> 
+   <script type="text/javascript">
+        $(function () {
+            var imgHoverSetTimeOut = null;
+            $('.xh_265x265 img').hover(function () {
+                var oPosition = $(this).offset();
+                var oThis = $(this);
+                $(".boxBor").css({
+                    left: oPosition.left,
+                    top: oPosition.top,
+                    width: oThis.width(),
+                    height: oThis.height()
+                });
+                $(".boxBor").show();
+                var urlText = $(this).parent().attr("href");
+                $("#hdBoxbor").val(urlText);
+            }, function () {
+                imgHoverSetTimeOut = setTimeout(function () { $(".boxBor").hide(); }, 500);
+            });
+            $(".boxBor").hover(
+                function () {
+                    clearTimeout(imgHoverSetTimeOut);
+                }
+                , function () {
+                    $(".boxBor").hide();
+                }
+            );
+        });
+        function IBoxBor() {
+            window.open($("#hdBoxbor").val());
+        }
+        function goanewurl() {
+            window.open($("#hdUrlFocus").val());
+        }
+</script> 
+  </div> 
+  <div id="footer_wrap"> 
+   
+  <div id="footer"> 
+    <div class="footer_navi"> 
+      <ul id="menu-%e5%b0%be%e9%83%a8%e5%af%bc%e8%88%aa" class="menu">
+        <li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156"> 
+          <a href="#">关于我们</a></li>
+        <li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157"> 
+          <a href="#">联络我们</a></li>
+        <li id="menu-item-158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-158"> 
+          <a href="#">我要投稿</a></li>
+        <li id="menu-item-159" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-159"> 
+          <a href="http://www.daiyou8.com/">网站模板</a></li>
+      </ul>
+    </div>
+    <div class="footer_info"> <span class="legal">Copyright &copy; 2002-2015 daiyou8.COM 
+      版权所有&nbsp;&nbsp;&nbsp;<a href="#"> 琼ICP备xxxxx号</a>&nbsp;&nbsp;&nbsp; 
+      </span> </div>
+  </div> 
+  </div> 
+  <div style="display: none;" id="scroll"> 
+  </div> 
+  <script type="text/javascript" src="js/z700bike_global.js"></script>  
+ </body>
+</html>

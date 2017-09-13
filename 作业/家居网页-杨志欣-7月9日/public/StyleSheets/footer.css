@@ -1,0 +1,51 @@
+@charset "utf-8";
+footer{
+	background-color:#333333;
+	min-width: 940px;
+}
+footer section{
+	width: 920px;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+footer section article{
+	float: left;
+	width: 230px;
+}
+footer h2{
+	font-size: 30px;
+	color: white;
+	margin: 10px;
+}
+footer li{
+	margin: 5px 5px 5px 10px;
+}
+footer li a{
+	color: #777777;
+}
+footer p{
+	
+	color: #777777;
+	text-align: center;
+	line-height: 340%;
+	clear: both;
+}
+
+footer .mail input[type="email"]{
+	width: 160px;
+	height: 40px;
+	color: white;
+	background-color: #333;
+	border: 1px solid white;
+	padding-left: 10px;
+	float: left;
+	
+}
+#go{
+	width: 40px;
+	height: 40px;
+	background: url('../images/arrow.png') center no-repeat;
+	border: 1px solid white;
+	border-left: none;
+	float: left;
+}

@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+/************
+* 初始设置
+**********/
+
+* {
+    box-sizing: border-box;
+}
+
+
+/************
+* 输入区域
+**********/
+
+.inputContent {
+    width: 920px;
+    margin: auto;
+}
+
+.inputContent>p>input {
+    width: 100%;
+    color: #3dcece;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.inputContent>p>button {
+    padding: 5px 15px;
+}
+
+
+/************
+* 打印区域
+**********/
+
+.textContent {
+    width: 920px;
+    height: auto;
+    margin: auto;
+    text-indent: 2em;
+    word-break: break-all;
+    background: repeating-linear-gradient(#fff 0px, #fff 44px, #e24747 45px);
+}
+
+.textContent span {
+    display: inline-block;
+    line-height: 45px;
+    vertical-align: middle;
+}
+
+
+/************
+* 样式组件
+**********/
+
+.fz-12 {
+    font-size: 12px;
+    color: #fa9ca3;
+}
+
+.fz-13 {
+    font-size: 13px;
+    color: #d34480;
+}
+
+.fz-14 {
+    font-size: 14px;
+    color: #c73cc7;
+}
+
+.fz-15 {
+    font-size: 15px;
+    color: #713cc7;
+}
+
+.fz-16 {
+    font-size: 16px;
+    color: #3036c1;
+}
+
+.fz-17 {
+    font-size: 17px;
+    color: #4491d3;
+}
+
+.fz-18 {
+    font-size: 18px;
+    color: #44d3a7;
+}
+
+.fz-19 {
+    font-size: 19px;
+    color: #35d041;
+}
+
+.fz-20 {
+    font-size: 20px;
+    color: #87d85c;
+}
+
+.fz-21 {
+    font-size: 21px;
+    color: #acba3f;
+}
+
+.fz-22 {
+    font-size: 22px;
+    color: #fddb1d;
+}
+
+.fz-23 {
+    font-size: 23px;
+    color: #eb730c;
+}
+
+.fz-24 {
+    font-size: 24px;
+    color: #ff4114;
+}
+
+.fz-25 {
+    font-size: 25px;
+    color: #234333;
+}
+
+.fz-26 {
+    font-size: 26px;
+    color: #6c4354;
+}
+
+.fz-27 {
+    font-size: 27px;
+    color: #2c4857;
+}
+
+.fz-28 {
+    font-size: 28px;
+    color: #626230;
+}
+
+.fz-29 {
+    font-size: 29px;
+    color: #573458;
+}
+
+.fz-30 {
+    font-size: 30px;
+    color: #3f7177;
+}
+
+.fz-31 {
+    font-size: 31px;
+    color: #88b97d;
+}
+
+.fz-32 {
+    font-size: 32px;
+    color: #617203;
+}

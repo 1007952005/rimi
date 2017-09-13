@@ -1,0 +1,171 @@
+.icon1,
+.icon2,
+.icon3,
+.icon4,
+.icon5,
+.icon6,
+.store,
+.user1,
+.icon, 
+.about, 
+.Document-2, 
+.EditUser, 
+.Locked-2, 
+.Mail-2, 
+.tel1, 
+.Edit-Document 3, 
+.girl, 
+.arrow, 
+.Rounded-Rectangle 2 copy 52,
+ .telephone, 
+ .buy, 
+ .classify, 
+ .search, 
+ .home{
+	background: url(sprites.png) no-repeat;
+}
+
+.icon1{
+	background-position: 0 0;
+	width: 120px;
+	height: 120px;
+}
+
+.icon2{
+	background-position: -150px 0;
+	width: 120px;
+	height: 120px;
+}
+
+.icon3{
+	background-position: -300px 0;
+	width: 120px;
+	height: 120px;
+}
+
+.icon4{
+	background-position: -450px 0;
+	width: 120px;
+	height: 120px;
+}
+
+.icon5{
+	background-position: -600px 0;
+	width: 120px;
+	height: 120px;
+}
+
+.icon6{
+	background-position: -750px 0;
+	width: 120px;
+	height: 120px;
+}
+
+.store{
+	background-position: -280px -150px ;
+	width: 40px;
+	height: 40px;
+}
+
+.user1{
+	background-position: -480px -150px ;
+	width: 38px;
+	height: 38px;
+}
+
+.icon{
+	background-position: 0 -150px ;
+	width: 603px;
+	height: 41px;
+}
+
+.about{
+	background-position: -250px -200px ;
+	width: 40px;
+	height: 40px;
+}
+
+.Document-2{
+	background-position: -100px -200px ;
+	width: 35px;
+	height: 40px;
+}
+
+.EditUser{
+	background-position: -50px -200px ;
+	width: 40px;
+	height: 40px;
+}
+
+.Locked-2{
+	background-position: -150px -200px ;
+	width: 37px;
+	height: 40px;
+}
+
+.Mail-2{
+	background-position: -200px -205px ;
+	width: 40px;
+	height: 30px;
+}
+
+.tel1{
+	background-position: -350px -200px ;
+	width: 43px;
+	height: 46px;
+}
+
+.Edit-Document 3{
+	background-position: -300px -200px ;
+	width: 46px;
+	height: 46px;
+}
+
+.girl{
+	background-position: -400px -200px ;
+	width: 18px;
+	height: 28px;
+}
+
+.arrow{
+	background-position: -450px -200px ;
+	width: 16px;
+	height: 28px;
+}
+
+.Rounded-Rectangle 2 copy 52{
+	background-position: -500px -200px ;
+	width: 38px;
+	height: 20px;
+}
+
+.telephone{
+	background-position: 0 -200px ;
+	width: 27px;
+	height: 40px;
+}
+
+.buy{
+	background-position: -550px -200px ;
+	width: 46px;
+	height: 46px;
+}
+
+.classify{
+	background-position: -600px -200px ;
+	width: 42px;
+	height: 25px;
+}
+
+.search{
+	background-position: -650px -200px ;
+	width: 33px;
+	height: 34px;
+}
+
+.home{
+	background-position: -80px -150px ;
+	width: 40px;
+	height: 40px;
+}
+

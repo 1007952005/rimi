@@ -1,0 +1,87 @@
+@charset "utf-8";
+body {
+    font-family: "Microsoft Yahei";
+    font-size: 18px;
+    min-width: 1005px;
+}
+
+main {
+    padding: 30px;
+}
+
+input {
+    font-family: "Microsoft Yahei";
+    font-size: 16px;
+    padding: 5px;
+    vertical-align: middle;
+    color: #0575D9;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+    line-height: 20px;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.rol {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.rol>div {
+    display: inline-block;
+}
+
+.rol>div:nth-child(1) {
+    float: left;
+}
+
+.rol>div:nth-child(3) {
+    float: right;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+input[type="reset"] {
+    color: #333;
+    padding: 5px 30px;
+    margin-right: 20px;
+}
+
+input[type="button"] {
+    color: #fff;
+    padding: 5px 32px;
+    background: #0575D9;
+}
+
+thead td,
+tfoot td {
+    color: #fff;
+    background: #0575D9;
+}
+
+tbody tr:nth-child(2n) {
+    background: #DBF0FE;
+}
+
+td {
+    padding: 5px;
+}
+
+tfoot>tr>td:last-child {
+    font-size: 20px;
+}
+
+tr {
+    border: 1px solid #8fcafd;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <main>
+        <!--第一页-->
+        <page data-page="1">
+            <header>好友列表</header>
+            <div class="content">
+                <ul id="friend-list" class="base-list">
+                    <!--
+                    <li>
+                    <img src="images/1.jpg">
+                    <span>test文本</span>
+                    <i data-arrow="right">&gt;</i>
+                    </li>
+                    -->
+                </ul>
+            </div>
+            <footer>&copy;版权声明</footer>
+        </page>
+        <!--第二页-->
+        <page data-page="2">
+            <header>
+                <back>返回</back>
+                支付信息
+            </header>
+            <div class="content">
+                <p>您将向<span id="payee_1" class="payee"></span>支付</p>
+                <p class="mt-10">
+                    <label for="numPayMoney">￥</label>
+                    <input id="numPayMoney" type="number">
+                </p>
+                <p class="mt-40">
+                    <button id="payMoney" class="btn default" type="button">支付</button>
+                </p>
+            </div>
+            <footer>&copy;版权声明</footer>
+        </page>
+        <!--第三页-->
+        <page data-page="3">
+            <header>
+                <back>返回</back>
+                支付成功
+            </header>
+            <div class="content">
+                <p class="successTxt">
+                    <img src="images/success_32px.png" alt="">
+                    <span class="payee">转账成功</span>
+                </p>
+                <p class="mt-30">已向<span id="payee_2" class="payee">xxx</span>转账</p>
+                <p class="fz-34">￥<span id="payMoneyTotal">1000</span></p>
+            </div>
+            <footer>&copy;版权声明</footer>
+        </page>
+        <!-- 组件-->
+        <componet>
+
+        </componet>
+    </main>
+
+    <script src="data/friendData.json "></script>
+    <script src="javascript/index.js "></script>
+</body>
+
+
+</html>

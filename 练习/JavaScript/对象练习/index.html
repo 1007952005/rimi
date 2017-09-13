@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>对象</title>
+</head>
+<style>
+    #galen label {
+        display: inline-block;
+        width: 80px;
+        height: 20px;
+        line-height: 20px;
+        text-align: right;
+        color: gray;
+    }
+    
+    #galen span {
+        color: chocolate;
+        margin-left: 10px;
+    }
+
+</style>
+
+<body>
+
+
+    <div id="galen">
+
+    </div>
+    <script>
+        var roleInfo = {
+            id: "lol-119",
+            name: "德玛西亚之力",
+            attack: "36",
+            defense: "42",
+            speed: "66",
+            hp: "2400",
+            mp: "null",
+            skill: ["坚韧（被动）", "致命打击", "勇气", "审判", "德玛西亚正义"]
+        }
+        var arr = ["ID:", "角色名:", "攻击力:", "防御力:", "速度:", "血量:", "魔法:", "技能:"]
+        var galen = document.getElementById("galen");
+        var roleInfoText = document.getElementsByTagName("span");
+        var roleInfoHead = document.getElementsByTagName("label");
+        Object.prototype.attrVal = function(index) {
+            return this[Object.keys(this)[index]];
+        }
+        for (var i = 0; i < arr.length; i++) {
+
+            if (Array.isArray(roleInfo.attrVal(i))) {
+                galen.innerHTML += "<div><label>" + arr[i] + "</label><span>" + roleInfo.attrVal(i).join("&nbsp;&nbsp;&nbsp;") + "</span></div>";
+            } else if (roleInfo.attrVal(i) === "null") {
+                galen.innerHTML += "<div><label>" + arr[i] + "</label><span>无</span></div>";
+            } else {
+                galen.innerHTML += "<div><label>" + arr[i] + "</label><span>" + roleInfo.attrVal(i) + "</span></div>";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

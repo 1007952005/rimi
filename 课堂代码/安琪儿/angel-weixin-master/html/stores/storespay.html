@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <title>支付</title>
+    <link rel="shortcut icon" href="../../resource/img/favicon.ico"> 
+    <link rel="stylesheet" href="../../resource/plugin/baseCSS-1.0.5.min.css">
+    <link rel="stylesheet" href="../../resource/css/common.css">
+    <link rel="stylesheet" href="../../resource/css/details.css">
+</head>
+<body>
+    <section>
+        <!-- 待支付商品列表 -->
+        <ul class="orderli sotrespay-list">
+            <li>
+                <div>
+                    <p>日本花王纸尿裤</p>
+                    <p class="font-light-gray">规格:L 54*4(9-14kg)</p>
+                </div>
+                <div class="second">
+                    <p>￥400.92</p>
+                    <p class="select-btn">
+                        <span class="btn lower" onclick="lower(this);">-</span>
+                        <span class="number num">1</span>
+                        <span class="btn add"  onclick="add(this);">+</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <p>日本花王纸尿裤</p>
+                    <p class="font-light-gray">规格:L 54*4(9-14kg)</p>
+                </div>
+                <div class="second">
+                    <p>￥400.92</p>
+                    <p class="select-btn">
+                        <span class="btn lower" onclick="lower(this);">-</span>
+                        <span class="number num">1</span>
+                        <span class="btn add" onclick="add(this);">+</span>
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <!-- 金额统计 -->
+        <ul class="resultli">
+            <li>
+                <span>合计金额</span>
+                <span>￥1202.76</span>
+            </li>
+        </ul>
+        <!-- 去交费 -->
+        <div class="blockBtn">
+            <button type="button" class="pay">去支付</button>
+        </div>
+    </section>
+</body>
+<!-- JS引入部分 -->
+<script src="../../resource/plugin/jquery-2.2.4.min.js"></script>
+<script src="../../resource/js/common.js"></script>
+</html>

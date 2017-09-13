@@ -1,0 +1,933 @@
+<重要声明>：
+· 在本页面内答指定题目时，禁止查看其它题、其它文件和进行窗口切换，否则回答作废。
+· 答题完成后打开随机点名系统，点击“重置”按钮后再点击“开始”随机点名，点击“停止”确认下一个回答者
+· 在题目显示的时候，非问题回答者不能进行任何形式的提示，否则，将自动成为下一个问题的回答者，如果此题已是当天的最后一题，则回答下一个课时的第一题
+· 达到答题规定时间的，需要立刻停止答题
+
+1、下面的程序在控制台运行后的结果是（C）（60秒）   
+
+// 第一段程序
+var num1 = 2E00 * 3E00;
+num1;
+
+// 第二段程序
+var num2 = 2E2 * 3E2;
+num2;
+
+A. 6	  6
+B. 6E00   4E2
+C. 6  	  60000
+D. 60000  60000
+
+<解惑>
+科学计数法“E”后面跟的数值决定“E”前面数值小数点右移多少位，而两个0和一个0的作用都是一样，都表示不做小数点的移动。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2、下面的程序运行后返回的结果是（D）（60秒）  
+var a = 10, b = 10, c = "10";
+// 运行
+a + b + c;
+
+A. 30
+B. 2010
+C. "30"
+D. "2010"
+
+<解惑>
+按照代码的运行顺序，首先是会计算出前两个10，得出结果20，然后执行 20 + "10"的字符串拼接操作，得出"2010"。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3、现有一个字符串"2356"，要使它可以成为一个可以参与任何类型算术运算的数值，不能使用以下哪个方法：（C）（60秒）   
+A. parseInt()
+B. parseFloat()
+C. toFixed()
+D. Number()   
+
+<解惑>
+toFixed()为Number数据值类型的专用方法，如果对其他数据值类型使用则会产生“TypeError”（类型错误）。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4、阅读以下代码：
+
+function runFn() {
+	var a = "1", b = "2", c = "3", res;
+	res = a * b * c;
+	if(isNaN(res)) {
+		res = 0;
+	}
+	return res;
+}
+
+// 调用以上函数
+runFn();
+
+请问该程运行后的返回的结果是（A）（90秒）   
+A. 6
+B. 0
+C. "123"
+D. NaN
+
+<解惑>
+在执行非“+”运算时（相加或拼接运算），解释器始终会尝试将其类型转换为数值型进行运算，所以res应该是6，而isNaN方法只对结果为不能转换为数值型的值返回true，所以if内语句不会执行，函数调用后返回结果6。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5、阅读以下代码：
+
+/**** HTML部分代码 ****/
+<input id="num1" type="number" value="2">
+<input id="num2" type="number" value="4">
+<input id="num3" type="number" value="6">
+
+/**** JavaScript部分代码 ****/
+function sum() {
+    var num1 = document.getElementById("num1").value,
+		num2 = document.getElementById("num2").value,
+		num3 = document.getElementById("num3").value,
+		res;
+	return res = num1 + num2 + num3;
+}
+
+// 调用以上函数
+sum();
+
+请问该程运行后的结果是（B）（90秒）   
+A. 程序报错
+B. "246"
+C. "12"
+D. 12
+
+<解惑>
+由于通过value、textContent、innerText、innerHTML等DOM属性返回的结果都是String型，所以函数return的运算结果res只是3个字符串的拼接。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6、阅读以下代码：
+var obj = {
+    apple: "苹果",
+    orange: "橘子",
+    pear: "梨子",
+    banana: "香蕉",
+    peach: "桃子",
+    strawberr: "草莓"
+}
+var count = 0;
+for(x in obj) {
+    count++;
+}
+console.log(count);
+请问该程运行后，在控制台获取到的值应该是（D）（90秒）
+A. 0 1 2 3 4 5 
+B. apple orange pear banana peach strawberr
+C. 苹果 橘子 梨子 香蕉 桃子 草莓
+D. 6
+
+<解惑>
+由于for-in语句内没有做任何和对象obj相关的操作，所以只是对count的数值做叠加操作，而obj内一共有6个非undefined值的属性，所以for-in会执行6次，所以结果是对0加了6次1。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7、将字符串转换为数组的方法是（C），将数组转换为字符串的方法是（B）（60秒）   
+A. parseInt()
+B. join()
+C. split()
+D. toFixed()
+
+<解惑>
+固定知识点，牢记即可。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8、现在需要取出个字符串内的其中某一段内容，下列哪个方法是没有直接帮助的（B）（30秒）   
+A. slice()
+B. concat()
+C. substring()
+D. substr()
+
+<解惑>
+concat()是用于拼接字符串和数组的方法，其它3个方法都是用于截取字符串的。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9、阅读以下代码，选择程序运行后在控制台输出的日志和返回结果是（A）（90秒）   
+
+var judge = function() {
+	var skill = ["HTML","CSS","JavaScript","Bootstrap","jQuery","AngularJS","React","NodeJs"];
+	skill.length = 5;
+	console.log(5 in skill);
+	return typeof(5 in skill);
+}
+// 在控制台进行调用
+judge();
+
+A. false 		         "boolean"
+B. "AngularJS"      "string"
+C. undefined	     "undefined"
+D. 5			             "undefined"
+
+<解惑>
+这里的“in”操作符是用于判断当前索引值对应数组元素下标的值是否存在的操作符（如果是一个非undefined的值就为true，否则为false），而现在的数组通过length方法将数组删减到了5项（数组项最大下标值的项为4），也就是说对应下标为5的元素已经不存在了，所以使用in会返回false，而false的数据值类型为boolean。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10、<多选题>要验证一个字符串内是否包含“差评”二字，可以使用下列哪些方法可以采用（BCEG）（120秒）
+A. slice()
+B. search()
+C. indexOf()
+D. substr()
+E. lastIndexOf()
+F. trim()
+G. match()
+
+<解惑>
+search、indexOf、lastIndexOf三个方法在使用上大致一样，都是用于判断一个字符串是否包含指定字符串的，包含则返回指定字符串第一个字符开始的下标索引，否则返回-1，而match方法会将参数内匹配的字符串作为一个数组的形式返回（数组内的元素也是一个字符串）。
+而slice、substr是用于截取字符串内容，而trim的作用是去除字符串两端的空格、换行符等内容。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11、<多选题>下面哪些办法可以获取到下列数组中下标索引为“2”的数组元素项（AD）（60秒）
+
+var arr = ["A","B","C","D","E","F"];
+
+A. arr[2]
+B. arr.2
+C. arr.[2]
+D. arr["2"]
+E. arr.["2"]
+F. arr."2"
+
+<解惑>
+只有AD两个答案符合JS的语法规范，其它答案都会返回“SyntaxError”（语法错误）。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12、请使用一个方法，将下列的字符串变量“getMoney”转换成一个数值型并赋予变量“total”，且不得改变字面量上的值。(120秒)
+
+var getMoney = "12335.23",
+	total;
+	
+// 请在下方编写代码
+total = parseFloat(getMoney);
+
+<解惑>
+这里可以使用的方法有两个，一个是parseFloat，一个是Number，但从语义角度出发这里使用parseFloat是更好的选择，因为一般Number的作用是需要将一系列的非数值型（如果值是位置变量也可能是数值）转换为数值，通过结果是否为一个NaN来协助接下来的逻辑判断语句执行。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13、通过在下方编码，实现对下列数组的求和（不能使用reduce方法），并赋值给一个自定义变量“sum”。（180秒）
+
+var strArr = ["21","12","45","13","68","10","7"];
+
+// 请在下方编写代码
+var sum = 0;
+for(var i = 0; i<strArr.length; i++){
+   sum += Number(strArr[i]);
+}
+// 第二种方式
+var strArr = ["21","12","45","13","68","10","7"];
+Array.prototype.total = function() {
+	var sum = 0;
+	for(var i = 0; i<this.length; i++){
+	   sum += Number(this[i]);
+	}
+	return sum;
+}
+strArr.total();
+
+<解惑>
+reduce方法是一个ES5的方法，考虑到浏览器兼容性的问题，在有的项目里不能使用，只有通过循环来完成叠加操作了。况且数组内的所有元素都是字符串，即使使用reduce方法，得到的结果也只是将它们拼接在一起而已。所以，就算要用reduce方法也需要先通过循环来转换数据类型，在这里还不如“顺便”将值也进行求和操作。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14、阅读下方的程序，实现函数“sayHello()”在运行后，用alert()方法弹出“尊敬的VIP会员，xxx您好！”，注意：这个字符串中的“VIP会员，”是一个变量（有可能是黄金会员、钻石会员等），“xxx”是指在文本框内输入的值，它们均不能直接在JS代码中出现，变量名自定义（300秒）
+
+/**** HTML部分代码 ****/
+<span>尊敬的</span>
+<span id="mesg">VIP会员</span>
+<label>姓名：</label>
+<input id="userName" type="text">
+
+/**** JavaScript部分代码 ****/
+function sayHello() {
+	// 请在这里编写缺失代码
+	var memberType = document.getElementById("mesg").textContent,
+	      userName = document.getElementById("userName").value;
+	alert("尊敬的" + memberType + "," + userName + "您好！");
+}
+
+// 调用函数
+sayHello();
+
+<解惑>
+这里主要区分的是获取一个标签的文本内容（textContent）和获取表单值（value）的属性，剩余的工作只是将字符串和变量拼接在一起而已
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+15、下列提供的代码内容，实现获取用户在ID为“userURL”的输入框中输入的URL中的“网络协议”部分和“页面类型”部分的字符，分别赋值给变量“protocolType”和“pageType”。（360秒）
+假设用户现在输入的是：“http://keke.sina.com/usercenter.jsp”。
+
+/**** HTML部分代码 ****/
+<label>个人主页：</label>
+<input id="userURL" type="url" placeholder="请使用“http”或“https”开头的网址">
+
+/**** JavaScript部分代码 ****/
+// 网络协议类型
+var protocolType;
+// 页面类型（可能是“html”、“php”、“aspx”、“jsp”等）
+var pageType;
+
+// 请在下方编写代码
+	
+// 第一种实现建议方式
+var inputValue = document.getElementById('userURL').value;
+protocolType = inputValue.slice(0,inputValue.indexOf(':'));
+pageType = inputValue.substr(inputValue.lastIndexOf('.') + 1);
+	
+// 第二种实现建议方式
+var inputValue = document.getElementById('userURL').value;
+var protocolTypeArr = inputValue.split("://");
+var pageTypeArr = inputValue.split(".");
+protocolType = inputValue[0];
+pageType = pageTypeArr[pageTypeArr.length - 1];
+
+<解惑>
+这里只需要认真分析答案中建议的代码即可
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+16、数组在JavaScript是一种引用数据类型，如果有多个变量在对同一个数据进行了赋值操作之后，任何一个变量在修改了当前的数组后，其它所有变量的值都会同步的跟随改变，这样会破坏原始数组，导致后续程序编写出现问题。
+现在请通过一个方法将数组“arr1”的值克隆给“arr2”，使“arr2”在对数组进行任何的改变后都不再影响到“arr1”的值。（240秒）
+
+// 原始数组arr1如下
+var arr1 = ["某","人","是","白","痴"];
+var arr2 = [];
+
+// 请在下方编写代码
+
+// 第一种实现建议方式
+arr2 = arr2.concat(arr1);
+
+// 第二种实现建议方式
+for(var i = 0; i < arr1.length; i++) {
+	arr2[i] = arr1[i];
+}
+
+// 第三种实现建议方式
+arr2 = arr1.map(function(ele){
+   return ele;
+});
+
+<解惑>
+第一种方式利用concat方法不会改变原数组的特性，将一个空数组arr2拼接数组arr2，将这个结果复制给arr2（替换掉了原来的空数组），这样一来这两个数组也就都独立了。
+第二种方式采用为arr2创建数组元素的方式来克隆出一个新数组，在这个过程中，arr2只是对位的去获取arr1每一项的值，而并没有对arr1进行任何“破坏性”的操作，所以最终出来的arr2和arr1也没有任何联系了。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+17、有以下字符串，请将数据类型为“数值型”的内容取出来存入一个名为“num”的变量。（变量在使用typeof(num)方法之后，得到的结果应该是一个“number”，不需要在代码里写出来）（180秒）
+
+var str = "AXXBJTYJY1XX2XXDXOPCXX3XXEX4FWEFX5XXXJXXGXCZCXXXSRXXCXZCXEXX6HKTD";
+
+// 请在下方编写代码
+
+// 第一种实现建议方式
+var num;
+num = Number(str.replace(/\D/g,""));
+
+// 第二种实现建议方式
+var num;
+num = Number(str.match(/\d/g).join(""));
+
+<解惑>
+第一种方式是利用正则表达式将所有非数值的元素清除掉（替换为空字符串），将转换出的结果使用Number方法转换为数值型。
+第二种方式是将所有数字匹配出来成为一个数组，然后将其转换为字符串，最后才是使用Number方法将其转换为数值。
+当然，原则是只要能实现效果，并且不违反“高代码质量”原则的情况下，能使用简单的则没有必要使用复杂的，第二种方式可以抛弃掉。但是将它列出来是为了扩展编程思维
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+18、有以下二维数组，请将数组内所有的值，在控制台内进行输出。（240秒）
+
+var letter = [
+	["A","B","C","D","E"],
+	["F","G","H","I","J"],
+	["K","L","M","N","O"],
+	["P","Q","R","S","T"],
+	["U","V","W","X","Y"],
+	["Z"]
+];
+
+// 请在下方编写代码
+for(var i = 0; i < letter.length; i++){
+	for(var j = 0;j < letter[i].length;j++){
+		console.log(letter[i][j]);
+	}
+}
+
+<解惑>
+一个标准的二维数组循环遍历，仔细阅读代码即可
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19、根据下面注释提供的需求完成操作代码的编写，转换后的数据结果用原变量接收。（240秒）
+
+var char1 = "998";
+// 将char1转换为数值型的值
+char1 = Number(char1);
+char1 = parseInt(char1);
+char1 = parseFloat(char1);
+char1 = ~~char1;
+
+var char2 = 998;
+// 将char2转换为字符串
+char2 = char2.toString();
+char2 = String(char2);
+
+var char3 = "998";
+// 将char3转换为一个数组，分离为3个数组元素
+char3 = char3.split("");
+
+var char4 = ["9", "9", "8"];
+// 将char4转换为一个布尔型的值
+char4 = Boolean(char4);
+char4 = !!char4;
+
+var char5 = true;
+// 将char5转换为一个数值型的值
+char5 = Number(char5);
+
+<解惑>
+仔细阅读建议代码即可。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20、有以下2个数组：
+var quantity = [3, 6, 9, 5, 2],
+	  goodsName = ["书","茅台","中华","钢笔","茶杯"];
+请使用forEach方法将两个数组的值生成一个列表，生成后的结果应该如下：
+
+<ul id="goodsList">
+	<li>书 -- 3</li>
+	<li>茅台 -- 6</li>
+	<li>中华 -- 9</li>
+	<li>钢笔 -- 5</li>
+	<li>茶杯 -- 2</li>
+</ul>
+
+现在页面中只有一个空的<ul id="goodsList"></ul>，请使用forEach方法通过这2个数组生成以上列表。（300秒）
+
+// 请在下方编写代码
+var goodsList = document.getElementById("goodsList");
+quantity.forEach(function(item,index) {
+	goodsList.innerHTML += '<li>' + goodsName[index] + ' -- ' + item + '</li>'
+});
+
+<解惑>
+这里首先得了解forEach的基本语法结构，和它参数内函数的三个参数分别是什么（数组项、索引值、原数组），再利用它会执行多次的特点来完成这个要求应该就不是什么难事了。
+
+
+
+
+
+
+
+
+
+
+
+

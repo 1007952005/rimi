@@ -1,0 +1,609 @@
+@charset "utf-8";
+
+/***********************************************
+ *
+ *   功能：“服务与支持”详细设置
+ *   开发者：杨志欣
+ *   最后修改日期：2017-09-08
+ *
+************************************************/
+
+
+/**********************
+ *  “服务与支持”banner设置
+**********************/
+
+.serviceMain>.serviceBannerBox {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.serviceMain>.serviceBannerBox>section {
+    width: 100%;
+    height: 500px;
+    padding: 0 17%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.serviceMain>.serviceBannerBox>section:nth-child(1) {
+    background: url('../images/service/service-software-banner.png') 0 0/cover no-repeat;
+}
+
+.serviceMain>.serviceBannerBox>section:nth-child(2) {
+    background: url('../images/service/service-wechat-banner.png') 0 0/cover no-repeat;
+}
+
+.serviceMain>.serviceBannerBox>section:nth-child(3) {
+    background: url('../images/service/service-mobile-banner.png') 0 0/cover no-repeat;
+}
+
+.serviceMain>.serviceBannerBox>section:nth-child(4) {
+    background: url('../images/service/service-network-banner.png') 0 0/cover no-repeat;
+}
+
+.serviceMain>.serviceBannerBox>section:nth-child(5) {
+    background: url('../images/service/service-consultant-banner.png') 0 0/cover no-repeat;
+}
+
+
+/*字体设置*/
+
+.serviceMain>.serviceBannerBox>section>h2 {
+    color: #fff;
+    font-size: 2.625em;
+    letter-spacing: 2px;
+    padding-top: 185px;
+    margin-bottom: 50px;
+}
+
+.serviceMain>.serviceBannerBox>section>h3 {
+    color: #fff;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+
+/**********************
+ *  服务选项设置
+**********************/
+
+.serviceMain>.serviceNav {
+    width: 100%;
+    height: 105px;
+    background-color: #fff;
+    border-bottom: 1px solid #bcbcbc;
+    font-size: 0;
+    position: relative;
+}
+
+.serviceMain>.serviceNav>.serviceNavBox {
+    width: 100%;
+    min-width: 800px;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.serviceMain>.serviceNav>.serviceNavBox>a {
+    display: inline-block;
+    cursor: pointer;
+    width: 20%;
+    max-width: 250px;
+    height: 100%;
+    font-size: 16px;
+    line-height: 104px;
+}
+
+.serviceMain>.serviceNav>.serviceNavBox>a>span {
+    display: inline-block;
+    height: 100%;
+    color: #909090;
+    font-size: 1.125em;
+    vertical-align: middle;
+}
+
+.serviceMain>.serviceNav>.serviceNavBox>a>i {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+    font-style: normal;
+    vertical-align: middle;
+}
+
+.serviceMain>.serviceNav>.serviceNavBox>a:nth-child(1)>i {
+    background: url('../images/service/service-tab-1.png') 0 0 no-repeat;
+}
+
+.serviceMain>.serviceNav>.serviceNavBox>a:nth-child(2)>i {
+    background: url('../images/service/service-tab-2.png') 0 0 no-repeat;
+    margin-bottom: -2px;
+}
+
+.serviceMain>.serviceNav>.serviceNavBox>a:nth-child(3)>i {
+    background: url('../images/service/service-tab-3.png') 0 0 no-repeat;
+    margin-bottom: 0px;
+}
+
+.serviceMain>.serviceNav>.serviceNavBox>a:nth-child(4)>i {
+    background: url('../images/service/service-tab-4.png') 0 0 no-repeat;
+}
+
+.serviceMain>.serviceNav>.serviceNavBox>a:nth-child(5)>i {
+    background: url('../images/service/service-tab-5.png') 0 0 no-repeat;
+}
+
+.serviceMain>.serviceNav>.serviceNavBox>a.selected>span {
+    color: #3c9de5;
+}
+
+
+/*滑块样式*/
+
+.serviceMain>.serviceNav>#serviceSliding {
+    display: inline-block;
+    position: absolute;
+    bottom: -1px;
+    width: 20%;
+    max-width: 250px;
+    min-width: 160px;
+    height: 2px;
+    background-color: #3c9de5;
+    transition: left .4s;
+}
+
+
+/**********************
+ *  服务详情设置
+**********************/
+
+.serviceMain>.serviceDescribeBox {
+    width: 100%;
+}
+
+.serviceMain>.serviceDescribeBox>.serviceDescribe {
+    display: none;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: center;
+}
+
+
+/*标题设置*/
+
+.serviceMain>.serviceDescribeBox>.serviceDescribe>section>h3 {
+    color: #303030;
+    font-size: 1.75em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-top: 70px;
+}
+
+.serviceMain>.serviceDescribeBox>.serviceDescribe>section>h4 {
+    color: #3c9ce6;
+    font-size: 1.25em;
+    margin-top: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    padding-bottom: 70px;
+}
+
+.separate:before {
+    content: url('../images/service/separate-line.png');
+}
+
+
+/*软件定制服务*/
+
+.serviceDescribe:nth-child(1)>section:nth-child(1) {
+    background-color: #f6f6f6;
+}
+
+.serviceDescribe:nth-child(1)>section:nth-child(1)>img {
+    width: 80%;
+    padding-bottom: 60px;
+    max-width: 1182px;
+}
+
+.serviceDescribe:nth-child(1)>section:nth-child(2)>h4 {
+    padding-bottom: 25px;
+}
+
+.advantageBox {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 0;
+    margin-top: 40px;
+}
+
+.advantageBox>li {
+    display: inline-block;
+    width: 33.33333333%;
+    color: #303030;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    vertical-align: top;
+}
+
+.advantageBox>li>h5,
+.advantageBox>li>p {
+    font-weight: normal;
+    font-size: 1em;
+    text-align: left;
+    padding: 10px 5px;
+}
+
+.advantageBox>li>p {
+    padding-right: 19%;
+}
+
+.advantageBox>li>div {
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.advantageBox>li>div>img {
+    display: inline-block;
+    width: 100%;
+    transform: scale(1);
+    transition: all 0.8s;
+}
+
+.advantageBox>li>div:hover>img {
+    transform: scale(1.2);
+}
+
+
+/*微信开发平台*/
+
+.serviceDescribe:nth-child(2)>section:nth-child(1) {
+    background-color: #f6f6f6;
+    padding-bottom: 60px;
+}
+
+.coreBox {
+    width: 90%;
+    max-width: 1182px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.coreBox>li {
+    width: 33.33333333%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.coreBox>li>div {
+    font-size: 16px;
+    text-align: center;
+}
+
+.coreBox>li>div>h5 {
+    font-weight: normal;
+    padding: 25px 0 20px;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+}
+
+.coreBox>li>div>p {
+    padding: 0 10px;
+    line-height: 24px;
+    font-size: .875em;
+    letter-spacing: 1px;
+    text-align: left;
+    text-indent: 2em;
+}
+
+.coreBox>li:nth-child(1)>div:before {
+    display: inline-block;
+    content: url('../images/service/wechat-1.png');
+}
+
+.coreBox>li:nth-child(2)>div:before {
+    display: inline-block;
+    content: url('../images/service/wechat-2.png');
+}
+
+.coreBox>li:nth-child(3)>div:before {
+    display: inline-block;
+    content: url('../images/service/wechat-3.png');
+}
+
+.serviceDescribe:nth-child(2)>section:nth-child(2) {
+    background-color: #2F3047;
+    text-align: center;
+}
+
+.serviceDescribe:nth-child(2)>section:nth-child(2)>h3,
+.serviceDescribe:nth-child(2)>section:nth-child(2)>h4 {
+    color: #fff;
+}
+
+.serviceDescribe:nth-child(2)>section:nth-child(2)>h4 {
+    padding-bottom: 20px;
+}
+
+.serviceDescribe:nth-child(2)>section:nth-child(2)>div {
+    width: 80%;
+    max-width: 1182px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding-bottom: 160px;
+}
+
+.serviceDescribe:nth-child(2)>section:nth-child(2)>div>img {
+    width: 100%;
+}
+
+
+/*网络运营服务*/
+
+.serviceDescribe:nth-child(3)>section:nth-child(1) {
+    background-color: #f6f6f6;
+    padding-bottom: 120px;
+}
+
+.serviceDescribe:nth-child(3)>section:nth-child(2) {
+    padding-bottom: 120px;
+}
+
+.serviceDescribe:nth-child(3)>section>ul {
+    width: 90%;
+    max-width: 1182px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.serviceDescribe:nth-child(3)>section>ul>li {
+    display: inline-block;
+    width: 33.33333333%;
+    font-size: 16px;
+    vertical-align: top;
+    position: relative;
+    text-align: center;
+}
+
+.serviceDescribe:nth-child(3)>section>ul>li>p {
+    line-height: 40px;
+    text-align: center;
+    color: #666;
+    font-size: 1.75em;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.serviceDescribe:nth-child(3)>section>ul>li>img {
+    width: 100%;
+    max-width: 180px;
+}
+
+.serviceDescribe:nth-child(3)>section>ul>li>p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+/*网络运营服务*/
+
+.serviceDescribe:nth-child(4)>section:nth-child(1) {
+    background-color: #f6f6f6;
+    padding-bottom: 120px;
+}
+
+.TwoOperationSecton {
+    width: 80%;
+    max-width: 1182px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.TwoOperationSecton>li {
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+    vertical-align: top;
+    text-align: left;
+    padding-bottom: 20px;
+    background-color: #fff;
+}
+
+.TwoOperationSecton>li>div:first-child>span {
+    font-size: 1.75em;
+    font-weight: 500;
+    padding-right: 20px;
+    padding-left: 10%;
+    color: #fff;
+    line-height: 80px;
+}
+
+.TwoOperationSecton>li>div:first-child>span:last-child {
+    padding: 0;
+    font-size: 1em;
+}
+
+.TwoOperationSecton>li:first-child>div:first-child {
+    width: 100%;
+    height: 80px;
+    background: url(../images/service/network-1.png) no-repeat;
+    background-size: cover;
+}
+
+.TwoOperationSecton>li:last-child>div:first-child {
+    width: 100%;
+    height: 80px;
+    background: url(../images/service/network-2.png) no-repeat;
+    background-size: cover;
+}
+
+.TwoOperationSecton>li>div:last-child {
+    height: 200px;
+}
+
+.TwoOperationSecton>li>div:last-child>p:before {
+    content: " ";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #3c9de5;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-left: 10%;
+}
+
+.TwoOperationSecton>li>div:last-child>p:first-child {
+    margin-top: 10px;
+}
+
+.TwoOperationSecton>li:first-child>div:last-child>p {
+    height: 33.33333333%;
+    line-height: 66.6px;
+}
+
+.TwoOperationSecton>li:last-child>div:last-child>p {
+    height: 25%;
+    line-height: 50px;
+}
+
+.split-line {
+    display: block;
+    width: 100%;
+    padding-bottom: 1px;
+    border-top: 1px dashed #d0d0d0;
+}
+
+.serviceDescribe:nth-child(4)>section:nth-child(2)>div {
+    padding: 70px 0 60px;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.serviceDescribe:nth-child(4)>section:nth-child(2)>div>div {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    padding-right: 5%;
+}
+
+.serviceDescribe:nth-child(4)>section:nth-child(2)>div>img {
+    width: 40%;
+    max-width: 290px;
+    vertical-align: middle;
+}
+
+.serviceDescribe:nth-child(4)>section:nth-child(2)>div:nth-of-type(2) {
+    padding-bottom: 0;
+}
+
+.serviceDescribe:nth-child(4)>section:nth-child(2)>div:nth-of-type(even)>div {
+    margin-left: 5%;
+}
+
+.under-line {
+    width: 40px;
+    border-bottom: 2px solid #3c9de5;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.serviceDescribe:nth-child(4)>section:nth-child(2)>div>div>h5 {
+    color: #3c9de5;
+    font-size: 1.875em;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.serviceDescribe:nth-child(4)>section:nth-child(2)>div>div>p {
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: #666;
+    padding-bottom: 10px;
+    line-height: 40px;
+    width: 100%;
+}
+
+
+/*解决方案资讯*/
+
+.serviceDescribe:nth-child(5)>section:nth-child(1) {
+    background-color: #f6f6f6;
+    padding-bottom: 120px;
+}
+
+.serviceDescribe:nth-child(5)>section:nth-child(2) {
+    padding-bottom: 120px;
+}
+
+.serviceDescribe:nth-child(5)>section:nth-child(1)>div {
+    width: 80%;
+    max-width: 1058px;
+    margin: 0 auto;
+}
+
+.serviceDescribe:nth-child(5)>section:nth-child(1)>div>img {
+    width: 100%;
+}
+
+.serviceDescribe:nth-child(5)>section:nth-child(2)>div {
+    width: 90%;
+    max-width: 1182px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.serviceDescribe:nth-child(5)>section:nth-child(2)>div>img {
+    display: inline-block;
+    width: 33.33333333%;
+    vertical-align: middle;
+}
+
+.serviceRow {
+    display: inline-block;
+    text-align: left;
+    width: 33.33333333%;
+    font-size: 16px;
+    padding: 0 20px;
+    vertical-align: middle;
+}
+
+.serviceRow>div>h5 {
+    color: #3c9de5;
+    font-size: 1.125em;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.serviceRow>div>p {
+    font-size: 1em;
+    color: #666;
+    line-height: 36px;
+}
+
+.serviceDescribe:nth-child(5)>section:nth-child(2)>div>.serviceRow:nth-of-type(1)>div:first-child {
+    margin-bottom: 70px;
+}
+
+.serviceDescribe:nth-child(5)>section:nth-child(2)>div>.serviceRow:nth-of-type(2)>div:first-child {
+    margin-bottom: 100px;
+}

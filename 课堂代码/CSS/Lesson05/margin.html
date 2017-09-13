@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>上下外间距重叠</title>
+	<style>
+		div{
+			height: 80px;
+			background-color: #f00;
+		}
+		div:nth-child(1){
+			/*margin-bottom: 30px;*/
+		}
+		div:nth-child(2){
+			/*margin-top: 20px;*/
+			/*border:1px solid #333;*/
+		}
+		div:nth-child(2)>p{
+			background-color: #0f0;
+				margin-top: 40px;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div>第一个div元素</div>
+	<div>
+		<p>第二个div元素的第一个子元素</p>
+	</div>
+</body>
+</html>

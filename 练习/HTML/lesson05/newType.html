@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>新表单元素</title>
+</head>
+<body>
+	<p><label for="people">你的偶像是：</label><input type="text" list="items">
+	<datalist id="items">
+		<option value="范冰冰">范冰冰</option>
+		<option value="李冰冰">李冰冰</option>
+		<option value="李晨">李晨</option>
+		<option value="杨颖">杨颖</option>
+	</datalist>
+	</p>
+	<form action="" method="get" oninput="result.value=parseInt(first.value)*parseInt(second.value)">
+		<input type="range" id="first" value="5" max="10" min="0">
+		<label>X</label>
+		<input type="number" id="second" value="5" max="10" min="0">
+		<label>=</label>
+		<output name="result" for="first second">?</output>
+	</form>
+	<form action="" method="get" oninput="result.value=first1.value+second2.value">
+		<input type="text" id="first1" value="你愁啥?">
+		
+		<input type="text" id="second2" value="瞅你咋地" >
+		
+		<output name="result" for="first1 second2">?</output>
+	</form>
+</body>
+</html>

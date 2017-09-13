@@ -1,0 +1,74 @@
+@charset "utf-8";
+/*****
+******功能：公共样式表
+******开发者：***
+******日前：
+******
+***/
+/***** header style ****/
+p{
+	color:#f00;
+}
+/*class*/
+.p1{font-size: 50px;}
+
+/*id*/
+#p1,section p{
+	text-align: center;
+}
+
+section>p{
+	font-size: 36px;
+}
+/*section div{
+	font-size: 50px;
+	}*/
+
+	/*分组（,）*/
+
+	/*同级选择器*/
+	ul>li{
+		border:1px solid #333;
+		padding:2px 3px;
+		width:100px;
+		margin-bottom: 5px;
+		transition: 0.3s;
+	}
+	ul>li:nth-child(1):hover + li:nth-child(2){
+		margin-left: 100px;
+	}
+
+	ul>li:nth-child(1):hover ~ li:nth-child(3){
+		margin-left: 200px;
+	}
+
+
+	/******  伪劣选择器 ********/
+/*a:link{
+	color:#0f0;
+}
+a:visited{
+	color:#00f;
+	}*/
+
+	li:hover{
+		color:#f00;
+	}
+	li:active{
+		color:#00f;
+	}
+
+input[name |='user']{
+		border:2px solid #ccc;
+		border-radius: 10px;
+		padding-left: 5px;
+	}
+	p>input[name |='user']:focus{
+		border-color:#ffdb29;
+		background-color: #fffc29;
+	}
+
+
+
+
+

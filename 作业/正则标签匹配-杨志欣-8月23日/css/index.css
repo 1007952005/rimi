@@ -1,0 +1,10 @@
+@charset "utf-8";
+#textCode {
+    display: block;
+    padding: 10px;
+    font-family: Consolas, Monaco, "宋体";
+    background-color: #333;
+    color: #eee;
+    white-space: pre;
+    tab-size: 4;
+}

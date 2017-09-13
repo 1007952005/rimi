@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"/>
+<title>单车博客-单车分类详情页</title>
+<link rel="alternate" type="application/rss+xml" title="骑摆客--第一单车分享平台，骑行爱好者分享潮流单车及装备的网站 ? Feed" href="#" />
+<link rel="alternate" type="application/rss+xml" title="骑摆客--第一单车分享平台，骑行爱好者分享潮流单车及装备的网站 ? 评论 Feed" href="#" />
+<script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.error.js"></script>
+<script type="text/javascript" src="js/jtemplates.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<script type="text/javascript" src="js/lazy.js"></script>
+<script type="text/javascript" src="js/wp-sns-share.js"></script>
+<script type="text/javascript" src="js/voterajax.js"></script>
+<script type="text/javascript" src="js/userregister.js"></script>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/pagenavi-css.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="css/votestyles.css" type="text/css"/>
+<link rel="stylesheet" href="css/voteitup.css" type="text/css"/>
+
+<link rel="stylesheet" href="css/list.css" type="text/css"/>
+<link rel="stylesheet" href="css/article.css" type="text/css"/>
+
+<script language="javascript" type="text/javascript" src="js/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+function postBadGood(ftype,fid)
+{
+	var taget_obj = document.getElementById(ftype+fid);
+	var saveid = GetCookie('badgoodid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==fid && hasid) continue;
+			else {
+				if(saveids[i]==fid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==10 && hasid) break;
+				if(j==9 && !hasid) break;
+			}
+		}
+		if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+		else saveid += ','+fid;
+		SetCookie('badgoodid',saveid,1);
+	}
+	else
+	{
+		SetCookie('badgoodid',fid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+}
+function postDigg(ftype,aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	var url = "/plus/digg_ajax.php?action="+ftype+"&id="+aid;
+	myajax.SendGet2(url);
+}
+function getDigg(aid)
+{
+	var taget_obj = document.getElementById('newdigg');
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/digg_ajax.php?id="+aid);
+	DedeXHTTP = null;
+}
+-->
+</script>
+<script type="text/javascript">
+function ILike(th, v) {
+	if (v) {
+		$(th).addClass("single_views_over");
+	}
+	else {
+		$(th).removeClass("single_views_over");
+	}
+}
+</script>
+</head>
+<body class="single2">
+<script>
+ function subForm()
+ {
+ formsearch.submit();
+ //form1为form的id
+ }
+ </script>
+<script type="text/javascript">
+    function showMask() {
+        $("#mask").css("height", $(document).height());
+        $("#mask").css("width", $(document).width());
+        $("#mask").show();
+    }  
+</script>
+<div id="mask" class="mask" onclick="CloseMask()">
+</div>
+<div id="header_wrap">
+	<div id="header">
+		<div style="float: left; width: 310px;">
+			<h1><a href="#" title="宽屏大气文章类织梦博客模板">宽屏大气文章类织梦博客模板--代友吧</a>
+			<div class="" id="logo-sub-class">
+			</div>
+			</h1>
+		</div>
+		<div id="navi">
+      <ul id="jsddm">
+        <li><a class="navi_home" href="index.html">首页</a></li>
+        <li><a href="bikeList.html">单车分类</a> 
+          <ul>
+            <li><a href="bikeDetail.html">死飞车</a></li>
+            <li><a href="bikeDetail.html">复古骑行</a></li>
+            <li><a href="bikeDetail.html">公路车</a></li>
+            <li><a href="bikeDetail.html">山地车</a></li>
+            <li><a href="bikeDetail.html">折叠/小径车</a></li>
+            <li><a href="bikeDetail.html">BMX</a></li>
+            <li><a href="bikeDetail.html">城市车及其他</a></li>
+          </ul>
+        </li>
+        <li><a href="gearList.html">骑行装备</a> 
+          <ul>
+            <li><a href="gearDetail.html">车身装备</a></li>
+            <li><a href="gearDetail.html">人身装备</a></li>
+          </ul>
+        </li>
+        <li><a href="life.html">单车生活</a></li>
+        <li><a href="news.html">行业资讯</a></li>
+      </ul>
+			<div style="clear: both;">
+			</div>
+		</div>
+		<div style="float: right; width: 209px;">
+			<div class="widget" style="height: 30px; padding-top: 20px;">
+				<div style="float: left;">
+					<form name="formsearch" action="/plus/search.php">
+						<input type="hidden" name="kwtype" value="0"/>
+						<input name="q" type="text" style="background-color: #000000;padding-left: 10px; font-size: 12px;font-family: 'Microsoft Yahei'; color: #999999;height: 29px; width: 160px; border: solid 1px #666666; line-height: 28px;" id="go" value="在这里搜索..." onfocus="if(this.value=='在这里搜索...'){this.value='';}" onblur="if(this.value==''){this.value='在这里搜索...';}"/>
+					</form>
+				</div>
+				<div style="float: left;">
+					<img src="images/search-new.png" id="imgSearch" style="cursor: pointer; margin: 0px; padding: 0px;" onclick="subForm()"/>
+				</div>
+				<div style="clear: both;">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="wrapper">
+	<div id="wrapper">
+		<div id="container">
+			<div id="content">
+				<div class="post" id="post-19563" style="border-right: solid 1px #000000; min-height: 1700px; margin-top: 10px;">
+					<div class="path">
+						<a href="#">主页</a> &gt; 
+						<a href="#">单车分类</a> &gt; 
+						<a href="#">BMX</a> &gt;
+					</div>
+					<div class="single_entry single2_entry">
+						<div class="entry fewcomment">
+							<div class="title_container">
+								<h2 class="title single_title"><span>Alain Massabova: 40 Years in Paris BMX 视频</span><span class="title_date"></span></h2>
+								<p class="single_info">
+									时间：2014-02-06 17:25&nbsp;&nbsp;&nbsp;编辑：代友吧
+								</p>
+							</div>
+							<div class="div-content">
+								<p>
+									 Alain Massabova最近就走到巴黎，与导演JC Pieri合作，为《ART BMX Magazine》制作出最新的《40 Years in Paris》视频短片。这次Massabova在巴黎的街头展示出他的高强BMX技艺，优美的动作让他化身成一个艺术家一样，透过难以驾驭的动作展示出艺术的另一可能性，彷如名导演Woody Allen执导的最新一出最新的运动动作电影一样。
+								</p>
+								<p>
+									<embed align="middle" allowfullscreen="true" allowscriptaccess="sameDomain" height="500" quality="high" src="http://player.youku.com/player.php/sid/XNDI2NjcyOTQ0/v.swf" type="application/x-shockwave-flash" width="790"/>
+								</p>
+								<center id="pagenav">
+								</center>
+								<div id="BottomNavOver" style="height: 80px;">
+									<div style="float: left; font-size: 12px;">
+									</div>
+									<div style="float: right; padding-right: 20px; width: 120px;" class="div">
+										<table cellpadding="0" cellspacing="0" border="0" style="background-color: transparent; border: 0px solid #EEEEEE; border-collapse: collapse; margin: 5px 0 10px;">
+										<tbody>
+										<tr>
+											<td style="border-width: 0px; padding: 0px; padding-right: 4px;">
+											</td>
+											<td style="border-width: 0px; padding: 0px;">
+												<!-- JiaThis Button BEGIN -->
+												<div class="jiathis_style">
+													<a class="jiathis_button_qzone"></a>
+													<a class="jiathis_button_tqq"></a>
+													<a class="jiathis_button_renren"></a>
+													<a class="jiathis_button_kaixin001"></a>
+													<a href="#" class="jiathis jiathis_txt jtico jtico_jiathis"></a>
+												</div>
+												<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1365565447348652" charset="utf-8"></script>
+												<!-- JiaThis Button END -->
+											</td>
+										</tr>
+										</tbody>
+										</table>
+									</div>
+									<div style="float: right; width: 60px; font-size: 12px;">
+             分享至：
+									</div>
+									<div style="clear: both;">
+									</div>
+								</div>
+							</div>
+							<div class="clear">
+							</div>
+							<div id="ctl00_ctl00_ContentPlaceHolder1_contentPlace_divRead">
+								<div style="text-align: left; width: 100%; border-bottom: solid 1px #e0e0e0; padding-bottom: 4px; color: Black; vertical-align: middle; font-weight: bold;">
+            &nbsp;&nbsp;猜您喜欢的文章
+								</div>
+								<ul class="read" style="list-style-type: none; margin-top: 10px; width: 780px;">
+								</ul>
+							</div>
+							<div class="clear">
+							</div>
+							<div class="comments_wrap" style="margin-top: 35px;">
+								<a name="comment"></a>
+								<!-- Duoshuo Comment BEGIN -->
+								<div>多说评论</div>
+								
+								<!-- Duoshuo Comment END -->
+							</div>
+							<div class="clear">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="sidebar">
+				<div class="widget single" style="margin-bottom: 0px; margin-left: 0px; margin-top: 40px; padding-bottom: 0px;" id="newdigg">
+					<div class="single_views" onmouseout="ILike(this,false)" onmouseover="ILike(this,true)">
+						<span class="textcontainer"><span class="votecount26536">0</span></span>
+						<span class="bartext voteid26536"><a href="#" id="aZanImg" onclick="javascript:postDigg('good',240)"></a></span>
+						<span class="text" id="spanZan">赞</span>
+						<span class="text love">人</span>
+					</div>
+				</div>
+				<script language="javascript" type="text/javascript">getDigg(240);</script>
+				<!-- 右侧 -->
+				<div class="widget">
+					<div style="background: url('images/hots_bg.png') no-repeat scroll 0 0 transparent;width:250px;height:52px;margin-bottom:15px;">
+					</div>
+					<ul id="ulHot">
+						<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+						<div style="float:left;width:85px;height:55px; overflow:hidden;">
+							<a href="#"><img src="images/181.png" width="83" title="街头气息十足 Stussy 2013 秋冬系列新品LOOKBOOK"/></a>
+						</div>
+						<div style="float:right;width:145px;height:52px; overflow:hidden;">
+							<a href="#" title="街头气息十足 Stussy 2013 秋冬系列新品LOOKBOOK">街头气息十足 Stussy 2013 秋冬系列新品LOOKB</a>
+						</div>
+						</li>
+						<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+						<div style="float:left;width:85px;height:55px; overflow:hidden;">
+							<a href="#"><img src="images/187.png" width="83" title="单车电影展播：纪录BMX女车手的短片《SISTER SESSION》"/></a>
+						</div>
+						<div style="float:right;width:145px;height:52px; overflow:hidden;">
+							<a href="#" title="单车电影展播：纪录BMX女车手的短片《SISTER SESSION》">单车电影展播：纪录BMX女车手的短片《SISTER </a>
+						</div>
+						</li>
+						<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+						<div style="float:left;width:85px;height:55px; overflow:hidden;">
+							<a href="#"><img src="images/186.jpg" width="83" title="把单车改造成唱片机，超尻的BMX新玩法"/></a>
+						</div>
+						<div style="float:right;width:145px;height:52px; overflow:hidden;">
+							<a href="#" title="把单车改造成唱片机，超尻的BMX新玩法">把单车改造成唱片机，超尻的BMX新玩法</a>
+						</div>
+						</li>
+						<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+						<div style="float:left;width:85px;height:55px; overflow:hidden;">
+							<a href="#"><img src="images/162.jpg" width="83" title="视频：世界自行车极限运动冠军Daniel Dhers秘鲁BMX表演"/></a>
+						</div>
+						<div style="float:right;width:145px;height:52px; overflow:hidden;">
+							<a href="#" title="视频：世界自行车极限运动冠军Daniel Dhers秘鲁BMX表演">视频：世界自行车极限运动冠军Daniel Dhers秘</a>
+						</div>
+						</li>
+						<li style="border-bottom:dashed 1px #ccc;height:70px; margin-bottom:15px;">
+						<div style="float:left;width:85px;height:55px; overflow:hidden;">
+							<a href="#"><img src="images/182.png" width="83" title="2013新品：BELL街头BMX系列头盔之SEGMENT"/></a>
+						</div>
+						<div style="float:right;width:145px;height:52px; overflow:hidden;">
+							<a href="#" title="2013新品：BELL街头BMX系列头盔之SEGMENT">2013新品：BELL街头BMX系列头盔之SEGMENT</a>
+						</div>
+						</li>
+					</ul>
+				</div>
+				<div class="widget portrait">
+					<div>
+						<div class="textwidget">
+							<a href="#"><img src="images/tg.jpg" alt="&#xfffd;&#xfffd;&#xfffd;"/></a>
+							<br/>
+							<br/>
+							<script type="text/javascript">BAIDU_CLB_fillSlot("870073");</script>
+							<script type="text/javascript">BAIDU_CLB_fillSlot("870080");</script>
+							<script type="text/javascript">BAIDU_CLB_fillSlot("870081");</script>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear">
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/z700bike_global.js"></script>
+	<script type="text/javascript" src="js/z700bike_single.js"></script>
+	<script type="text/javascript" src="js/jquery.colorbox-min.js?ver=1.3.17.2"></script>
+</div>
+<div id="footer_wrap">
+	<div id="footer">
+		<div class="footer_navi">
+			<ul id="menu-%e5%b0%be%e9%83%a8%e5%af%bc%e8%88%aa" class="menu">
+				<li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156"><a href="#">关于我们</a></li>
+				<li id="menu-item-157" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-157"><a href="#">联络我们</a></li>
+				<li id="menu-item-158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-158"><a href="#">我要投稿</a></li>
+				<li id="menu-item-159" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-159"><a href="http://www.daiyou8.com/">网站模板</a></li>
+			</ul>
+		</div>
+		<div class="footer_info">
+			<span class="legal">Copyright &copy; 2002-2015 daiyou8.COM 版权所有&nbsp;&nbsp;&nbsp;<a href="#"> ICP备xxxx号</a>&nbsp;&nbsp;&nbsp; </span>
+		</div>
+	</div>
+</div>
+<div style="display: none;" id="scroll">
+</div>
+<script type="text/javascript" src="js/z700bike_global.js"></script>
+</body>
+</html>
