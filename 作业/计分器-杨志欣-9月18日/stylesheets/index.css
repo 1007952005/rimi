@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/***********************
+ *
+ *   计数器详细设置
+ *
+***********************/
+
+h1 {
+    text-align: center;
+}
+
+main {
+    margin: 20px auto;
+    width: 800px;
+}
+
+label {
+    display: inline-block;
+    width: 35px;
+    height: 25px;
+    font-size: 20px;
+    text-align: right;
+    font-family: "Microsoft Yahei";
+    color: #333;
+    vertical-align: middle;
+}
+
+form {
+    text-align: left;
+}
+
+
+/*输入框样式*/
+
+.inputBtn {
+    text-align: right;
+}
+
+.inputBox>span {
+    display: inline-block;
+    width: 25%;
+    height: 50px;
+    text-align: center;
+}
+
+.inputBox>span.action>label {
+    color:#4586d1;
+}
+
+input {
+    width: 50px;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #afafaf;
+    color: #333;
+    border-radius: 3px;
+}
+
+button[type="reset"] {
+    width: auto;
+    padding: 5px 10px;
+    background-color: #ccc;
+    border: none;
+    color: #333;
+    margin-top: 10px;
+    font-size: 20px;
+    outline: none;
+}
+
+button[type="button"] {
+    width: auto;
+    padding: 5px 40px;
+    background-color: #2b5bc7;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    font-size: 20px;
+    outline: none;
+}
+
+button[type="reset"]:active {
+    background-color: #e8e8e8;
+}
+
+button[type="button"]:active {
+    background-color: #6791d4;
+}
+
+
+/*结果文字样式*/
+
+p {
+    font-size: 24px;
+    text-align: right;
+    color: #406aac;
+}
+
+p>span {
+    display: inline-block;
+    width: 100px;
+    height: 55px;
+    font-size: 42px;
+    color: #e36161;
+    line-height: 70px;
+    vertical-align: bottom;
+}

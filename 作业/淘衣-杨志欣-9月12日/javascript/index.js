@@ -40,7 +40,7 @@ window.addEventListener("DOMContentLoaded", function () {
             msg.style.opacity = "0";
             setTimeout(function () {
                 msg.style.display = "none";
-            }, 400)
+            }, 400);
         }
     }
     var xhr = new XMLHttpRequest();
