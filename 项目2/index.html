@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
     <meta name="description" content="《今日头条》(www.toutiao.com)是一款基于数据挖掘的推荐引擎产品，它为用户推荐有价值的、个性化的信息，提供连接人与信息的新型服务，是国内移动互联网领域成长最快的产品服务之一。">
     <title>今日头条</title>
+    <link rel="icon" href="//s3a.pstatp.com/toutiao/resource/ntoutiao_web/static/image/favicon_8e9c9c7.ico">
     <link rel="stylesheet" href="./stylesheet/index.css">
 </head>
 
@@ -22,6 +23,7 @@
         </header>
         <div class="homeNav">
             <ul>
+                <li class="action">关注</li>
                 <li>关注</li>
                 <li>关注</li>
                 <li>关注</li>
@@ -32,14 +34,112 @@
                 <li>关注</li>
                 <li>关注</li>
                 <li>关注</li>
-                <li>关注</li>
+                <li class="lastItem"></li>
             </ul>
             <div class="homeNavAdd"><i></i></div>
         </div>
     </page>
-    <page class="play"></page>
-    <page class="movie"></page>
-    <page class="mine"></page>
+    <page class="play">
+        <header>
+            <div class="playNav">
+                <ul>
+                    <li class="action">关注</li>
+                    <li>音乐</li>
+                    <li>搞笑</li>
+                    <li>社会</li>
+                    <li>小品</li>
+                    <li>生活</li>
+                    <li>电影</li>
+                    <li>娱乐</li>
+                    <li>呆萌</li>
+                    <li>游戏</li>
+                    <li>原创</li>
+                    <li>开眼</li>
+                    <li>火山直播</li>
+                    <li class="lastItem"></li>
+                </ul>
+                <div class="playNavSearch"><i></i></div>
+            </div>
+        </header>
+        <div class="playBox">
+            <div class="playItem">
+                <video>
+                    <source type="video/mp4" src="./video/1.mp4">
+                </video>
+                <div class="playMsg"></div>
+                <div class="playShow">
+                    <div class="playShowL"></div>
+                    <div class="playShowR">
+                        <i></i>
+                        <span></span>
+                        <i></i>
+                        <span></span>
+                        <i></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </page>
+    <page class="movie">
+
+    </page>
+    <page class="mine">
+        <div class="mineBox">
+            <div class="minehead">
+                <div class="mineMsg">
+                    <img src="./images/photo.jpg">
+                    <span class="nickName">Pudge</span>
+                </div>
+                <div class="mineState">
+                    <div><span>0</span>动态</div>
+                    <div><span>0</span>粉丝</div>
+                    <div><span>0</span>7天访客</div>
+                </div>
+            </div>
+            <div class="minegGroup">
+                <div>
+                    <span><i></i>收藏</span>
+                    <span><i></i>历史</span>
+                    <span><i></i>夜间</span>
+                </div>
+            </div>
+            <div class="minegGroup">
+                <div>
+                    <span class="mineGrpL">我的关注</span>
+                    <span class="minegrpR"></span>
+                </div>
+                <div>
+                    <span class="mineGrpL">消息通知</span>
+                    <span class="minegrpR"></span></div>
+            </div>
+            <div class="minegGroup">
+                <div>
+                    <span class="mineGrpL">头条商城</span>
+                    <span class="minegrpR"></span>
+                    <span class="msgRight">邀请好友的200月现金奖励</span>
+                </div>
+                <div>
+                    <span class="mineGrpL">京东特供</span>
+                    <span class="minegrpR"></span>
+                    <span class="msgRight">新人领188元红包</span>
+                </div>
+            </div>
+            <div class="minegGroup">
+                <div>
+                    <span class="mineGrpL">我要爆料</span>
+                    <span class="minegrpR"></span>
+                </div>
+                <div>
+                    <span class="mineGrpL">用户反馈</span>
+                    <span class="minegrpR"></span>
+                </div>
+                <div>
+                    <span class="mineGrpL">系统设置</span>
+                    <span class="minegrpR"></span>
+                </div>
+            </div>
+        </div>
+    </page>
     <nav>
         <ul>
             <li class="action"><i></i><span>首页</span></li>

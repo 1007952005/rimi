@@ -1,0 +1,63 @@
+{
+    "data": [{}, {
+        "type": "play",
+        "resources": [{
+            "author": "晓天吓",
+            "portraitURL": "./images/play1.jpg",
+            "videoURL": "./video/1.mp4",
+            "msgCount":"4234",
+            "playCount":"1629890"
+        }, {
+            "author": "波光炫影",
+            "portraitURL": "./images/play1.jpg",
+            "videoURL": "./video/1.mp4",
+            "msgCount":"77234",
+            "playCount":"1432141"
+        },{
+            "author": "我的时髦视频台",
+            "portraitURL": "./images/play1.jpg",
+            "videoURL": "./video/1.mp4",
+            "msgCount":"5432",
+            "playCount":"32141"
+        }]
+    }, {
+        "type": "movie",
+        "resources": [{
+            "title": "好看的饺子",
+            "imgURL": "http://p3.pstatp.com/large/397e000420294a3e5978.jpg",
+            "movieURL": "http://hotsoon.snssdk.com/hotsoon/item/video/_playback/?video_id=9103e25dc84b4df5b30b48ba634f36bd&line=0&watermark=1&app_id=1112",
+            "playCount": "41231",
+            "ticketCount": "2342"
+        }, {
+            "title": "这才才是爆发力，霸气暴扣",
+            "imgURL": "http://p9.pstatp.com/large/362c0013a69aaf2cbec7.jpg",
+            "movieURL": "http://hotsoon.snssdk.com/hotsoon/item/video/_playback/?video_id=afc496d2fe4a4a11893b6b3cc5c11ef5&line=0&watermark=1&app_id=1112",
+            "playCount": "54322",
+            "ticketCount": "4332"
+        }, {
+            "title": "快速乘法",
+            "imgURL": "http://p1.pstatp.com/large/392a000fcc637712d3e3.jpg",
+            "movieURL": "http://hotsoon.snssdk.com/hotsoon/item/video/_playback/?video_id=7ee49baea271420a8ddfdee37f27fd6c&line=0&watermark=1&app_id=1112",
+            "playCount": "23545",
+            "ticketCount": "432"
+        }, {
+            "title": "每天教大家面食",
+            "imgURL": "http://p3.pstatp.com/large/390e0000f124bcbd21a4.jpg",
+            "movieURL": "http://hotsoon.snssdk.com/hotsoon/item/video/_playback/?video_id=c82b4ae631d14e3d880ecb35d4dc5a23&line=0&watermark=1&app_id=1112",
+            "playCount": "543252",
+            "ticketCount": "54323"
+        }, {
+            "title": "原创搞笑作品",
+            "imgURL": "http://p1.pstatp.com/large/39830003f07edbaf51f5.jpg",
+            "movieURL": "http://hotsoon.snssdk.com/hotsoon/item/video/_playback/?video_id=183150965cb349989d7ed2e0627bab42&line=0&watermark=1&app_id=1112",
+            "playCount": "8675",
+            "ticketCount": "1234"
+        }, {
+            "title": "杨坤演唱会",
+            "imgURL": "http://p3.pstatp.com/large/3a5300120450bf1a725a.jpg",
+            "movieURL": "http://hotsoon.snssdk.com/hotsoon/item/video/_playback/?video_id=c20bd1181b2d43909328c4e92d0a6164&line=0&watermark=1&app_id=1112",
+            "playCount": "57895",
+            "ticketCount": "4353"
+        }]
+    }]
+}

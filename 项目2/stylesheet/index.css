@@ -4,7 +4,7 @@
 * 
 *    功能：今日头条
 *    开发者：杨志欣
-*    最后修改日期：2017-9-14
+*    最后修改日期：2017-9-17
 *
 ************************************************************/
 
@@ -56,10 +56,16 @@ a {
 page {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    height: calc(100% - 46px);
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+page:nth-child(1) {
+    z-index: 10;
 }
 
 
@@ -101,19 +107,19 @@ nav>ul>li>i {
 }
 
 nav>ul>li:nth-child(1)>i {
-    background: url('../images/home-active.svg')0 0/cover no-repeat;
+    background: url('../images/0-active.svg')0 0/cover no-repeat;
 }
 
 nav>ul>li:nth-child(2)>i {
-    background: url('../images/play.svg')0 0/cover no-repeat;
+    background: url('../images/1.svg')0 0/cover no-repeat;
 }
 
 nav>ul>li:nth-child(3)>i {
-    background: url('../images/movie.svg')0 0/cover no-repeat;
+    background: url('../images/2.svg')0 0/cover no-repeat;
 }
 
 nav>ul>li:nth-child(4)>i {
-    background: url('../images/my.svg')0 0/cover no-repeat;
+    background: url('../images/3.svg')0 0/cover no-repeat;
 }
 
 nav>ul>li>span {
@@ -129,10 +135,6 @@ nav>ul>li.action {
 /*************************************
 *    功能：首页样式
 **************************************/
-
-page:nth-child(1) {
-    z-index: 10;
-}
 
 
 /*头部样式*/
@@ -202,7 +204,7 @@ page:nth-child(1) {
 .homeNav {
     width: 100%;
     position: relative;
-    font-size: 1.05em;
+    font-size: 1.2em;
     color: #333;
     border-bottom: 1px solid #e5e5e5;
 }
@@ -220,6 +222,15 @@ page:nth-child(1) {
     padding: 0 7px;
 }
 
+.homeNav>ul>li.action {
+    color: #ed4040;
+}
+
+.homeNav>ul>.lastItem {
+    width: 30px;
+    height: 100%;
+}
+
 
 /*添加类型样式*/
 
@@ -231,7 +242,8 @@ page:nth-child(1) {
     height: 100%;
     text-align: center;
     line-height: 30px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, .9);
+    z-index: 10;
 }
 
 .homeNav>.homeNavAdd>i {
@@ -242,16 +254,365 @@ page:nth-child(1) {
     background: url('../images/add.svg')0 0/cover no-repeat;
 }
 
-.homeNav>.homeNavAdd:before {
+.homeNav:before {
     content: "";
     display: inline-block;
     border-left: 1px solid #f8f8f8;
+    width: 20px;
     height: 20px;
     position: absolute;
-    border-radius: 15px;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.9);
     top: 6px;
+    right: 16px;
+    box-shadow: -4px 0 5px 1px #e6e6e6;
+    z-index: -2;
+}
+
+
+/*************************************
+*    功能：西瓜视频样式
+**************************************/
+
+
+/*西瓜视频导航*/
+
+.play>header {
+    width: 100%;
+    height: 45px;
+}
+
+.playNav {
+    width: 100%;
+    position: fixed;
+    font-size: 1.2em;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fff;
+}
+
+.playNav>ul {
+    padding: 10px 7px;
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.playNav>ul>li {
+    display: inline-block;
+    padding: 0 7px;
+}
+
+.playNav>ul>li.action {
+    color: #ed4040;
+}
+
+.playNav>ul>.lastItem {
+    width: 30px;
+    height: 100%;
+}
+
+
+/*搜索样式*/
+
+.playNav>.playNavSearch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgba(255, 255, 255, .9);
+    z-index: 10;
+}
+
+.playNav>.playNavSearch>i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background: url('../images/search-play.svg')0 0/cover no-repeat;
+}
+
+.playNav:before {
+    content: "";
+    display: inline-block;
+    border-left: 1px solid #f8f8f8;
+    width: 20px;
+    height: 24px;
+    position: absolute;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.9);
+    top: 10px;
+    right: 16px;
+    box-shadow: -4px 0 5px 1px #e6e6e6;
+    z-index: -2;
+}
+
+
+/*视频样式*/
+
+.playBox {
+    width: 100%;
+}
+
+.playBox>.playItem {
+    width: 100%;
+    position: relative;
+    font-size: 0;
+}
+
+.playBox>.playItem>video {
+    width: 100%;
+}
+
+.playBox>.playItem>.playShow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
     left: 0;
-    box-shadow: -3px 0 10px 1px #909090;
-    
-                
+}
+
+.playBox>.playItem>.playMsg {
+    width: 100%;
+    height: 50px;
+    font-size: 0.9rem;
+} 
+;
+
+/*************************************
+*    功能：小视频样式
+**************************************/
+
+.movie {
+    font-size: 0;
+}
+
+.movie>.moveItem {
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    padding: 1px;
+    text-align: center;
+}
+
+.movie>.moveItem:nth-child(even) {
+    padding-left: 0;
+}
+
+.movie>.moveItem>a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.movie>.moveItem>a>img {
+    width: 100%;
+    height: 100%;
+}
+
+.movie>.moveItem>a>div {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 1rem;
+    color: #fff;
+    overflow: hidden;
+}
+
+.movie>.moveItem>a>div>h3 {
+    text-align: left;
+    font-weight: 400;
+    font-size: 1em;
+    padding: 0 8px 0;
+}
+
+.movie>.moveItem>a>div>span:nth-of-type(1) {
+    float: left;
+    font-size: 0.8em;
+    padding: 8px;
+}
+
+.movie>.moveItem>a>div>span:nth-of-type(1):before {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    content: "";
+    background: url('../images/moviePlay.svg')0 0/cover no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: -4px;
+}
+
+.movie>.moveItem>a>div>span:nth-of-type(2) {
+    float: right;
+    font-size: 0.8em;
+    padding: 8px;
+}
+
+.movie>.moveItem>a>.movieClose {
+    position: absolute;
+    display: inline-block;
+    top: 5px;
+    right: 5px;
+    color: #b9b9b9;
+    font-size: 1rem;
+}
+
+
+/*************************************
+*    功能：我的样式
+**************************************/
+
+.mine>.mineBox {
+    width: 100%;
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+
+/*头部设置*/
+
+.mine>.mineBox>.minehead {
+    width: 100%;
+    height: 200px;
+    background: url('../images/bg.jpg')0 0/cover no-repeat;
+    position: relative;
+    color: #fff;
+}
+
+.minehead>.mineMsg {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.minehead>.mineMsg img {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.minehead>.mineMsg>.nickName {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 1.3em;
+    vertical-align: middle;
+}
+
+
+/*关注部分设置*/
+
+.minehead>.mineState {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.minehead>.mineState>div {
+    width: 33.33333333%;
+    margin: 10px;
+    font-size: 0.8rem;
+    color: #a3a3a3;
+}
+
+.minehead>.mineState>div:nth-child(2) {
+    border-left: 1px solid #777;
+    border-right: 1px solid #777;
+}
+
+.minehead>.mineState>div>span {
+    font-size: 1rem;
+    display: block;
+    color: #fff;
+}
+
+
+/*相关设置样式*/
+
+.mineBox>.minegGroup {
+    border-top: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+
+.mineBox>.minegGroup:nth-child(2) {
+    padding: 0;
+}
+
+.mineBox>.minegGroup:nth-child(2)>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    font-size: 0.8rem;
+}
+
+.mineBox>.minegGroup:nth-child(2)>div>span {
+    width: 33.33333333%;
+    text-align: center;
+}
+
+.mineBox>.minegGroup:nth-child(2)>div i {
+    display: block;
+    width: 100%;
+    height: 28px;
+}
+
+.mineBox>.minegGroup:nth-child(2)>div>span:nth-child(1)>i {
+    background: url('../images/collection.svg')center/30px 30px no-repeat;
+}
+
+.mineBox>.minegGroup:nth-child(2)>div>span:nth-child(2)>i {
+    background: url('../images/history.svg')center/26px 26px no-repeat;
+}
+
+.mineBox>.minegGroup:nth-child(2)>div>span:nth-child(3)>i {
+    background: url('../images/night.svg')center/26px 26px no-repeat;
+}
+
+.mineBox>.minegGroup>div {
+    padding: 10px 0 10px;
+    border-bottom: 1px solid #f2f2f2;
+    overflow: hidden;
+    line-height: 21px;
+}
+
+.mineBox>.minegGroup>div:last-child {
+    border-bottom: none;
+}
+
+.mineBox>.minegGroup>div>.minegrpL {
+    float: left;
+}
+
+.mineBox>.minegGroup>div>.minegrpR {
+    float: right;
+    line-height: 20px;
+    margin-right: 15px;
+    width: 12px;
+    height: 20px;
+    background: url('../images/lg.svg')center/12px 12px no-repeat;
+}
+
+.mineBox>.minegGroup>div>.msgRight {
+    float: right;
+    font-size: 0.9em;
+    margin-right: 10px;
+    color: #aaa;
 }
