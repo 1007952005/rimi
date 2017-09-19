@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/*初始样式*/
+
+html,
+body,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*头部样式*/
+
+header {
+    padding: 10px;
+    background-color: #ccc;
+    position: relative;
+}
+
+header>button {
+    padding: 10px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+    outline: none;
+}
+
+header>.sectionBox {
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    margin-top: 3px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    display: none;
+    z-index: 10;
+}
+
+header>.sectionBox button {
+    width: 100%;
+    padding: 5px 3px 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: #fff;
+    outline: none;
+}
+
+label {
+    font-size: 16px;
+    vertical-align: top;
+}
+
+header>button:active,
+header>.sectionBox button:active {
+    background-color: #e8e8e8;
+}
+
+input {
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+textarea {
+    font-size: 14px;
+    max-width: 220px;
+    min-width: 220px;
+    max-height: 150px;
+    min-height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
+/*添加列表的样式*/
+
+article {
+    padding: 10px;
+}
+
+article>section {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: #e8e8e8;
+}
+
+article>section>h2 {
+    font-size: 18px;
+    font-weight: 600;
+    padding-right: 50px;
+}
+
+article>section>p {
+    display: none;
+}
+
+article>section>.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: yellowgreen;
+    transition: all .3s;
+}
+
+article>section>.close:hover {
+    background-color: #db4b38;
+}

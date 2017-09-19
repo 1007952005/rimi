@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>章节练习一</title>
+</head>
+
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+    </ul>
+    <div>您选择的是：<span></span></div>
+    <script src="./jquery.js"></script>
+    <script>
+        var span = $("span");
+        $("ul li").click(function() {
+            var text = $(this).text();
+            span.text(text);
+            switch (text) {
+                case "HTML":
+                    span.css("color", "#ea9900");
+                    break;
+                case "CSS":
+                    span.css("color", "#3088f0");
+                    break;
+                case "JavaScript":
+                    span.css("color", "#b6be00");
+                    break;
+                case "jQuery":
+                    span.css("color", "#00be3a");
+                    break;
+            }
+        });
+
+    </script>
+</body>
+
+</html>

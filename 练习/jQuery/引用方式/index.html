@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery入门</title>
+    <style>
+        #roleInfo {
+            cursor: pointer;
+        }
+        
+        #showActive {
+            color: #ffb948;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        <ul id="roleInfo">
+            <li>柯基</li>
+            <li>法斗</li>
+            <li>博美</li>
+            <li>哈士奇</li>
+        </ul>
+        <div id="showActive">无</div>
+    </main>
+    <script src="./jquery.js"></script>
+    <script>
+        $("ul:nth-child(1) li").css("color", "#2398fd");
+        //        var ul = document.getElementById("roleInfo"),
+        //            itemList = ul.children;
+        //        var showActive = document.getElementById("showActive");
+        //        for (var i = 0; i < itemList.length; i++) {
+        //            itemList[i].onclick = function() {
+        //                var thisText = this.textContent;
+        //                showActive.textContent = thisText;
+        //            }
+        //        }
+        //jQuery实现
+        $("#roleInfo li").click(function() {
+            var thisText = $(this).text();
+            $("#showActive").text(thisText);
+        });
+
+    </script>
+</body>
+
+</html>
