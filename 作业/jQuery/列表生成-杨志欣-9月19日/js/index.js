@@ -16,17 +16,17 @@ window.onload = function () {
         if (titleText == "" || textContent == "") {
             return;
         }
-        var str = `<section>
+        var str = `<div><section>
             <h2>${titleText}</h2>
             <p>${textContent}</p>
             <span class="close"></span>
-        </section>`;
+        </section></div>`;
         //添加列表
         $article.append(str);
         //绑定关闭事件
         $(".close:last").click(function (event) {
             $(this).parent().fadeOut(200, function () {
-                this.remove();
+                this.parent().remove();
             })
             //阻止事件冒泡防止列表展开事件触发
             event.stopPropagation();
@@ -34,7 +34,7 @@ window.onload = function () {
         //列表展开事件
         $("section:last").click(function () {
             console.log($(this));
-            $(this).siblings().find("p").slideUp(300);
+            $(this).parent().siblings().find("p").slideUp(300);
             $(this).find("p").slideToggle(300);
             $(this).css("background-color", "#e8e8e8");
         });

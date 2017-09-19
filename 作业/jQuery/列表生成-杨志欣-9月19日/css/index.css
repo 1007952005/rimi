@@ -84,7 +84,7 @@ article {
     padding: 10px;
 }
 
-article>section {
+article section {
     position: relative;
     display: inline-block;
     width: 400px;
@@ -95,17 +95,17 @@ article>section {
     background-color: #e8e8e8;
 }
 
-article>section>h2 {
+article section>h2 {
     font-size: 18px;
     font-weight: 600;
     padding-right: 50px;
 }
 
-article>section>p {
+article section>p {
     display: none;
 }
 
-article>section>.close {
+article section>.close {
     position: absolute;
     top: 15px;
     right: 25px;
@@ -116,6 +116,6 @@ article>section>.close {
     transition: all .3s;
 }
 
-article>section>.close:hover {
+article section>.close:hover {
     background-color: #db4b38;
 }
