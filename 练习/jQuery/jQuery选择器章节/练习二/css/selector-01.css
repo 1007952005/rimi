@@ -1,0 +1,64 @@
+@charset "utf-8";
+ul {
+    list-style: none;
+}
+
+
+/* 周列表 */
+
+ul.week {
+    font-size: 0;
+}
+
+ul.week>li {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 16px;
+    border: 1px solid #acacac;
+    border-right: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+ul.week>li:last-child {
+    border-right: 1px solid #acacac;
+}
+
+
+/* 天气列表 */
+
+ul.weather>li {
+    padding: 12px 20px;
+    border: 1px solid #acacac;
+    border-radius: 15px;
+    font-size: 32px;
+    display: none;
+}
+
+
+/* 恢复“列表项”的显示类型 */
+
+ul>li.show {
+    display: list-item;
+}
+
+ul>li.sunny {
+    background-color: #f76543;
+    color: #fff;
+}
+
+ul>li.lightRain {
+    background-color: #718fd4;
+    color: #fff;
+}
+
+ul>li.moderateRain {
+    background-color: #6079b2;
+    color: #fff;
+}
+
+ul>li.cloudy {
+    background-color: #777777;
+    color: #fff;
+}

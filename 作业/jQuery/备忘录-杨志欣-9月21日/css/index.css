@@ -1,0 +1,285 @@
+@charset "utf-8";
+/**************************************
+*   开发者：杨志欣
+*   功能：备忘录样式设置
+*   最后更改日期 2017/9/25
+**************************************/
+
+/************************
+*   页面初始化样式
+************************/
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Microsoft Yahei";
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+
+/************************
+*   备忘录公共样式
+************************/
+page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg.jpg")0 0;
+}
+
+/**
+ *   头部样式
+**/
+page > header {
+    position: relative;
+    height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+/**
+ *   底部样式
+**/
+page > footer {
+    position: relative;
+    height: 44px;
+    border-top: 1px solid #ddd;
+}
+
+/************************
+*   备忘录展示列表页面样式
+************************/
+/**
+ *  头部详细样式
+**/
+page:nth-child(1)>header{
+    text-align: center;
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: 40px;
+}
+page:nth-child(1)>header>span,
+page:nth-child(1)>header>button{
+    display:block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    color: #e9b114;
+    padding: 0 12px;
+    cursor: pointer;
+    font-size:1.1em;
+    cursor: pointer;
+}
+page:nth-child(1)>header>button{
+    background-color: transparent;
+    border:none;
+}
+page:nth-child(1)>header>.cancelToggle{
+    display: none;
+}
+/**
+ *  内容详细样式
+**/
+page:nth-child(1)>main{
+    height: calc(100% - 84px);
+    margin-left: 12px;
+    margin-right: 12px;
+    overflow-y: auto;
+    padding-bottom: 30px;
+}
+page:nth-child(1)>main li>div:last-child{
+    transition: all .4s;
+}
+/*编辑多选按钮样式*/
+page:nth-child(1)>main li{
+    position: relative;
+    padding: 14px 0 6px;
+    line-height: 24px;
+    border-bottom: 1px solid #ddd;
+}
+page:nth-child(1)>main li>div:first-child{
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 16px;
+    transition: all .3s;
+}
+page:nth-child(1)>main li i{
+    display: inline-block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    line-height: 18px;
+    color: #fff;
+    left: 0;
+    top: 12px;
+    cursor: pointer;
+
+}
+page:nth-child(1)>main li>div:nth-child(2)>p:first-child{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+}
+page:nth-child(1)>main li>div:nth-child(2)>p:last-child{
+    width: 100%;
+    font-size: .9em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #888888;
+}
+
+/**
+ *  底部详细样式
+**/
+
+page:nth-child(1)>footer>div{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 40px;
+}
+page:nth-child(1)>footer>span{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 56px;
+    height: 100%;
+    padding: 0 12px;
+}
+page:nth-child(1)>footer>.addToggle{
+    background: url(../images/edit.png)18px 12px/20px 20px no-repeat;
+}
+page:nth-child(1)>footer>.deleteToggle{
+    color: #e9b114;
+    line-height: 44px;
+    display: none;
+}
+/************************
+*   备忘录增加(编辑)页面样式
+************************/
+page:nth-child(2){
+    left: 100%;
+    transition: all .3s;
+}
+/**
+ *  头部详细样式
+**/
+
+/*返回按钮*/
+page:nth-child(2)>header>.backMainPage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 0 12px;
+    color: #e9b114;
+    line-height: 38px;
+    cursor: pointer;
+}
+.backMainPage>i{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-bottom:2px;
+    margin-right:5px;
+    background: url("../images/prev.png")0 0/cover no-repeat;
+    vertical-align: middle;
+}
+/*保存按钮*/
+page:nth-child(2)>header>button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 12px;
+    height: 100%;
+    line-height: 38px;
+    color: #e9b114;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+/**
+ *  内容详细样式
+**/
+page:nth-child(2)>main{
+    height: calc(100% - 84px);
+    margin-left: 12px;
+    margin-right: 12px;
+    overflow-y: auto;
+    font-size:0;
+}
+page:nth-child(2)>main>textarea{
+    padding: 8px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    resize: none;
+    font: lighter 16px/1.6 "Microsoft Yahei";
+    outline: none;
+}
+/**
+ *  底部详细样式
+**/
+page:nth-child(2)>footer>div{
+    display: none;
+    height: 100%;
+    position: absolute;
+    top:0;
+    right:0;
+    padding: 0 12px;
+    line-height:44px;
+    color: #e9b114;
+    cursor: pointer;
+}
+/************************
+*   动态改变样式
+************************/
+
+/*进入编辑状态时样式*/
+page:nth-child(1)>main li.editstatus>div:first-child{
+    width: 48px;
+}
+page:nth-child(1)>main li.editstatus>div:last-child{
+    margin-left: 28px;
+}
+page:nth-child(1)>header>button.disabled{
+    color: #ccc;
+}
+/*保存失效*/
+.memoOperation header>button.disabled{
+    color: #ccc;
+}
+/*编辑下的按钮选中*/
+.memoShow>main li .choice.selected{
+    background-color: #e9b114;
+}

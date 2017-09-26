@@ -9,7 +9,7 @@
 
 
 /**
- *  功能：网站header、footer加载
+ *  功能：网站header、footer加载3/0
  *  参数：无
  **/
 function loadHeaderOrFooter() {

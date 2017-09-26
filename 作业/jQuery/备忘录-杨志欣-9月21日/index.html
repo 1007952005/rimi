@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Pudge">
+    <title>备忘录</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<page class="memoShow">
+    <header>
+        <div class="title">备忘录</div>
+        <button class="editToggle">编辑</button>
+        <span class="cancelToggle">取消</span>
+    </header>
+    <main>
+        <ul id="memoireList">
+
+        </ul>
+    </main>
+    <footer>
+        <div class="footerTitle"></div>
+        <span class="deleteToggle">删除</span>
+        <span class="addToggle"></span>
+    </footer>
+</page>
+<page class="memoOperation">
+    <header>
+        <div class="backMainPage"><i></i>备忘录</div>
+        <button class="preservation disabled" disabled>保存</button>
+    </header>
+    <main>
+        <textarea class="text" placeholder="请输入内容..."></textarea>
+    </main>
+    <footer>
+        <div class="contentEdit">内容编辑</div>
+    </footer>
+</page>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script type="text/javascript" src="./javascript/index.js"></script>
+</body>
+</html>
