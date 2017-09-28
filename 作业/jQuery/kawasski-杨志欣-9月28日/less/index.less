@@ -1,0 +1,231 @@
+/**
+ *  功能：kawasski样式
+ *  日期: 2017/9/28
+**/
+//主题色
+@theme-color: #69bf2a;
+//文字用到的颜色
+@font-color1: #dafeda;
+@font-color2: #fff;
+//字体样式
+@font: normal 16px "Microsoft Yahei";
+//动画时长
+@animationTime: 2s;
+/****************
+*  初始化样式
+****************/
+* {
+    box-sizing: border-box;
+}
+
+html, body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: @font;
+    color: @font-color1;
+    min-width: 1200px;
+    background: url("../images/bg.gif") 0 0;
+    padding-bottom: 120px;
+}
+
+a {
+    font: @font;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/****************
+*  头部样式
+****************/
+
+/*logo和导航样式*/
+header {
+    background-color: #3d3d3d;
+    padding-bottom: 6px;
+    border-bottom: 4px solid @theme-color;
+
+    & > .headerBox {
+        width: 100%;
+        height: 60px;
+        overflow: hidden;
+        //log样式
+        & > .logo {
+            width: 256px;
+            height: 60px;
+            background: url('../images/kawasaki-logo.jpg') no-repeat #3d3d3d;
+            float: left;
+            margin-left: 20px;
+        }
+        //联系方式
+        & > span {
+            display: block;
+            font-weight: 400;
+            font-size: 18px;
+            float: right;
+            margin-right: 20px;
+            line-height: 60px;
+        }
+    }
+    //导航样式
+    & > nav {
+        width: 100%;
+        margin: 0 auto;
+        height: 40px;
+        padding: 10px 0;
+        overflow: hidden;
+        border-bottom: 2px solid #69bf2a;
+        & > div {
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            & > a {
+                padding: 0 16px;
+                border-right: 1px solid @font-color1;
+                text-decoration: none;
+                line-height: 20px;
+                color: @font-color1;
+                cursor: pointer;
+                display: block;
+                float: left;
+                &:hover {
+                    color: @font-color2;
+                    text-decoration: underline;
+                }
+            }
+            & > a:last-child {
+                border-right: none;
+            }
+        }
+
+    }
+}
+
+/****************
+*  轮播样式
+****************/
+.banner {
+    width: 100%;
+    height: 512px;
+    background: url("../images/kawasaki-bg.jpg") center center/cover no-repeat #4c4c4c;
+    overflow: hidden;
+    border-bottom: 2px solid @theme-color;
+    & > div {
+        width: 1200px;
+        height: 100%;
+        background-color: #3d3d3d;
+        margin: 0 auto;
+        position: relative;
+        animation: greenLight @animationTime alternate ease-in infinite;
+        & > img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: all .4s;
+        }
+        & > img.show {
+            opacity: 1;
+        }
+    }
+
+}
+
+/****************
+*  主体样式设置
+****************/
+main {
+    padding-top: 30px;
+    //摩托车样式
+    & > .moto-title {
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+        & > img {
+            width: 100%;
+            height: 100%;
+        }
+        & > div {
+            position: absolute;
+            width: 360px;
+            background: url("../images/moto-title.png") no-repeat;
+            text-align: center;
+            top: 50%;
+            right: 0;
+            transform: translate(0, -50%);
+            & > a {
+                font-size: 28px;
+                color: @font-color2;
+                cursor: pointer;
+                line-height: 60px;
+            }
+            & > a:hover {
+                color: @font-color1;
+            }
+        }
+    }
+    //图片导航样式
+    & > ul {
+        width: 1200px;
+        margin: 30px auto 20px;
+        overflow: hidden;
+        & > li {
+            display: inline-block;
+            width: 33%;
+            margin-right: .33333333%;
+            margin-bottom: 4px;
+            float: left;
+            position: relative;
+            transition: all .1s ease-in;
+            & > img {
+                width: 100%;
+            }
+            & > a {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, .4);
+                text-align: center;
+                text-decoration: none;
+                font-size: 28px;
+                color: @font-color2;
+                line-height: 230px;
+                position: absolute;
+                z-index: 1;
+                transition: all .3s ease-in;
+                &:hover {
+                    background-color: transparent;
+                    text-decoration: underline;
+                    color: #dafeda;
+                }
+            }
+            //变大hover效果
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 0 20px rgba(0, 0, 0, .7);
+                z-index: 2;
+            }
+        }
+    }
+}
+
+/****************
+*  轮播发光动画
+****************/
+@keyframes greenLight {
+    0% {
+        box-shadow: 0 0 320px #3b6b18;
+    }
+    100% {
+        box-shadow: 0 0 320px #9fdf70;
+    }
+}

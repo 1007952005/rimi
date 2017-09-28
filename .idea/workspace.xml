@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b591fe6-07ba-42c1-a406-cbcf38f75774" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/课堂代码/jQuery/jquery.zip" afterPath="$PROJECT_DIR$/课堂代码/jQuery/jquery.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/作业/jQuery/列表生成-杨志欣-9月19日/js/index.js" afterPath="$PROJECT_DIR$/作业/jQuery/列表生成-杨志欣-9月19日/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/项目1/艾尔帕思--杨志欣/javascripts/common.js" afterPath="$PROJECT_DIR$/项目1/艾尔帕思--杨志欣/javascripts/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/项目1/艾尔帕思--杨志欣/stylesheets/about.css" afterPath="$PROJECT_DIR$/项目1/艾尔帕思--杨志欣/stylesheets/about.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/css/index.css" afterPath="$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/css/index.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,58 +21,39 @@
     <favorites_list name="培训" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47437775">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="280">
-                  <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/javascript/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="497">
-                  <caret line="129" column="24" lean-forward="false" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
-                  <folding>
-                    <marker date="1506420027288" expanded="true" signature="1573:1809" ph="..." />
-                    <marker date="1506420027288" expanded="true" signature="1646:1791" ph="..." />
-                    <marker date="1506420027288" expanded="true" signature="4802:5072" ph="..." />
-                    <marker date="1506420027288" expanded="true" signature="4887:5046" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/css/index.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="283">
-                  <caret line="274" column="40" lean-forward="false" selection-start-line="274" selection-start-column="32" selection-end-line="274" selection-end-column="40" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/作业/jQuery/kawasski-杨志欣-9月28日/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/作业/jQuery/kawasski-杨志欣-9月28日/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="226" column="22" lean-forward="false" selection-start-line="226" selection-start-column="22" selection-end-line="226" selection-end-column="22" />
+              <folding>
+                <marker date="1506591837064" expanded="true" signature="218:367" ph="{...}" />
+                <marker date="1506591837064" expanded="true" signature="370:436" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Less File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -85,7 +63,11 @@
       <find>transition</find>
       <find>Preservation</find>
       <find>$ele</find>
+      <find>../fonts/</find>
     </findStrings>
+    <replaceStrings>
+      <replace>./fonts/</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -101,8 +83,21 @@
         <option value="$PROJECT_DIR$/练习/jQuery/jQuery懒加载练习/index.html" />
         <option value="$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/css/indexl.css" />
         <option value="$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/index.html" />
-        <option value="$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/css/index.css" />
         <option value="$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/javascript/index.js" />
+        <option value="$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/css/index.css" />
+        <option value="$PROJECT_DIR$/作业/BootStrap/test1/JavaScript/index.js" />
+        <option value="$PROJECT_DIR$/作业/BootStrap/test1/css/css.css" />
+        <option value="$PROJECT_DIR$/作业/BootStrap/test1/plugins/bootstrap.css" />
+        <option value="$PROJECT_DIR$/作业/BootStrap/test1/index.html" />
+        <option value="$PROJECT_DIR$/作业/BootStrap/test1/css/index.css" />
+        <option value="$PROJECT_DIR$/练习/Less/index.html" />
+        <option value="$PROJECT_DIR$/练习/Less/index.less" />
+        <option value="$PROJECT_DIR$/练习/Less/auto.less" />
+        <option value="$PROJECT_DIR$/作业/jQuery/摩托-杨志欣-9月28日/index.html" />
+        <option value="$PROJECT_DIR$/作业/jQuery/kawasski-杨志欣-9月28日/css/index.css" />
+        <option value="$PROJECT_DIR$/作业/jQuery/kawasski-杨志欣-9月28日/less/index.less" />
+        <option value="$PROJECT_DIR$/作业/jQuery/kawasski-杨志欣-9月28日/index.html" />
+        <option value="$PROJECT_DIR$/作业/jQuery/kawasski-杨志欣-9月28日/JavaScript/index.js" />
       </list>
     </option>
   </component>
@@ -156,7 +151,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -181,31 +175,29 @@
               <item name="培训" type="462c0819:PsiDirectoryNode" />
               <item name="作业" type="462c0819:PsiDirectoryNode" />
               <item name="jQuery" type="462c0819:PsiDirectoryNode" />
-              <item name="备忘录-杨志欣-9月21日" type="462c0819:PsiDirectoryNode" />
+              <item name="kawasski-杨志欣-9月28日" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="培训" type="cbb8eebc:String" user="培训" />
             </path>
             <path>
-              <item name="培训" type="b2602c69:ProjectViewProjectNode" />
-              <item name="培训" type="462c0819:PsiDirectoryNode" />
-              <item name="作业" type="462c0819:PsiDirectoryNode" />
-              <item name="jQuery" type="462c0819:PsiDirectoryNode" />
-              <item name="备忘录-杨志欣-9月21日" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="培训" type="cbb8eebc:String" user="培训" />
+              <item name="作业" type="cbb8eebc:String" user="作业" />
             </path>
             <path>
-              <item name="培训" type="b2602c69:ProjectViewProjectNode" />
-              <item name="培训" type="462c0819:PsiDirectoryNode" />
-              <item name="作业" type="462c0819:PsiDirectoryNode" />
-              <item name="jQuery" type="462c0819:PsiDirectoryNode" />
-              <item name="备忘录-杨志欣-9月21日" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="培训" type="b2602c69:ProjectViewProjectNode" />
-              <item name="培训" type="462c0819:PsiDirectoryNode" />
-              <item name="作业" type="462c0819:PsiDirectoryNode" />
-              <item name="jQuery" type="462c0819:PsiDirectoryNode" />
-              <item name="备忘录-杨志欣-9月21日" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="培训" type="cbb8eebc:String" user="培训" />
+              <item name="作业" type="cbb8eebc:String" user="作业" />
+              <item name="jQuery" type="cbb8eebc:String" user="jQuery" />
             </path>
           </expand>
           <select />
@@ -214,7 +206,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Less" />
     <property name="nodejs_interpreter_path" value="D:/NodeJS/node" />
     <property name="javascript.nodejs.core.library.configured.version" value="8.4.0" />
     <property name="JavaScriptPreferStrict" value="false" />
@@ -223,7 +215,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\睿峰\培训\练习\Less" />
+      <recent name="E:\睿峰\培训\作业\BootStrap\test1\plugins" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -263,11 +261,15 @@
       <workItem from="1506308587055" duration="2181000" />
       <workItem from="1506317843480" duration="17013000" />
       <workItem from="1506387938171" duration="24989000" />
+      <workItem from="1506474475783" duration="9434000" />
+      <workItem from="1506504719173" duration="622000" />
+      <workItem from="1506561485692" duration="3934000" />
+      <workItem from="1506583069137" duration="9723000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67119000" />
+    <option name="totallyTimeSpent" value="92502000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -281,12 +283,12 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20058565" sideWeight="0.47581902" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17423134" sideWeight="0.47581902" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917318" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -313,11 +315,32 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/css/indexl.css" />
+    <entry file="file://$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7672">
+          <caret line="274" column="40" lean-forward="false" selection-start-line="274" selection-start-column="32" selection-end-line="274" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/javascript/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="121" column="8" lean-forward="false" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
           <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -325,12 +348,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1092">
           <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="20" />
-          <folding>
-            <marker date="1506420027288" expanded="true" signature="1573:1809" ph="..." />
-            <marker date="1506420027288" expanded="true" signature="1646:1791" ph="..." />
-            <marker date="1506420027288" expanded="true" signature="4802:5072" ph="..." />
-            <marker date="1506420027288" expanded="true" signature="4887:5046" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -338,7 +355,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7336">
           <caret line="262" column="53" lean-forward="true" selection-start-line="262" selection-start-column="53" selection-end-line="262" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -346,7 +362,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -355,7 +370,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -483,7 +497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1549">
           <caret line="604" column="16" lean-forward="false" selection-start-line="604" selection-start-column="16" selection-end-line="604" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -503,32 +516,107 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/css/indexl.css" />
-    <entry file="file://$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/css/index.css">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="274" column="40" lean-forward="false" selection-start-line="274" selection-start-column="32" selection-end-line="274" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/index.html">
+    <entry file="file://$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
+          <caret line="175" column="18" lean-forward="false" selection-start-line="175" selection-start-column="18" selection-end-line="175" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/javascript/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="129" column="24" lean-forward="false" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
+        <state relative-caret-position="329">
+          <caret line="127" column="43" lean-forward="false" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作业/jQuery/备忘录-杨志欣-9月21日/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作业/BootStrap/test1/JavaScript/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作业/BootStrap/test1/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作业/BootStrap/test1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作业/BootStrap/test1/plugins/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="2189" column="18" lean-forward="false" selection-start-line="2189" selection-start-column="18" selection-end-line="2189" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/练习/Less/index.html" />
+    <entry file="file://$PROJECT_DIR$/练习/Less/index.less" />
+    <entry file="file://$PROJECT_DIR$/练习/Less/index.css.map" />
+    <entry file="file://$PROJECT_DIR$/练习/Less/index.css" />
+    <entry file="file://$PROJECT_DIR$/练习/Less/auto.less" />
+    <entry file="file://$PROJECT_DIR$/作业/jQuery/摩托-杨志欣-9月28日/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作业/jQuery/kawasski-杨志欣-9月28日/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="226" column="22" lean-forward="false" selection-start-line="226" selection-start-column="22" selection-end-line="226" selection-end-column="22" />
           <folding>
-            <marker date="1506420027288" expanded="true" signature="1573:1809" ph="..." />
-            <marker date="1506420027288" expanded="true" signature="1646:1791" ph="..." />
-            <marker date="1506420027288" expanded="true" signature="4802:5072" ph="..." />
-            <marker date="1506420027288" expanded="true" signature="4887:5046" ph="..." />
+            <marker date="1506591837064" expanded="true" signature="218:367" ph="{...}" />
+            <marker date="1506591837064" expanded="true" signature="370:436" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作业/jQuery/kawasski-杨志欣-9月28日/JavaScript/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作业/jQuery/kawasski-杨志欣-9月28日/less/index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/作业/jQuery/kawasski-杨志欣-9月28日/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

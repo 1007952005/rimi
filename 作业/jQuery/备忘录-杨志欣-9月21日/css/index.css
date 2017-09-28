@@ -173,6 +173,7 @@ page:nth-child(1)>footer>span{
     width: 56px;
     height: 100%;
     padding: 0 12px;
+    cursor:pointer;
 }
 page:nth-child(1)>footer>.addToggle{
     background: url(../images/edit.png)18px 12px/20px 20px no-repeat;
